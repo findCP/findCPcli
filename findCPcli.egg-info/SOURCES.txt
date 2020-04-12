@@ -1,7 +1,0 @@
-README.md
-setup.py
-findCPcli.egg-info/PKG-INFO
-findCPcli.egg-info/SOURCES.txt
-findCPcli.egg-info/dependency_links.txt
-findCPcli.egg-info/top_level.txt
-scripts/findCPcli
