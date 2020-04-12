@@ -5,13 +5,13 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="findCPcli",
-    version="0.0.1",
+    version="0.0.2",
     author="Alex Oarga",
     author_email="alex718123@gmail.com",
-    description="findCP core package",
+    description="findCP CLI package",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/findCP/findCPcore",
+    url="https://github.com/findCP/findCPcli",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -19,4 +19,5 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.6',
+    scripts=['scripts/findCPcli'],
 )

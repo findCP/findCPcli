@@ -4,14 +4,20 @@
 
 # Source
 ## Table of Contents
+- [Install](#Install)
 - [Run](#Run)
 - [Maintainers](#maintainers)
 - [Contributing](#contributing)
 - [License](#license)
 
+## Install
+```
+$ pip install findCPcli
+```
+
 ## Run
 ```sh
-$ python3 main/CLI/findCP.py [-h] [-v] -i <input file> [-o <output file>]
+$ findCPcli [-h] [-v] -i <input file> [-o <output file>]
                  [-cp <output file>] [-swD <output file>] [-sF <output file>]
                  [-swDF <output file>]
 
