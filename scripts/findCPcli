@@ -86,7 +86,7 @@ def run(model_path, output_path, task, verbose):
 		print("Error: Something went wrong:")
 		print(str(error))
 		#print("########## REMOVE raise ON CLI/Main.py")
-		#raise error
+		raise error
 
 
 def __check_model_file(input):
