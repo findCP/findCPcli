@@ -29,8 +29,8 @@ optional arguments:
                        .yml
   -o <output file>     Output spreadsheet file with results. Allowed file
                        formats: .xls .xlsx .ods
-  -cp <output file>    Output spreadsheet file with chokepoints sensibility
-                       analysis. Allowed file formats: .xls .xlsx .ods
+  -cp <output file>    Output spreadsheet file with growth dependent
+                       chokepoints. Allowed file formats: .xls .xlsx .ods
   -swD <output file>   Save output model without Dead End Metabolites. Allowed
                        file formats: .xml .json .yml
   -sF <output file>    Save output model with reactions bounds updated with

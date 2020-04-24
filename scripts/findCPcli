@@ -37,7 +37,7 @@ def run(model_path, output_path, task, verbose):
 				print("Error, something went wrong: " + error)
 			print("")
 		elif task == TASK_SENSIBILITY:
-			print("Task: Save chokepoint sensibility spreadsheet")
+			print("Task: Save growth dependent chokepoints spreadsheet")
 			facade = Facade()
 			error = facade.generate_sensibility_spreadsheet(False, model_path, verbose_f, args1=verbose, args2=None, output_path=None)
 			if error == "":	
@@ -106,7 +106,7 @@ def read_input():
 	parser.add_argument("-o", dest="outputfile",
 						help="Output spreadsheet file with results. Allowed file formats: .xls .xlsx .ods", metavar="<output file>")
 	parser.add_argument("-cp", dest="cp",
-						help="Output spreadsheet file with chokepoints sensibility analysis. Allowed file formats: .xls .xlsx .ods", metavar="<output file>")
+						help="Output spreadsheet file with growth dependent chokepoints. Allowed file formats: .xls .xlsx .ods", metavar="<output file>")
 	parser.add_argument("-swD", dest="modelwodem",
 						help="Save output model without Dead End Metabolites. Allowed file formats: .xml .json .yml", metavar="<output file>")
 	parser.add_argument("-sF", dest="modelfva",

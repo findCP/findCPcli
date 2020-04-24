@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="findCPcli",
-    version="0.0.5",
+    version="0.0.6",
     author="Alex Oarga",
     author_email="alex718123@gmail.com",
     description="findCP CLI package",
@@ -21,6 +21,6 @@ setuptools.setup(
     install_requires=[
         "findCPcore",
     ],
-    python_requires='>=3.6',
+    python_requires='>=3.5',
     scripts=['scripts/findCPcli'],
 )
