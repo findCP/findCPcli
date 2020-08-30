@@ -1,8 +1,19 @@
 language: python
 python:
-  - "3.7"
+- '3.7'
 cache: pip
 install:
-  - pip install -r requirements.txt
+- pip install -r requirements.txt
 script:
-  - bash test.sh
+- bash test.sh
+
+deploy:
+  provider: releases
+  api_key:
+    secure: cSa8OsuR6a4IEB7d9RnFa/qcnzrAshl0JDlj8pA4CArOJjTgcC0pjwOywUKspjqg7/AeXUKabzMTRZPXvNH94geCyXx6DfuzK052ko+9SwBtbT7dlaT2Wxj4guPKrVBi+/EambSu600iQwFshrn1tNzy1qN6hAC3EnwJRzv1S4m3BHmC/1om6ta/xLQqrET7pO0Qf0rawRVi61JbUbrC6V9JObi5FV5d7RNrCWSQf/ZroWR9WfajqMX5artR9eY7xfExUhLsJNxEJU3GkrIE+rMafqS0vyRG1YDO/nwaSb1c7E+OuPfSfaPzSh0oyvHw0IQOPHs7pOd7bnlBtYLyc/RaiQBNtDkJgiPrt4RIx4MZKTZa1W0tv59tA52eou6Wh+KZAc+SQnjZaHm9Zix8JY8Lk7z8mdX1CzJHQMcRRHIvTz0ZvAR8YU+B0FWckWk/pBeXMPEXELcI6WqMFD/Lb9L9ymbkXve7MB5zcimFw6beADxYpMJnycnaoERxFJgqft63/C39s4VjPWxZpUAR28rBfYL++jsHQ9odOK8t6d+iGET/+pqlCO5oUGHUPak1n1R62A/udF/P9u3iz89wr2L8r2ssGPNoe5i5/kDZeRdEyHhyzr+FkFIg4e54cXfhC38vDpDSUwuo/lU0migXR7QTyoIhyT73nNUVDeNAfPM=
+  file: ''
+  on:
+    repo: findCP/findCPcli
+  skip_cleanup: 'true'
+  on:
+    tags: true
