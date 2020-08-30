@@ -50,7 +50,7 @@ def test_no_args():
     LOGGER.info("Executing cli file: {}" \
                 .format(FINDCPCLI_PATH))
 
-    f = open("data/no_args_err.txt", "r")
+    f = open("test/data/no_args_err.txt", "r")
     expected_result = f.read()
     f.close()
 
@@ -102,12 +102,12 @@ def test_verbose_output_on_model():
 
     LOGGER.info("Comparing spreadsheets: '{}' : '{}'".format( \
         "test_spreadsheet.xls", \
-        "data/MODEL1108160000_url.xls" \
+        "test/data/MODEL1108160000_url.xls" \
     ))
 
     __compare_two_spreadsheets_content( \
         "test_spreadsheet.xls", \
-        "data/MODEL1108160000_url.xls" \
+        "test/data/MODEL1108160000_url.xls" \
     )
 
 
@@ -133,12 +133,12 @@ def test_verbose_chokepoint_computation_on_model():
 
     LOGGER.info("Comparing spreadsheets: '{}' : '{}'".format( \
         "test_spreadsheet_cp.xls", \
-        "data/MODEL1108160000_url_cp.xls" \
+        "test/data/MODEL1108160000_url_cp.xls" \
     ))
 
     __compare_two_spreadsheets_content( \
         "test_spreadsheet_cp.xls", \
-        "data/MODEL1108160000_url_cp.xls" \
+        "test/data/MODEL1108160000_url_cp.xls" \
     )
 
 

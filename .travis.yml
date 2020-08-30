@@ -5,4 +5,4 @@ cache: pip
 install:
   - pip install -r requirements.txt
 script:
-  - py.test --log-cli-level=10 -s test/test_findCPcli.py 
+  - bash test.sh
