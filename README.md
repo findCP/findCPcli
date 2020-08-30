@@ -1,6 +1,6 @@
 # findCPcli
 
-[![Build Status](https://travis-ci.org/findCP/findCPcli.svg?branch=master&style=flat-square)](https://travis-ci.org/findCP/findCPcli) [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+[![Build Status](https://travis-ci.org/findCP/findCPcli.svg?branch=master)](https://travis-ci.org/findCP/findCPcli) [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg)](https://github.com/RichardLitt/standard-readme)
 
 # Source
 ## Table of Contents
