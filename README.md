@@ -39,6 +39,9 @@ optional arguments:
   -swDF <output file>  Save output model with reactions bounds updated with
                        Flux Variability Analysis and without Dead End
                        Metabolites. Allowed file formats: .xml .json .yml
+  -objective <reaction id>
+                        Reaction id to be used as objective function with Flux
+                        Balance Analysis
 ```
 
 

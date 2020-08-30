@@ -1,0 +1,15 @@
+Task: Save growth dependent chokepoints spreadsheet
+Reading model...
+Running Flux Variability Analysis with fraction: 0.0
+Running Flux Variability Analysis with fraction: 0.1
+Running Flux Variability Analysis with fraction: 0.2
+Running Flux Variability Analysis with fraction: 0.3
+Running Flux Variability Analysis with fraction: 0.4
+Running Flux Variability Analysis with fraction: 0.5
+Running Flux Variability Analysis with fraction: 0.6
+Running Flux Variability Analysis with fraction: 0.7
+Running Flux Variability Analysis with fraction: 0.8
+Running Flux Variability Analysis with fraction: 0.9
+Running Flux Variability Analysis with fraction: 1.0
+File succesfully saved at: test_spreadsheet_cp.xls
+
