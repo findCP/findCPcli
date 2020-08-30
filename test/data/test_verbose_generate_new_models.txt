@@ -6,5 +6,6 @@ cobra/core/group.py:109 [1;31mUserWarning[0m: need to pass in a list
 File succesfully saved at: model_fva_flux.json
 
 Task: save model refined with Flux Variability Analysis without dead end metabolites
+cobra/core/group.py:109 [1;31mUserWarning[0m: need to pass in a list
 File succesfully saved at: model_fva_dem.yml
 

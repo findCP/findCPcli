@@ -83,7 +83,7 @@ def test_incorrect_input_model():
 """
     Assure correct output and no errors running correct model
 """
-@pytest.mark.skip(reason="")
+#@pytest.mark.skip(reason="")
 def test_verbose_output_on_model():
     params  = ["-i", TEST_MODEL, "-o", "test_spreadsheet.xls", "-v"]
 
@@ -114,7 +114,6 @@ def test_verbose_output_on_model():
 """
     Assure correct output and no errors running correct model
 """
-@pytest.mark.skip(reason="")
 def test_verbose_chokepoint_computation_on_model():
     params  = ["-i", TEST_MODEL, "-cp", "test_spreadsheet_cp.xls", "-v"]
 
@@ -145,7 +144,7 @@ def test_verbose_chokepoint_computation_on_model():
 """
     Assure correct output and no errors generating new models
 """
-def test_verbose_chokepoint_computation_on_model():
+def test_verbose_generate_new_models():
     params  = ["-i", TEST_MODEL, \
                "-swD",  "model_without_dem.xml", \
                "-sF",   "model_fva_flux.json", \
