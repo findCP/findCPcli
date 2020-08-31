@@ -5,14 +5,18 @@ import subprocess
 import xlrd
 import math
 
-from errorHandler import *
-from findCPcore   import *
+from errorHandler import CellsNotEqualException
+from findCPcore   import CobraMetabolicModel
 
-LOGGER = logging.getLogger(__name__)
+LOGGER     = logging.getLogger(__name__)
+LOGGER_MSG = "Executing cli file: {} {}"
 
 TEST_MODEL           = "data/MODEL1108160000_url.xml"
 INCORRECTLY_FORMATED = "data/incorrectly_formatted.xml"
 FINDCPCLI_PATH       = os.path.abspath("../scripts/findCPcli")
+
+OUTPUT_SPREADSHEET_TEST    = "test_spreadsheet.xls"
+OUTPUT_SPREADSHEET_TEST_CP = "test_spreadsheet_cp.xls"
 
 def __equal_cell(val1, val2):
     if isinstance(val1, float):
@@ -27,7 +31,6 @@ def __compare_two_spreadsheets_content(file1, file2):
     xls1 = xlrd.open_workbook(file1, on_demand=True)
     xls2 = xlrd.open_workbook(file1, on_demand=True)
 
-    i = 0
     for name in xls1.sheet_names():
         sheet1 = xls1.sheet_by_name(name)
         sheet2 = xls2.sheet_by_name(name)
@@ -55,7 +58,7 @@ def test_no_args():
     f.close()
 
     try:
-        result = subprocess.check_output(['python', FINDCPCLI_PATH], stderr=subprocess.STDOUT, text=True)
+        subprocess.check_output(['python', FINDCPCLI_PATH], stderr=subprocess.STDOUT, text=True)
         raise RuntimeError("This point should not be reached. Return code must not be 0.")
     except subprocess.CalledProcessError as err:
         assert(str(err.stdout) == expected_result)
@@ -65,9 +68,9 @@ def test_no_args():
     Check error output when passing incorrect sbml input
 """
 def test_incorrect_input_model():
-    params  = ["-i", INCORRECTLY_FORMATED, "-o", "test_spreadsheet.xls"]
+    params  = ["-i", INCORRECTLY_FORMATED, "-o", OUTPUT_SPREADSHEET_TEST]
 
-    LOGGER.info("Executing cli file: {} {}" \
+    LOGGER.info(LOGGER_MSG \
                 .format(FINDCPCLI_PATH, params))
 
     f = open("data/test_incorrect_input_model.txt", "r")
@@ -85,9 +88,9 @@ def test_incorrect_input_model():
 """
 #@pytest.mark.skip(reason="")
 def test_verbose_output_on_model():
-    params  = ["-i", TEST_MODEL, "-o", "test_spreadsheet.xls", "-v"]
+    params  = ["-i", TEST_MODEL, "-o", OUTPUT_SPREADSHEET_TEST, "-v"]
 
-    LOGGER.info("Executing cli file: {} {}" \
+    LOGGER.info(LOGGER_MSG \
                 .format(FINDCPCLI_PATH, params))
 
     f = open("data/test_verbose_output_on_model.txt", "r")
@@ -101,12 +104,12 @@ def test_verbose_output_on_model():
     assert(str(result) == expected_result)
 
     LOGGER.info("Comparing spreadsheets: '{}' : '{}'".format( \
-        "test_spreadsheet.xls", \
+        OUTPUT_SPREADSHEET_TEST, \
         "data/MODEL1108160000_url.xls" \
     ))
 
     __compare_two_spreadsheets_content( \
-        "test_spreadsheet.xls", \
+        OUTPUT_SPREADSHEET_TEST, \
         "data/MODEL1108160000_url.xls" \
     )
 
@@ -115,9 +118,9 @@ def test_verbose_output_on_model():
     Assure correct output and no errors running correct model
 """
 def test_verbose_chokepoint_computation_on_model():
-    params  = ["-i", TEST_MODEL, "-cp", "test_spreadsheet_cp.xls", "-v"]
+    params  = ["-i", TEST_MODEL, "-cp", OUTPUT_SPREADSHEET_TEST_CP, "-v"]
 
-    LOGGER.info("Executing cli file: {} {}" \
+    LOGGER.info(LOGGER_MSG \
                 .format(FINDCPCLI_PATH, params))
 
     f = open("data/test_verbose_chokepoint_computation_on_model.txt", "r")
@@ -131,12 +134,12 @@ def test_verbose_chokepoint_computation_on_model():
     assert(str(result) == expected_result)
 
     LOGGER.info("Comparing spreadsheets: '{}' : '{}'".format( \
-        "test_spreadsheet_cp.xls", \
+        OUTPUT_SPREADSHEET_TEST_CP, \
         "data/MODEL1108160000_url_cp.xls" \
     ))
 
     __compare_two_spreadsheets_content( \
-        "test_spreadsheet_cp.xls", \
+        OUTPUT_SPREADSHEET_TEST_CP, \
         "data/MODEL1108160000_url_cp.xls" \
     )
 
@@ -150,7 +153,7 @@ def test_verbose_generate_new_models():
                "-sF",   "model_fva_flux.json", \
                "-swDF", "model_fva_dem.yml"]
 
-    LOGGER.info("Executing cli file: {} {}" \
+    LOGGER.info(LOGGER_MSG \
                 .format(FINDCPCLI_PATH, params))
 
     f = open("data/test_verbose_generate_new_models.txt", "r")
