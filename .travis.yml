@@ -7,10 +7,9 @@ install:
 
 jobs:
   include:
-    - stage: sonarcloud setup
-      script: bash sonar_setup.sh
     - stage: sonarcloud review
-      script: sonar-scanner
+      script: bash sonar_setup.sh
+    - script: sonar-scanner
     - stage: test
       script: bash test.sh
 

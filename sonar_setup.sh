@@ -1,4 +1,4 @@
 #!/bin/sh
 
 # Generating copy with '.py' extension for sonar review
-cp findCPcli findCPcli.py
+cp scripts/findCPcli scripts/findCPcli.py
