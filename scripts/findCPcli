@@ -3,15 +3,30 @@
 import sys, os
 import time
 from argparse import ArgumentParser
+from dotenv   import load_dotenv
+load_dotenv()
 
-from findCPcore import Facade
-from findCPcore import FacadeUtils
+ENV_ENVIRONMENT = "ENVIRONMENT"
+ENV_DEV = "DEV"
+ENV_PRO = "PRO"
+
+if os.environ.get(ENV_ENVIRONMENT) == ENV_DEV:
+	# import relative path of findCPcore for development purposes
+	sys.path.append("../../findCPcore_pkg/findCPcore/")
+	from Facade      import Facade
+	from FacadeUtils import FacadeUtils
+else:
+	from findCPcore import Facade
+	from findCPcore import FacadeUtils
 
 TASK_SPREADSHEET       = "TASK_SPREADSHEET"
 TASK_SENSIBILITY       = "TASK_SENSIBILITY"
 TASK_SAVE_WITHOUT_DEM  = "TASK_SAVE_WITHOUT_DEM"
 TASK_SAVE_WITH_FVA     = "TASK_SAVE_WITH_FVA"
 TASK_SAVE_WITH_FVA_DEM = "TASK_SAVE_WITH_FVA_DEM"
+
+MSG_SUCCESFULL_SAVE = "File succesfully saved at: {}"
+MSG_UNKNOWN_ERROR   = "Error, something went wrong: {}"
 
 def verbose_f(text, args1=False, args2=False):
 	if args1:
@@ -26,11 +41,11 @@ def run(task, model_path, output_path, verbose, objective=None):
 			if error == "":	
 				(result_ok, text) = facade.save_spreadsheet(False, output_path, verbose_f)
 				if result_ok:
-					print("File succesfully saved at: " + text)
+					print(MSG_SUCCESFULL_SAVE.format(text))
 				else:
-					print("Error, something went wrong: " + text)
+					print(MSG_UNKNOWN_ERROR.format(text))
 			else:
-				print("Error, something went wrong: " + error)
+				print(MSG_UNKNOWN_ERROR.format(error))
 			print("")
 
 		elif task == TASK_SENSIBILITY:
@@ -40,11 +55,11 @@ def run(task, model_path, output_path, verbose, objective=None):
 			if error == "":	
 				(result_ok, text) = facade.save_spreadsheet(False, output_path, verbose_f)
 				if result_ok:
-					print("File succesfully saved at: " + text)
+					print(MSG_SUCCESFULL_SAVE.format(text))
 				else:
-					print("Error, something went wrong: " + text)
+					print(MSG_UNKNOWN_ERROR.format(text))
 			else:
-				print("Error, something went wrong: " + error)
+				print(MSG_UNKNOWN_ERROR.format(error))
 			print("")
 
 		elif task == TASK_SAVE_WITHOUT_DEM:
@@ -53,9 +68,9 @@ def run(task, model_path, output_path, verbose, objective=None):
 			facade.find_and_remove_dem(False, output_path, verbose_f, model_path, args1=verbose, args2=None)
 			(result_ok, text) = facade.save_model(output_path, False, verbose_f)
 			if result_ok:
-				print("File succesfully saved at: " + text)
+				print(MSG_SUCCESFULL_SAVE.format(text))
 			else:
-				print("Error, something went wrong: " + text)
+				print(MSG_UNKNOWN_ERROR.format(text))
 			print("")
 
 		elif task == TASK_SAVE_WITH_FVA:
@@ -63,13 +78,13 @@ def run(task, model_path, output_path, verbose, objective=None):
 			facade = Facade()
 			error = facade.run_fva(False, output_path, verbose_f, model_path, args1=verbose, args2=None, objective=objective)
 			if error != "":
-				print("Error, something went wrong: " + error)
+				print(MSG_UNKNOWN_ERROR.format(error))
 			else:
 				(result_ok, text) = facade.save_model(output_path, False, verbose_f)
 				if result_ok:
-					print("File succesfully saved at: " + text)
+					print(MSG_SUCCESFULL_SAVE.format(text))
 				else:
-					print("Error, something went wrong: " + text)
+					print(MSG_UNKNOWN_ERROR.format(text))
 			print("")
 
 		elif task == TASK_SAVE_WITH_FVA_DEM:
@@ -77,25 +92,23 @@ def run(task, model_path, output_path, verbose, objective=None):
 			facade = Facade()
 			error = facade.run_fva_remove_dem(False, output_path, verbose_f, model_path, args1=verbose, args2=None, objective=objective)
 			if error != "":
-				print("Error, something went wrong: " + error)
+				print(MSG_UNKNOWN_ERROR.format(error))
 			else:
 				(result_ok, text) = facade.save_model(output_path, False, verbose_f)
 				if result_ok:
-					print("File succesfully saved at: " + text)
+					print(MSG_SUCCESFULL_SAVE.format(text))
 				else:
-					print("Error, something went wrong: " + text)
+					print(MSG_UNKNOWN_ERROR.format(text))
 			print("")
 
 	except Exception as error:
 		print("Error: Something went wrong:")
-		print(str(error))
-		#raise error
+		raise error
 
 
 def read_input():
 	input_file = ""
 	output = ""
-	verbose = False
 	parser = ArgumentParser(description="")
 
 	parser.add_argument("-v", "--verbose",  
@@ -182,6 +195,7 @@ def validate_output_spread(list_of_output_path):
 		# 	task has not been selected and the file is not checked
 		if output_path is not None and not __check_spread_file(output_path):
 			print("Output file must be .xls .xlsx or .ods")
+			print("run findCPcli -h for further information.")
 			exit(1)
 
 # Check that at least one operation has been selected
