@@ -21,6 +21,7 @@ setuptools.setup(
     install_requires=[
         "findCPcore",
         "numpy>=1.16.5",
+        "python-dotenv",
     ],
     python_requires='>=3.5',
     scripts=['scripts/findCPcli'],
