@@ -1,2 +1,3 @@
 findCPcore==0.0.11
+numpy>=1.16.5
 xlrd

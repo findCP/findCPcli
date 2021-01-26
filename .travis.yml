@@ -4,30 +4,22 @@ python:
 cache: pip
 install:
 - pip install -r requirements.txt
-
 jobs:
   include:
-
-    - stage: sonarcloud review
-      script: bash sonar.sh
-
-    - stage: test
-      script: bash test.sh
-
+  - stage: sonarcloud review
+    script: bash sonar.sh
+  - stage: test
+    script: bash test.sh
 addons:
   sonarcloud:
     organization: findcp
     token:
       secure: mO3j/RgiUVAZVyAI7jbYzz5AI9sPVAb1lwKxAbOML7sWSXS5q95rTZoysAutfPUuk3VHnQjzYtjEpftcQ34Yx5GKgyaV6CfOCeqSrqDD3xf5xPDiNdRf4J+aqWl1pHpvNLPJafYqJ9aP/27SndvndBRK7a7hGFE+oaPhq5lDQnIH+/RTL1TJZk3lLytrnDKDAdS3u1joqi3Hh3xgZDj4UmmRN34btPL3t7HipPSYfbyTGo0iYyNVqK7Lloa4KH/diBxnPHOoHUeK6i787WSrd5gHsFdpgDgks7PRlwuxHyWqguQmgiPAmf6dHdLnVdCi6ZuYYQYyuHTEKG090qF6aE6d7OLmio37IuenOUVnXhpBHSSBuAeYS7Z+udnWiARrPLekK3QlzHSFGY1YTsOeqEwe0p5Gt0QbWX6OL8w0qWVvDh0KgbSDj9NWWcq9YXkUKTtEKAZjnNmQVY4HvtXiN0o3f86aPhWTh6g5CBvNepuUK0uGt/l6Q5Ul5yCC1Qbu+pBxV9ybQsjWoC7xcjXrXbERg4YuiZS20pSPljUJXvEaj/TVs/z+0yhHOw4RR2OHMUhWS1cFYaNhkIX714DyZKWANE4YfM+Vd31574TyujpNAQUzFDtUOHI+hhAv5luCUlbdEL/TbqKliSRF+MBXDzI29xMBsmJyeKf0y5+q+8Y=
 
-#jobs:
-#  include:
-#    - stage: "Deploy to Pypi"
-#      script: skip
-#      deploy:
-#        provider: pypi
-#        username: "__token__"
-#        on:
-#          tags: true
-#        secure: OyBZ3yRg1YETqOTRbFAGMWy0qpNmkOz5GWWNXoqK7bx6ld8c1cB9MMS6XhbHJpkRKIxWmQwvr6eq6aq/VpC0hsPTgyOzTpPxDtUrzJwSAK1yGk/3rK51eVNl7ilehGMhSKv3kEttdPvGkO6AggpedBZW0dVqcEjw9bWdVqQFx3EUiXMdbmhTLXM4ndyHiAcCpMHbvyiKQutPnyGMcDTLFhKOyjrWIN26L481ZbH3n2GP5ZOlw6zlMzT7aFYcIrsvmlRUqlaXfisqvmxwBx0lYmyzGUMY5QUM0DbpynWqcmkvLBF6GJYYwAzh3L9DCTMxbVwX1uxXwA56pA87PIvFUdhqsQijtK9fHTUCWqssVb1LQNGhF4OZQhHyqVTcaLzSOAXgzLZyE5ptriqcywmFCGhgkTT+Z6DHmOfsVt6rkltnSJksHg0R0IVGTnB5s+F8gzqF9OK7wpCq0dAde9Qly4m0o/aEbELRPeFXAJeJn2KZVjxkEw6R8GkVzqTx/xdj+Bx9yh2s7oFiZ/mpBcR2P+DXh1Cxmks/SIc87SRplHfhsyxCvoQ5sMg6nf9CWl2vJ3RCMcnsBEAq1bt1zfBklSVNig3uWH9Y2OmmF2HMWKCjxTj4s5nZ+3Zg5f/uqnEh35kHjS/LE/9Ew9hRoV7uW/jI6ExLvwBBFLBHV5BGQxs=
-
+deploy:
+  provider: pypi
+  username: "__token__"
+  password:
+    secure: Jm+akO0Km3VGYjKg4gBv88GQh0g6mTfsddUcx1YNJ/HbBMwkD0x2lQ7eC1d8LU1CeBNsec/JMVUq6XXDWkCUh3y3zjJhVF67rwEGs6rS96arot2fbW+MWWpJsUCZKv68/UQrh5mZiRnMub2LPo3PawnmGhHU9OmCub2M9OM6blua+jXzANd0w0j9rSESij/qaInkTWx8THOgJEI7jQC+GFFWUSj80cO36HhNKgnQSMlmD1pD/b3GpHNoAm6apY8f8Hv7JjmkEA5WkxVau7SVtqvlr7UYW/SEuda3ipeDD75GhCmPfg9xytfWUOmNci8lbG40hGpQp/UrGyP6bOGvYy/QLE7pn/ZWr+ZP5tn1IAjKzpdmnBLjRGOXsaKMyj5iLPCVMxelzD+9alnelxww/PD/PVBldH11f3etBTfx4AMZKgsfFqFODM1IcjeoCtmBWGA5ItMQ3YXXKNbnxyZLKN0Nmed1ad45zJnwfrs73DxyUe7VHkzdO8u2CkH2n86REhBrVE2ZZDe818eIeU57flyI1DcDIfjcc/uK+WZVSQpnnNzlzCKsm4LTbkCiV9+YkbzgaOUqEs8S/UYYTU6g+3ASLFOOSBEzRJsU9HCQEXWWpnUpBPrkcbF4x3Cny+hBPanCq4NUk+5LqWeiPDOWy5xsAWXXnsQXRq5IQxC96gI=
+  on:
+    tags: true
