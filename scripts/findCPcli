@@ -122,7 +122,6 @@ def run(task, model_path, output_path, verbose, objective=None):
 		print("Error: Something went wrong:")
 		# Important: the error is not raised but instead it is printed.
 		print(str(error))
-		#raise error
 
 
 def read_input():
