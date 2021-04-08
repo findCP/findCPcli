@@ -28,6 +28,12 @@ MANIFEST
 
 # Project exclusive
 README_build.md
+.idea/
+
+# Environments
+.venv
+venv/
+venv.bak/
 
 # Installer logs
 pip-log.txt

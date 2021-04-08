@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-'''
+"""
     This file is part of findCPcli project.
     Copyright (C) 2020-2021  Alex Oarga  <718123 at unizar dot es> (University of Zaragoza)
 
@@ -15,7 +15,7 @@
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
-'''
+"""
 
 import sys, os
 import time
@@ -50,8 +50,7 @@ MSG_FURTHER_INFO = "run findCPcli -h for further information."
 PARAM_INPUT_FILE = "<input file>"
 PARAM_OUTPUT_FILE = "<output file>"
 
-LICENSE = \
-    """
+LICENSE = """
     findCPcli Copyright (C) 2020-2021  Alex Oarga  <718123 at unizar dot es> (University of Zaragoza)
     This program comes with ABSOLUTELY NO WARRANTY;
     This is free software, and you are welcome to redistribute it
@@ -71,10 +70,19 @@ def run(task, model_path, output_path, verbose, objective=None):
         if task == TASK_SPREADSHEET:
             print("Task: Save results spreadsheet")
             facade = Facade()
-            error = facade.generate_spreadsheet(False, model_path, verbose_f, args1=verbose, args2=None,
-                                                output_path=None, objective=objective)
+            error = facade.generate_spreadsheet(
+                False,
+                model_path,
+                verbose_f,
+                args1=verbose,
+                args2=None,
+                output_path=None,
+                objective=objective,
+            )
             if error == "":
-                (result_ok, text) = facade.save_spreadsheet(False, output_path, verbose_f)
+                (result_ok, text) = facade.save_spreadsheet(
+                    False, output_path, verbose_f
+                )
                 if result_ok:
                     print(MSG_SUCCESFULL_SAVE.format(text))
                 else:
@@ -86,10 +94,19 @@ def run(task, model_path, output_path, verbose, objective=None):
         elif task == TASK_SENSIBILITY:
             print("Task: Save growth dependent chokepoints spreadsheet")
             facade = Facade()
-            error = facade.generate_sensibility_spreadsheet(False, model_path, verbose_f, args1=verbose, args2=None,
-                                                            output_path=None, objective=objective)
+            error = facade.generate_sensibility_spreadsheet(
+                False,
+                model_path,
+                verbose_f,
+                args1=verbose,
+                args2=None,
+                output_path=None,
+                objective=objective,
+            )
             if error == "":
-                (result_ok, text) = facade.save_spreadsheet(False, output_path, verbose_f)
+                (result_ok, text) = facade.save_spreadsheet(
+                    False, output_path, verbose_f
+                )
                 if result_ok:
                     print(MSG_SUCCESFULL_SAVE.format(text))
                 else:
@@ -101,7 +118,9 @@ def run(task, model_path, output_path, verbose, objective=None):
         elif task == TASK_SAVE_WITHOUT_DEM:
             print("Task: save model without dead end metabolites")
             facade = Facade()
-            facade.find_and_remove_dem(False, output_path, verbose_f, model_path, args1=verbose, args2=None)
+            facade.find_and_remove_dem(
+                False, output_path, verbose_f, model_path, args1=verbose, args2=None
+            )
             (result_ok, text) = facade.save_model(output_path, False, verbose_f)
             if result_ok:
                 print(MSG_SUCCESFULL_SAVE.format(text))
@@ -112,8 +131,15 @@ def run(task, model_path, output_path, verbose, objective=None):
         elif task == TASK_SAVE_WITH_FVA:
             print("Task: save model refined with Flux Variability Analysis")
             facade = Facade()
-            error = facade.run_fva(False, output_path, verbose_f, model_path, args1=verbose, args2=None,
-                                   objective=objective)
+            error = facade.run_fva(
+                False,
+                output_path,
+                verbose_f,
+                model_path,
+                args1=verbose,
+                args2=None,
+                objective=objective,
+            )
             if error != "":
                 print(MSG_UNKNOWN_ERROR.format(error))
             else:
@@ -125,10 +151,19 @@ def run(task, model_path, output_path, verbose, objective=None):
             print("")
 
         elif task == TASK_SAVE_WITH_FVA_DEM:
-            print("Task: save model refined with Flux Variability Analysis without dead end metabolites")
+            print(
+                "Task: save model refined with Flux Variability Analysis without dead end metabolites"
+            )
             facade = Facade()
-            error = facade.run_fva_remove_dem(False, output_path, verbose_f, model_path, args1=verbose, args2=None,
-                                              objective=objective)
+            error = facade.run_fva_remove_dem(
+                False,
+                output_path,
+                verbose_f,
+                model_path,
+                args1=verbose,
+                args2=None,
+                objective=objective,
+            )
             if error != "":
                 print(MSG_UNKNOWN_ERROR.format(error))
             else:
@@ -150,41 +185,59 @@ def read_input():
     output = ""
     parser = ArgumentParser(description="")
 
-    parser.add_argument("-v", "--verbose",
-                        help="Print feedback while running.",
-                        action="store_true")
-    parser.add_argument("-l", "--license",
-						dest="license",
-						help="View license info.",
-						action="store_true")
-    parser.add_argument("-i",
-                        dest="inputfile", required=True,
-                        metavar=PARAM_INPUT_FILE,
-                        help="Input metabolic model. Allowed file formats: .xml .json .yml")
-    parser.add_argument("-o",
-                        dest="outputfile",
-                        metavar=PARAM_OUTPUT_FILE,
-                        help="Output spreadsheet file with results. Allowed file formats: .xls .xlsx .ods")
-    parser.add_argument("-cp",
-                        dest="cp",
-                        metavar=PARAM_OUTPUT_FILE,
-                        help="Output spreadsheet file with growth dependent chokepoints. Allowed file formats: .xls .xlsx .ods")
-    parser.add_argument("-swD",
-                        dest="modelwodem",
-                        metavar=PARAM_OUTPUT_FILE,
-                        help="Save output model without Dead End Metabolites. Allowed file formats: .xml .json .yml")
-    parser.add_argument("-sF",
-                        dest="modelfva",
-                        metavar=PARAM_OUTPUT_FILE,
-                        help="Save output model with reactions bounds updated with Flux Variability Analysis. Allowed file formats: .xml .json .yml")
-    parser.add_argument("-swDF",
-                        dest="modelfvawodem",
-                        metavar=PARAM_OUTPUT_FILE,
-                        help="Save output model with reactions bounds updated with Flux Variability Analysis and without Dead End Metabolites. Allowed file formats: .xml .json .yml")
-    parser.add_argument("-objective",
-                        dest="objective",
-                        metavar=PARAM_OUTPUT_FILE,
-                        help="Reaction id to be used as objective function with Flux Balance Analysis")
+    parser.add_argument(
+        "-v", "--verbose", help="Print feedback while running.", action="store_true"
+    )
+    parser.add_argument(
+        "-l",
+        "--license",
+        dest="license",
+        help="View license info.",
+        action="store_true",
+    )
+    parser.add_argument(
+        "-i",
+        dest="inputfile",
+        required=True,
+        metavar=PARAM_INPUT_FILE,
+        help="Input metabolic model. Allowed file formats: .xml .json .yml",
+    )
+    parser.add_argument(
+        "-o",
+        dest="outputfile",
+        metavar=PARAM_OUTPUT_FILE,
+        help="Output spreadsheet file with results. Allowed file formats: .xls .xlsx .ods",
+    )
+    parser.add_argument(
+        "-cp",
+        dest="cp",
+        metavar=PARAM_OUTPUT_FILE,
+        help="Output spreadsheet file with growth dependent chokepoints. Allowed file formats: .xls .xlsx .ods",
+    )
+    parser.add_argument(
+        "-swD",
+        dest="modelwodem",
+        metavar=PARAM_OUTPUT_FILE,
+        help="Save output model without Dead End Metabolites. Allowed file formats: .xml .json .yml",
+    )
+    parser.add_argument(
+        "-sF",
+        dest="modelfva",
+        metavar=PARAM_OUTPUT_FILE,
+        help="Save output model with reactions bounds updated with Flux Variability Analysis. Allowed file formats: .xml .json .yml",
+    )
+    parser.add_argument(
+        "-swDF",
+        dest="modelfvawodem",
+        metavar=PARAM_OUTPUT_FILE,
+        help="Save output model with reactions bounds updated with Flux Variability Analysis and without Dead End Metabolites. Allowed file formats: .xml .json .yml",
+    )
+    parser.add_argument(
+        "-objective",
+        dest="objective",
+        metavar=PARAM_OUTPUT_FILE,
+        help="Reaction id to be used as objective function with Flux Balance Analysis",
+    )
 
     args = parser.parse_args()
 
@@ -196,7 +249,17 @@ def read_input():
     modelfvawodem = args.modelfvawodem
     objective = args.objective
 
-    return (input_file, output, cp, modelwodem, modelfva, modelfvawodem, args.verbose, objective, args.license)
+    return (
+        input_file,
+        output,
+        cp,
+        modelwodem,
+        modelfva,
+        modelfvawodem,
+        args.verbose,
+        objective,
+        args.license,
+    )
 
 
 def __check_model_file(path):
@@ -255,20 +318,31 @@ def validate_operation_selected(list_of_possible_operations):
 
     if not operation_selected:
         print("Please select at least one operation to perform: ")
-        print("[-o <output file>] [-cp <output file>] [-swD <output file>] " \
-              + "[-sF <output file>] [-swDF <output file>]")
+        print(
+            "[-o <output file>] [-cp <output file>] [-swD <output file>] "
+            + "[-sF <output file>] [-swDF <output file>]"
+        )
         print(MSG_FURTHER_INFO)
         exit(1)
 
 
 #
-#	Main cli workflow
-#	 Input is read, validated and each task executed independently
+# 	Main cli workflow
+# 	 Input is read, validated and each task executed independently
 #
 def main():
     # Read input
-    (input_file, output, cp, modelwodem, modelfva, modelfvawodem, verbose, objective, license) \
-        = read_input()
+    (
+        input_file,
+        output,
+        cp,
+        modelwodem,
+        modelfva,
+        modelfvawodem,
+        verbose,
+        objective,
+        license,
+    ) = read_input()
 
     # Operations that dont requiere validation
     if license:
@@ -276,7 +350,11 @@ def main():
 
     # Note that the following save the outputh path of each operation
     # If the variable is None, no operation that operation has not been selected
-    NEW_MODEL_OPERATIONS = [modelwodem, modelfva, modelfvawodem]  # Tasks that generate new models
+    NEW_MODEL_OPERATIONS = [
+        modelwodem,
+        modelfva,
+        modelfvawodem,
+    ]  # Tasks that generate new models
     NEW_SPREADSHEET_OPS = [output, cp]  # Tasks that generate spreadsheet files
 
     # Check input file formats and task
