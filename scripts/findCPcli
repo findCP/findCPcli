@@ -49,6 +49,7 @@ MSG_FURTHER_INFO = "run findCPcli -h for further information."
 
 PARAM_INPUT_FILE = "<input file>"
 PARAM_OUTPUT_FILE = "<output file>"
+PARAM_REACTION_ID = "<reaction id>"
 
 LICENSE = """
     findCPcli Copyright (C) 2020-2021  Alex Oarga  <718123 at unizar dot es> (University of Zaragoza)
@@ -235,7 +236,7 @@ def read_input():
     parser.add_argument(
         "-objective",
         dest="objective",
-        metavar=PARAM_OUTPUT_FILE,
+        metavar=PARAM_REACTION_ID,
         help="Reaction id to be used as objective function with Flux Balance Analysis",
     )
 
