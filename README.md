@@ -2,8 +2,8 @@
 
 ## findCPcli - find ChokePoint reactions in genome-scale metabolic models
 
-```findCPcli``` is a command line python-tool for the computation of chokepoint rections in genome-scale metabolic models. 
-The main purspose is to provide a tool to compute the chokepoints of the topology of the metabolic network, as well as considering also the dynamic information of the network.
+```findCPcli``` is a command line python-tool for the computation of chokepoint reactions in genome-scale metabolic models. 
+The main purpose is to provide a tool to compute the chokepoints of the topology of the metabolic network, as well as considering also the dynamic information of the network.
 
 findCPcli takes as inputs SBML files of genome-scale models and  provides as output spreadsheet files with the results of the chokepoint computation. 
 
@@ -76,7 +76,7 @@ $ findCPcli -i model.xml -cp generate_output.xls
 
 ### Remove Dead-End Metabolites
 
-The following command exports a new generated model withoud Dead-End Metabolites from an input SBML model.
+The following command exports a new generated model without Dead-End Metabolites from an input SBML model.
 
 ```sh
 $ findCPcli -i model.xml -swD new_model.xml
