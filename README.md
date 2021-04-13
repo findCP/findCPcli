@@ -17,8 +17,8 @@ Oarga et al.. "Growth Dependent Computation of Chokepoints in Metabolic Networks
 
 ## Table of Contents
 - [Install](#Install)
-- [Documentation and Examples](#Documentation and Examples)
-- [Tool parameters](#Tool parameters)  
+- [Documentation and Examples](#documentation-and-examples)
+- [Tool parameters](#tool-parameters)  
 - [Maintainers](#maintainers)
 - [Contributing](#contributing)
 - [License](#license)
