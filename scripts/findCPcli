@@ -30,6 +30,7 @@ ENV_PRO = "PRO"
 
 if os.environ.get(ENV_ENVIRONMENT) == ENV_DEV:
     # import relative path of findCPcore for development purposes
+    print("*** DEVELOPMENT ENVIRONMENT ***")
     sys.path.append("../../findCPcore_pkg/findCPcore/")
     from Facade import Facade
     from FacadeUtils import FacadeUtils

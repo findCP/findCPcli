@@ -4,9 +4,25 @@ import logging
 import subprocess
 import xlrd
 import math
+import sys
+from dotenv import load_dotenv
+
+load_dotenv()
+
+ENV_ENVIRONMENT = "ENVIRONMENT"
+ENV_DEV = "DEV"
+ENV_PRO = "PRO"
+
+if os.environ.get(ENV_ENVIRONMENT) == ENV_DEV:
+    # import relative path of findCPcore for development purposes
+    print("*** DEVELOPMENT ENVIRONMENT ***")
+    sys.path.append("../../findCPcore_pkg/findCPcore/")
+    from CobraMetabolicModel import CobraMetabolicModel
+else:
+    from findCPcore import CobraMetabolicModel
 
 from errorHandler import CellsNotEqualException
-from findCPcore import CobraMetabolicModel
+
 
 LOGGER = logging.getLogger(__name__)
 LOGGER_MSG = "Executing cli file: {} {}"
