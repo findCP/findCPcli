@@ -67,6 +67,22 @@ def verbose_f(text, args1=False, args2=False):
         print(text)
 
 
+def save_final_spreadsheet(facade, output_path, verbose_f):
+    (result_ok, text) = facade.save_spreadsheet(
+        False, output_path, verbose_f
+    )
+    if result_ok:
+        print(MSG_SUCCESFULL_SAVE.format(text))
+    else:
+        print(MSG_UNKNOWN_ERROR.format(text))
+
+def save_final_model(facade, output_path, verbose_f):
+    (result_ok, text) = facade.save_model(output_path, False, verbose_f)
+    if result_ok:
+        print(MSG_SUCCESFULL_SAVE.format(text))
+    else:
+        print(MSG_UNKNOWN_ERROR.format(text))
+
 def run(task, model_path, output_path, verbose, objective=None):
     try:
         if task == TASK_SPREADSHEET:
@@ -82,16 +98,9 @@ def run(task, model_path, output_path, verbose, objective=None):
                 objective=objective,
             )
             if error == "":
-                (result_ok, text) = facade.save_spreadsheet(
-                    False, output_path, verbose_f
-                )
-                if result_ok:
-                    print(MSG_SUCCESFULL_SAVE.format(text))
-                else:
-                    print(MSG_UNKNOWN_ERROR.format(text))
+                save_final_spreadsheet(facade, output_path, verbose_f)
             else:
                 print(MSG_UNKNOWN_ERROR.format(error))
-            print("")
 
         elif task == TASK_SENSIBILITY:
             print("Task: Save growth dependent chokepoints spreadsheet")
@@ -106,16 +115,9 @@ def run(task, model_path, output_path, verbose, objective=None):
                 objective=objective,
             )
             if error == "":
-                (result_ok, text) = facade.save_spreadsheet(
-                    False, output_path, verbose_f
-                )
-                if result_ok:
-                    print(MSG_SUCCESFULL_SAVE.format(text))
-                else:
-                    print(MSG_UNKNOWN_ERROR.format(text))
+                save_final_spreadsheet(facade, output_path, verbose_f)
             else:
                 print(MSG_UNKNOWN_ERROR.format(error))
-            print("")
 
         elif task == TASK_SAVE_WITHOUT_DEM:
             print("Task: save model without dead end metabolites")
@@ -123,12 +125,7 @@ def run(task, model_path, output_path, verbose, objective=None):
             facade.find_and_remove_dem(
                 False, output_path, verbose_f, model_path, args1=verbose, args2=None
             )
-            (result_ok, text) = facade.save_model(output_path, False, verbose_f)
-            if result_ok:
-                print(MSG_SUCCESFULL_SAVE.format(text))
-            else:
-                print(MSG_UNKNOWN_ERROR.format(text))
-            print("")
+            save_final_model(facade, output_path, verbose_f)
 
         elif task == TASK_SAVE_WITH_FVA:
             print("Task: save model refined with Flux Variability Analysis")
@@ -145,12 +142,7 @@ def run(task, model_path, output_path, verbose, objective=None):
             if error != "":
                 print(MSG_UNKNOWN_ERROR.format(error))
             else:
-                (result_ok, text) = facade.save_model(output_path, False, verbose_f)
-                if result_ok:
-                    print(MSG_SUCCESFULL_SAVE.format(text))
-                else:
-                    print(MSG_UNKNOWN_ERROR.format(text))
-            print("")
+                save_final_model(facade, output_path, verbose_f)
 
         elif task == TASK_SAVE_WITH_FVA_DEM:
             print(
@@ -169,12 +161,10 @@ def run(task, model_path, output_path, verbose, objective=None):
             if error != "":
                 print(MSG_UNKNOWN_ERROR.format(error))
             else:
-                (result_ok, text) = facade.save_model(output_path, False, verbose_f)
-                if result_ok:
-                    print(MSG_SUCCESFULL_SAVE.format(text))
-                else:
-                    print(MSG_UNKNOWN_ERROR.format(text))
-            print("")
+                save_final_model(facade, output_path, verbose_f)
+
+        # Leave final blank line
+        print("")
 
     except Exception as error:
         print("Error: Something went wrong:")
