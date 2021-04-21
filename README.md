@@ -66,7 +66,7 @@ The previous command produces a spreadsheet file containing the following sheets
 ### Compute growth dependent chokepoints
 
 findcpcli allows, from a model in SBML format, to calculate how refining the model with different values of the fraction of the optimum with FVA affects the number of chokepoints
-(i.e. [Growth Dependant Chokepoints](https://doi.org/10.1007/978-3-030-60327-4_6)).
+(i.e. [Growth Dependent Chokepoints](https://doi.org/10.1007/978-3-030-60327-4_6)).
 , reversible and non reversible reactions and dead reactions (i.e. reactions with upper and lower bound equal to 0).
 The tool produces a spreadsheet file showing how the size of this set varies.
 
