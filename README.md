@@ -7,21 +7,35 @@ The main purpose is to provide a tool to compute the chokepoints of the topology
 
 findCPcli takes as inputs SBML files of genome-scale models and  provides as output spreadsheet files with the results of the chokepoint computation. 
 
-The computation of chokepoints can also be exploited via [findCPcore](https://github.com/findCP/findCPcore) which is used by findCPcli. 
-[findCPcore](https://github.com/findCP/findCPcore) documentation can be found at [readthedocs](https://findcpcore.readthedocs.io/en/latest/).
+**Chokepoint reactions** are those reactions that are either the unique consumer of a given metabolite or the only producer of a metabolite. 
 
-For citation purposes please refer to:
+**Dead-End Metabolites (DEM)**  are those metabolites that are not produced or consumed by any reaction.
 
-Oarga et al.. "Growth Dependent Computation of Chokepoints in Metabolic Networks." International Conference on Computational Methods in Systems Biology. Springer, Cham, 2020. https://doi.org/10.1007/978-3-030-60327-4_6
+**Figure:** Chokepoint reactions and dead-end metabolites example:
+![Chokepoint reactions and Dead-end metabolites example](docs/example.png)
+
+The computation of chokepoints can also be exploited programmatically via the [Low Level API](#low-level-api) which is based on [COBRApy](https://github.com/opencobra/cobrapy).
 
 
 ## Table of Contents
+- [License](#license)
 - [Install](#Install)
 - [Documentation and Examples](#documentation-and-examples)
-- [Tool parameters](#tool-parameters)  
+- [Tool parameters](#tool-parameters)
+- [Low Level API](#low-level-api)
 - [Maintainers](#maintainers)
 - [Contributing](#contributing)
-- [License](#license)
+
+
+## License
+
+findCPcli is released under [GPLv3 license](LICENSE).
+
+
+For citation purposes please refer to:
+
+Oarga et al. **Growth Dependent Computation of Chokepoints in Metabolic Networks.** International Conference on Computational Methods in Systems Biology. Springer, Cham, 2020. https://doi.org/10.1007/978-3-030-60327-4_6
+
 
 ## Install
 ```findCPcli``` can be installed via **pip**:
@@ -31,9 +45,6 @@ $ pip install findCPcli
 
 ## Documentation and Examples
 
-**Chokepoint reactions** are those reactions that are either the unique consumer of a given metabolite or the only producer of a metabolite. 
-
-**Dead-End Metabolites (DEM)**  are those metabolites that are not produced or consumed by any reaction.
 
 ### Compute chokepoints
 
@@ -127,6 +138,26 @@ optional arguments:
                         Balance Analysis
 ```
 
+## Low Level API
+
+The computation of chokepoints can also be exploited via [findCPcore](https://github.com/findCP/findCPcore) which is used by findCPcli. 
+[findCPcore](https://github.com/findCP/findCPcore) documentation can be found at [readthedocs](https://findcpcore.readthedocs.io/en/latest/).
+
+Example of network refinement and chokepoint computation:
+```python
+from findCPcore import CobraMetabolicModel
+
+model = CobraMetabolicModel("aureus.xml")
+
+# update flux bounds with FVA
+model.fva(update_flux=True)
+
+# compute chokepoints
+model.find_chokepoints()
+
+# get chokepoints
+model.chokepoints()
+```
 
 ## Maintainers
 
@@ -138,8 +169,6 @@ Feel free to dive in! [Open an issue](https://github.com/findCP/findCPcli/issues
 
 Standard Readme follows the [Contributor Covenant](http://contributor-covenant.org/version/1/3/0/) Code of Conduct.
 
-## License
 
-findCPcli is released under [GPLv3 license](LICENSE).
 
 
