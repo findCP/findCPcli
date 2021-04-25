@@ -12,7 +12,7 @@ findCPcli takes as inputs SBML files of genome-scale models and  provides as out
 **Dead-End Metabolites (DEM)**  are those metabolites that are not produced or consumed by any reaction.
 
 _Figure:_ Chokepoint reactions and dead-end metabolites example:
-![Chokepoint reactions and Dead-end metabolites example](docs/example.png)
+![Chokepoint reactions and Dead-end metabolites example](docs/chokepoints_example.png)
 
 The computation of chokepoints can also be exploited programmatically via the [Low Level API](#low-level-api) which is based on [COBRApy](https://github.com/opencobra/cobrapy).
 
@@ -57,61 +57,61 @@ The following section includes pseudocode of some of the main operations perform
 - Find chokepoints on a model
 
 ```
-function find_chokepoints(model)
-  chokepoint_list = empty list
-  for reaction in model
-      if reaction upper flux bound and lower flux bound are not both zero
-        for reactant in reaction
-            if reaction is the only consumer of reactant
-                chokepoint_list = chokepoint_list + (reaction, reactant)
-        for product in reaction
-            if reaction is the only producer of product
-                chokepoint_list = chokepoint_list + (reaction, product)
-  return chokepoint_list
+    function find_chokepoints(model)
+        chokepoint_list = empty list
+        for reaction in model
+            if reaction upper flux bound and lower flux bound are not both zero
+                for reactant in reaction
+                    if reaction is the only consumer of reactant
+                        chokepoint_list = chokepoint_list + (reaction, reactant)
+                for product in reaction
+                    if reaction is the only producer of product
+                        chokepoint_list = chokepoint_list + (reaction, product)
+        return chokepoint_list
 ```
 
 - Find dead-end metabolites on a model
 ```
-function find_dead_end_metabolites(model)
-  dem_list = empty list
-  for metabolite in model
-      if length(metabolite.consumers) == 0 or length(metabolite.producers) == 0
-          dem_list = dem_list + metabolite 
-  return dem_list
+    function find_dead_end_metabolites(model)
+      dem_list = empty list
+      for metabolite in model
+          if length(metabolite.consumers) == 0 or length(metabolite.producers) == 0
+              dem_list = dem_list + metabolite 
+      return dem_list
 ```
 
 - Remove dead-end metabolites on a model
 ```
-function remove_dead_end_metabolites(model) 
-    while number of metabolites in model does not change:
-        find_dead_end_metabolites(model)
-        delete all dead-end metabolites in model
-        for reaction that produced or consumed dead-end metabolites:
-            if reaction produces or consumes 0 metabolites [and is not exchange nor demand]:
-                delete reaction on model
-        find_dead_end_metabolites(model)
-    return model
+    function remove_dead_end_metabolites(model) 
+        while number of metabolites in model does not change:
+            find_dead_end_metabolites(model)
+            delete all dead-end metabolites in model
+            for reaction that produced or consumed dead-end metabolites:
+                if reaction produces or consumes 0 metabolites [and is not exchange nor demand]:
+                    delete reaction on model
+            find_dead_end_metabolites(model)
+        return model
 ```
 
 - Update model flux bounds with Flux Variability Analysis
 ```
-function update_flux_bounds_with_fva(model, fraction_of_optmimum_growth) 
-    max_fva, min_fva = flux_variability_analysis(model, fraction_of_optmimum_growth)
-    for reaction in model
-        reaction.upper_flux_bound = max_fva[reaction]
-        reaction.lower_flux_bound = min_fva[reaction]
-    return model
+    function update_flux_bounds_with_fva(model, fraction_of_optmimum_growth) 
+        max_fva, min_fva = flux_variability_analysis(model, fraction_of_optmimum_growth)
+        for reaction in model
+            reaction.upper_flux_bound = max_fva[reaction]
+            reaction.lower_flux_bound = min_fva[reaction]
+        return model
 ```
 
 - Find essential reactions
 ```
-function find_essential_reactions(model)
-  essential_reactions = empty list
-  for reaction in model
-      only knock out reaction
-      if flux_balance_analysis on model is 0
-          essential_reactions = essential_reactions + reaction
-  return essential_reactions
+    function find_essential_reactions(model)
+      essential_reactions = empty list
+      for reaction in model
+          only knock out reaction
+          if flux_balance_analysis on model is 0
+              essential_reactions = essential_reactions + reaction
+      return essential_reactions
 ```
 
 ### Compute chokepoints
@@ -157,19 +157,19 @@ $ findCPcli -i model.xml -cp generate_output.xls
 
 The pipeline pseudocode of this operation is included below:
 ```
-model = read_model()
-reversible_reactions     = all reactions with upper flux bound > 0 and lower flux bound < 0
-dead_reactions           = all reactions with both upper and lower flux bound equal to 0
-non_reversible_reactions = model.reactions - reversible_reactions - dead_reactions
-chokepoint_reactions     = find_chokepoints(model)
-
-for fraction in [0,0 ... 1,0]
     model = read_model()
-    model = update_flux_bounds_with_fva(model, fraction)
     reversible_reactions     = all reactions with upper flux bound > 0 and lower flux bound < 0
     dead_reactions           = all reactions with both upper and lower flux bound equal to 0
     non_reversible_reactions = model.reactions - reversible_reactions - dead_reactions
     chokepoint_reactions     = find_chokepoints(model)
+    
+    for fraction in [0,0 ... 1,0]
+        model = read_model()
+        model = update_flux_bounds_with_fva(model, fraction)
+        reversible_reactions     = all reactions with upper flux bound > 0 and lower flux bound < 0
+        dead_reactions           = all reactions with both upper and lower flux bound equal to 0
+        non_reversible_reactions = model.reactions - reversible_reactions - dead_reactions
+        chokepoint_reactions     = find_chokepoints(model)
 ```
 
 ### Remove Dead-End Metabolites
