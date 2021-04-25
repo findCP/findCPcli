@@ -45,7 +45,7 @@ Oarga et al. **Growth Dependent Computation of Chokepoints in Metabolic Networks
 
 ## Install
 ```findCPcli``` can be installed via **pip**:
-```
+```shell
 $ pip install findCPcli
 ```
 
@@ -118,7 +118,7 @@ function find_essential_reactions(model)
 
 findCPcli allows, from a model in SBML format, the generation of a spreadsheet with the computation of chokepoints and other points of interest of the model (such as dead-end metabolites, essential reactions and essential genes).
 
-```sh
+```shell
 $ findCPcli -i model.xml -o generate_output.xls 
 ```
 
@@ -151,7 +151,7 @@ findCPcli allows, from a model in SBML format, to calculate how refining the mod
 , reversible and non reversible reactions and dead reactions (i.e. reactions with upper and lower bound equal to 0).
 The tool produces a spreadsheet file showing how the size of these set varies.
 
-```sh
+```shell
 $ findCPcli -i model.xml -cp generate_output.xls 
 ```
 
@@ -176,7 +176,7 @@ for fraction in [0,0 ... 1,0]
 
 The following command exports a new generated model without Dead-End Metabolites from an input SBML model.
 
-```sh
+```shell
 $ findCPcli -i model.xml -swD new_model.xml
 ```
 
@@ -185,18 +185,18 @@ findCPcli can generate a new model in which the flux bounds of the reactions hav
 In this way the model can receive a different topology and the number of chokepoints, essential reactions or dead reactions, among others, can vary.
 
 
-```sh
+```shell
 $ findCPcli -i model.xml -sF new_model.xml
 ```
 
 Alternatively a new model can be generated refined with FVA and with DEMs removed after.
 
-```sh
+```shell
 $ findCPcli -i model.xml -swDF new_model.xml
 ```
 
 ## Tool parameters
-```sh
+```shell
 $ findCPcli [-h] [-v] [-l] -i <input file> [-o <output file>]
                  [-cp <output file>] [-swD <output file>] [-sF <output file>]
                  [-swDF <output file>]
