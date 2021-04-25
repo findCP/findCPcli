@@ -60,7 +60,7 @@ The following section includes pseudocode of some of the main operations perform
     function find_chokepoints(model)
         chokepoint_list = empty list
         for reaction in model
-            if reaction upper flux bound and lower flux bound are not both zero
+            if reaction upper flux bound not equal 0 and lower flux bound not equal 0
                 for reactant in reaction
                     if reaction is the only consumer of reactant
                         chokepoint_list = chokepoint_list + (reaction, reactant)
