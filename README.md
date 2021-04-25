@@ -22,6 +22,11 @@ The computation of chokepoints can also be exploited programmatically via the [L
 - [Pseudocode](#pseudocode)
 - [Install](#Install)
 - [Documentation and Examples](#documentation-and-examples)
+  - [Pseucodode](#pseudocode)
+  - [Compute chokepoints](#compute-chokepoints)
+  - [Compute growth dependent chokepoints](#compute-growth-dependent-chokepoints)
+  - [Remove dead-end metabolites](#remove-dead-end-metabolites)
+  - [Refine model with FVA](#refine-model-with-fva)
 - [Tool parameters](#tool-parameters)
 - [Low Level API](#low-level-api)
 - [Maintainers](#maintainers)
@@ -111,7 +116,7 @@ function find_essential_reactions(model)
 
 ### Compute chokepoints
 
-findcpcli allows, from a model in SBML format, the generation of a spreadsheet with the computation of chokepoints and other points of interest of the model (such as dead-end metabolites, essential reactions and essential genes).
+findCPcli allows, from a model in SBML format, the generation of a spreadsheet with the computation of chokepoints and other points of interest of the model (such as dead-end metabolites, essential reactions and essential genes).
 
 ```sh
 $ findCPcli -i model.xml -o generate_output.xls 
@@ -141,10 +146,10 @@ The previous command produces a spreadsheet file containing the following sheets
 
 ### Compute growth dependent chokepoints
 
-findcpcli allows, from a model in SBML format, to calculate how refining the model with different values of the fraction of the optimum with FVA affects the number of chokepoints
-(i.e. [Growth Dependant Chokepoints](https://doi.org/10.1007/978-3-030-60327-4_6)).
+findCPcli allows, from a model in SBML format, to calculate how refining the model with different values of the fraction of the optimum with FVA affects the number of chokepoints
+(i.e. [Growth Dependent Chokepoints](https://doi.org/10.1007/978-3-030-60327-4_6)).
 , reversible and non reversible reactions and dead reactions (i.e. reactions with upper and lower bound equal to 0).
-The tool produces a spreadsheet file showing how the size of this set varies.
+The tool produces a spreadsheet file showing how the size of these set varies.
 
 ```sh
 $ findCPcli -i model.xml -cp generate_output.xls 
@@ -176,7 +181,7 @@ $ findCPcli -i model.xml -swD new_model.xml
 ```
 
 ### Refine model with FVA
-findcpcli can generate a new model in which the flux bounds of the reactions have been updated with the values obtained in the computation of FVA . 
+findCPcli can generate a new model in which the flux bounds of the reactions have been updated with the values obtained in the computation of FVA . 
 In this way the model can receive a different topology and the number of chokepoints, essential reactions or dead reactions, among others, can vary.
 
 
