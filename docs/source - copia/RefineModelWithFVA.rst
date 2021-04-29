@@ -1,5 +1,5 @@
 
-7. Refine model with FVA
+4.4. Refine model with FVA
 ====================================
 
 findCPcli can generate a new model in which the flux bounds of the reactions have been updated with the values obtained in the computation of FVA . 

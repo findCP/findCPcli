@@ -51,10 +51,8 @@ nbsphinx_allow_errors = True
 # Width of input/output prompts used in CSS:
 #nbsphinx_prompt_width = '8ex'
 
-#import stanford_theme
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'alabaster'
 html_static_path = ['_static']
-#html_theme_path = [stanford_theme.get_html_theme_path()]
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 # If window is narrower than this, input/output prompts are on separate lines:

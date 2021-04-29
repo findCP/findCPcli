@@ -1,22 +1,26 @@
 
-Introduction
+1. Introduction
 ===============
 
 ``findCPcli`` is a command line python-tool for the computation of chokepoint reactions in genome-scale metabolic models. 
-The main purpose is to provide a tool to compute the chokepoints of the topology of the metabolic network, as well as considering also the dynamic information of the network.
+The main purpose of the tool is to compute chokepoints by taking into account both the topology and the dynamic information of the network. In addition to the computation of chokepoints, findCPcli can compute and remove dead-end metabolites, find essential reactions and update the flux bounds of the reactions according to the results of Flux Variability Analysis. 
 
-findCPcli takes as inputs SBML files of genome-scale models and  provides as output spreadsheet files with the results of the chokepoint computation. 
+findCPcli takes as input an SBML files of genome-scale models, and provides as output a spreadsheet file with the results of the chokepoint computation.
 
-Chokepoint reactions 
-~~~~~~~~~~~~~~~~~~~~
-Chokepoint reactions are those reactions that are either the unique consumer of a given metabolite or the only producer of a metabolite. 
+1.1 Chokepoint reactions 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Chokepoint reactions are those reactions that are either the unique consumer or the only producer of a given metabolite. findCPcli makes use of the flux bounds of the model to determine consumer and producer reactions, and in turn, to compute chokepoint reactions.
 
-Dead-End Metabolites (DEM) 
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+1.2. Dead-End Metabolites (DEM) 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Dead-End Metabolites (DEM) are those metabolites that are not produced or consumed by any reaction.
 
-Example 
-~~~~~~~
+1.3. Essential reactions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+A reaction is considered an essential reaction if its deletion, this is, restricting its flux to zero, causes the objective (e.g. cellular growth) to be zero.
+
+1.4. Example 
+~~~~~~~~~~~~~~
 Chokepoint reactions and dead-end metabolites example:
 
 .. image:: _static/chokepoints_example.png

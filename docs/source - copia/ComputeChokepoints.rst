@@ -1,35 +1,35 @@
 
-4. Compute chokepoints
+4.1. Compute chokepoints
 ===================
 
-Given a genome-scale model in SBML format, findCPcli computes chokepoints, dead-end metabolites, essential reactions, and essential genes, and saves the results in a spreadsheet. findCPcli can be run as follows, where ``model.xml`` is the file with the SBML model and ``results.xls`` is the file where the results will be saved.
+findCPcli allows, from a model in SBML format, the generation of a spreadsheet with the computation of chokepoints and other points of interest of the model (such as dead-end metabolites, essential reactions and essential genes).
 
 ::
 
-    $ findCPcli -i model.xml -o results.xls 
+    $ findCPcli -i model.xml -o generate_output.xls 
 
 
-The following figure shows the pipeline of the chokepoint computation process. For a given SBML file, computations are performed on 4 models: i) model in the SBML file; ii) model without DEM; iii) model refined with FVA, i.e. with flux bounds updated according to FVA; and iv) model refined with FVA and without DEM.
+The following figure shows the pipeline of the chokepoint computation process. This is, the 4 models generated and the calculations performed on each one.
 
 .. image:: _static/chokepoint_pipeline.png
     :align: center
     :alt: alternate text
 
-4.1. Spreadsheet data
-**********************
+Spreadsheet data
+******************
 
 The previous command produces a spreadsheet file containing the following sheets:
 
-- ``model_info``: General model information.
-- ``reactions``: List of reactions of the model
-- ``metabolites``: List of metabolites of the model
-- ``genes``: List of genes of the model
+- ``model_info``: general model information.
+- ``reactions``: list of reactions of the model
+- ``metabolites``: list of metabolites of the model
+- ``genes``: list of genes of the model
 - ``reactions_FVA``: Upper and lower flux bound of each reaction obtained with Flux Variability Analysis.
 - ``metabolites_FVA``: Upper and lower flux bound of each reaction obtained with Flux Variability Analysis grouped by metabolite.
 - ``reversible_reactions``:  List of reversible reactions of the model before and after FVA refinement.
 - ``chokepoints``: Chokepoint reactions and the metabolite/s they produce/consume. Chokepoints are computed in 4 different models:   
 
-  1. Input model in the SBML file.    
+  1. Input model.    
   2. Model without DEM.    
   3. Model refined with FVA.     
   4. Model refined with FVA and without DEM.    

@@ -1,5 +1,5 @@
 
-10. License
+7. License
 ===============
 
 findCPcli is released under GPLv3_.

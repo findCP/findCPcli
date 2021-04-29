@@ -1,5 +1,5 @@
 
-9. Low Level API
+6. Low Level API
 ================
 
 The computation of chokepoints can also be exploited via findCPcore_ which is used by findCPcli. 

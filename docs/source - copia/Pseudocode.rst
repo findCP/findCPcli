@@ -62,8 +62,7 @@ The following section includes pseudocode of some of the main operations perform
     function find_essential_reactions(model)
       essential_reactions = empty list
       for reaction in model
-          knock out reaction
+          only knock out reaction
           if flux_balance_analysis on model is 0
               essential_reactions = essential_reactions + reaction
-          undo knock out
       return essential_reactions
