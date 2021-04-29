@@ -7,11 +7,12 @@ The main purpose of the tool is to compute chokepoints by taking into account bo
 
 findCPcli takes as input an SBML files of genome-scale models, and provides as output a spreadsheet file with the results of the chokepoint computation.
 
-**Chokepoint reactions** are those reactions that are either the unique consumer or the only producer of a given metabolite. findCPcli makes use of the flux bounds of the model to determine consumer and producer reactions, and in turn, to compute chokepoint reactions.
+**Chokepoint reactions:** Chokepoint reactions are those reactions that are either the unique consumer or the only producer of a given metabolite. findCPcli makes use of the flux bounds of the model to determine consumer and producer reactions, and in turn, to compute chokepoint reactions.
 
-**Dead-End Metabolites (DEM)**  are those metabolites that are not produced or consumed by any reaction.
+**Dead-End Metabolites (DEM):** Dead-end metabolites are those metabolites that are not produced or consumed by any reaction.
 
-A reaction is considered an **essential reaction** if its deletion, this is, restricting its flux to zero, causes the objective (e.g. cellular growth) to be zero.
+**Essential Reactions:** A reaction is considered an essential reaction if its deletion, this is, restricting its flux to zero, causes the objective (e.g. cellular growth) to be zero.
+
 
 _Figure:_ Chokepoint reactions and dead-end metabolites example:
 ![Chokepoint reactions and Dead-end metabolites example](docs/chokepoints_example.png)
