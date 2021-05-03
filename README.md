@@ -24,12 +24,7 @@ The computation of chokepoints can also be exploited programmatically via the [L
 - [License](#license)
 - [Pseudocode](#pseudocode)
 - [Install](#Install)
-- [Documentation and Examples](#documentation-and-examples)
-  - [Pseucodode](#pseudocode)
-  - [Compute chokepoints](#compute-chokepoints)
-  - [Compute growth dependent chokepoints](#compute-growth-dependent-chokepoints)
-  - [Remove dead-end metabolites](#remove-dead-end-metabolites)
-  - [Refine model with FVA](#refine-model-with-fva)
+- [Documentation](#documentation)
 - [Tool parameters](#tool-parameters)
 - [Low Level API](#low-level-api)
 - [Maintainers](#maintainers)
@@ -47,158 +42,21 @@ Oarga et al. **Growth Dependent Computation of Chokepoints in Metabolic Networks
 
 
 ## Install
-```findCPcli``` can be installed via **pip**:
+```findCPcli``` can be installed via **pip** package manager:
 ```shell
 $ pip install findCPcli
 ```
 
-## Documentation and Examples
+## Documentation
 
-### Pseudocode
-The following section includes pseudocode of some of the main operations performed by ```findCPcli```.
-
-- Find chokepoints on a model
-
-```
-    function find_chokepoints(model)
-        chokepoint_list = empty list
-        for reaction in model
-            if reaction upper flux bound not equal 0 and lower flux bound not equal 0
-                for reactant in reaction
-                    if reaction is the only consumer of reactant
-                        chokepoint_list = chokepoint_list + (reaction, reactant)
-                for product in reaction
-                    if reaction is the only producer of product
-                        chokepoint_list = chokepoint_list + (reaction, product)
-        return chokepoint_list
-```
-
-- Find dead-end metabolites on a model
-```
-    function find_dead_end_metabolites(model)
-      dem_list = empty list
-      for metabolite in model
-          if length(metabolite.consumers) == 0 or length(metabolite.producers) == 0
-              dem_list = dem_list + metabolite 
-      return dem_list
-```
-
-- Remove dead-end metabolites on a model
-```
-    function remove_dead_end_metabolites(model) 
-        while number of metabolites in model does not change:
-            find_dead_end_metabolites(model)
-            delete all dead-end metabolites in model
-            for reaction that produced or consumed dead-end metabolites:
-                if reaction produces or consumes 0 metabolites [and is not exchange nor demand]:
-                    delete reaction on model
-            find_dead_end_metabolites(model)
-        return model
-```
-
-- Update model flux bounds with Flux Variability Analysis
-```
-    function update_flux_bounds_with_fva(model, fraction_of_optmimum_growth) 
-        max_fva, min_fva = flux_variability_analysis(model, fraction_of_optmimum_growth)
-        for reaction in model
-            reaction.upper_flux_bound = max_fva[reaction]
-            reaction.lower_flux_bound = min_fva[reaction]
-        return model
-```
-
-- Find essential reactions
-```
-    function find_essential_reactions(model)
-      essential_reactions = empty list
-      for reaction in model
-          only knock out reaction
-          if flux_balance_analysis on model is 0
-              essential_reactions = essential_reactions + reaction
-      return essential_reactions
-```
-
-### Compute chokepoints
-
-findCPcli allows, from a model in SBML format, the generation of a spreadsheet with the computation of chokepoints and other points of interest of the model (such as dead-end metabolites, essential reactions and essential genes).
-
-```shell
-$ findCPcli -i model.xml -o generate_output.xls 
-```
-
-The following figure shows the pipeline of the chokepoint computation process. This is, the 4 models generated and the calculations performed on each one.
-![Chokepoint computation pipeline](docs/chokepoint_pipeline.png)
-
-The previous command produces a spreadsheet file containing the following sheets:
- - ```model_info```: general model information.
- - ```reactions```: list of reactions of the model
-- ```metabolites```: list of metabolites of the model
-- ```genes```: list of genes of the model
-- ```reactions_FVA```: Upper and lower flux bound of each reaction obtained with Flux Variability Analysis.
-- ```metabolites_FVA```: Upper and lower flux bound of each reaction obtained with Flux Variability Analysis grouped by metabolite.
-- ``` reversible_reactions ```:  List of reversible reactions of the model before and after FVA refinement.
-- ```chokepoints```: Chokepoint reactions and the metabolite/s they produce/consume. Chokepoints are computed in 4 different models:
-  1. Input model
-  2. Model without DEM.
-  3. Model refined with FVA.
-  4. Model refined with FVA and without DEM.
-- ``` dead-end ```:  Dead-end metabolites before and after FVA refinement.
-- ``` essential genes ```: List of essential genes of the model. Essential genes are computed in the 4 previously listed models.
-- ``` essential reactions ```: List of essential reactions of the model. Essential reactions are computed in the 4 previously listed models.
-- ``` comparison ```: Comparison of chokepoint, essential reactions and essential gene reactions in the 4 previously listed models.
-- ``` summary ```:  Comparison the size of the previous sets and their intersections.
-
-### Compute growth dependent chokepoints
-
-findCPcli allows, from a model in SBML format, to calculate how refining the model with different values of the fraction of the optimum with FVA affects the number of chokepoints
-(i.e. [Growth Dependent Chokepoints](https://doi.org/10.1007/978-3-030-60327-4_6)).
-, reversible and non reversible reactions and dead reactions (i.e. reactions with upper and lower bound equal to 0).
-The tool produces a spreadsheet file showing how the size of these set varies.
-
-```shell
-$ findCPcli -i model.xml -cp generate_output.xls 
-```
-
-The pipeline pseudocode of this operation is included below:
-```
-    model = read_model()
-    reversible_reactions     = all reactions with upper flux bound > 0 and lower flux bound < 0
-    dead_reactions           = all reactions with both upper and lower flux bound equal to 0
-    non_reversible_reactions = model.reactions - reversible_reactions - dead_reactions
-    chokepoint_reactions     = find_chokepoints(model)
-    
-    for fraction in [0,0 ... 1,0]
-        model = read_model()
-        model = update_flux_bounds_with_fva(model, fraction)
-        reversible_reactions     = all reactions with upper flux bound > 0 and lower flux bound < 0
-        dead_reactions           = all reactions with both upper and lower flux bound equal to 0
-        non_reversible_reactions = model.reactions - reversible_reactions - dead_reactions
-        chokepoint_reactions     = find_chokepoints(model)
-```
-
-### Remove Dead-End Metabolites
-
-The following command exports a new generated model without Dead-End Metabolites from an input SBML model.
-
-```shell
-$ findCPcli -i model.xml -swD new_model.xml
-```
-
-### Refine model with FVA
-findCPcli can generate a new model in which the flux bounds of the reactions have been updated with the values obtained in the computation of FVA . 
-In this way the model can receive a different topology and the number of chokepoints, essential reactions or dead reactions, among others, can vary.
-
-
-```shell
-$ findCPcli -i model.xml -sF new_model.xml
-```
-
-Alternatively a new model can be generated refined with FVA and with DEMs removed after.
-
-```shell
-$ findCPcli -i model.xml -swDF new_model.xml
-```
+Documentation is available at [readthedocs](https://findcpcli.readthedocs.io/en/latest/) and can also be [downloaded](https://findcpcli.readthedocs.io/_/downloads/en/latest/pdf/). 
+The previous links include examples and descriptions of the operations that can be performed with the tool.
 
 ## Tool parameters
+
+More information about the parameters of the tool can be obtained by executing ``findCPcli -h``. 
+For a detailes description of the operations see the [documentation](https://findcpcli.readthedocs.io/en/latest/). 
+
 ```shell
 $ findCPcli [-h] [-v] [-l] -i <input file> [-o <output file>]
                  [-cp <output file>] [-swD <output file>] [-sF <output file>]

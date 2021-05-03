@@ -2,6 +2,8 @@
 8. Tool parameters
 ==================
 
+More information about the parameters of the tool can be obtained by executing ``findCPcli -h``.
+
 ::
 
 	$ findCPcli [-h] [-v] [-l] -i <input file> [-o <output file>]

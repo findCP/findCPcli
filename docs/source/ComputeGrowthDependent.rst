@@ -7,13 +7,13 @@ findCPcli can be used to compute `Growth Dependent Chokepoints <https://doi.org/
 
 ::
 
-    $ findCPcli -i model.xml -cp generate_output.xls 
+    $ findCPcli -i model.xml -cp results.xls
 
 
 5.1. Procedure pseudocode
 **************************
 
-The pseudocode of this procedure is included below:
+The pseudocode of this task is included below:
 
 ::
 
