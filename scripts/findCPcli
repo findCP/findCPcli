@@ -38,7 +38,7 @@ if os.environ.get(ENV_ENVIRONMENT) == ENV_DEV:
 else:
     from findCPcore import Facade
     from findCPcore import FacadeUtils
-    from findCPcore.utils.GrowthDependentCPConfig import *
+    from findCPcore.utils.GrowthDependentCPConfig import GrowthDependentCPConfig
 
 TASK_SPREADSHEET = "TASK_SPREADSHEET"
 TASK_SENSIBILITY = "TASK_SENSIBILITY"
