@@ -34,9 +34,11 @@ if os.environ.get(ENV_ENVIRONMENT) == ENV_DEV:
     sys.path.append("../../findCPcore_pkg/findCPcore/")
     from Facade import Facade
     from FacadeUtils import FacadeUtils
+    from utils.GrowthDependentCPConfig import GrowthDependentCPConfig
 else:
     from findCPcore import Facade
     from findCPcore import FacadeUtils
+    from findCPcore.utils.GrowthDependentCPConfig import *
 
 TASK_SPREADSHEET = "TASK_SPREADSHEET"
 TASK_SENSIBILITY = "TASK_SENSIBILITY"
@@ -67,14 +69,17 @@ def verbose_f(text, args1=False, args2=False):
         print(text)
 
 
-def save_final_spreadsheet(facade, output_path, verbose_f):
-    (result_ok, text) = facade.save_spreadsheet(
-        False, output_path, verbose_f
-    )
-    if result_ok:
-        print(MSG_SUCCESFULL_SAVE.format(text))
+def save_final_spreadsheet(facade, output_path, verbose_f, error):
+    if error == "":
+        (result_ok, text) = facade.save_spreadsheet(
+            False, output_path, verbose_f
+        )
+        if result_ok:
+            print(MSG_SUCCESFULL_SAVE.format(text))
+        else:
+            print(MSG_UNKNOWN_ERROR.format(text))
     else:
-        print(MSG_UNKNOWN_ERROR.format(text))
+        print(MSG_UNKNOWN_ERROR.format(error))
 
 def save_final_model(facade, output_path, verbose_f):
     (result_ok, text) = facade.save_model(output_path, False, verbose_f)
@@ -82,6 +87,12 @@ def save_final_model(facade, output_path, verbose_f):
         print(MSG_SUCCESFULL_SAVE.format(text))
     else:
         print(MSG_UNKNOWN_ERROR.format(text))
+
+def check_error_save_final_model(error, facade, output_path, verbose_f):
+    if error != "":
+        print(MSG_UNKNOWN_ERROR.format(error))
+    else:
+        save_final_model(facade, output_path, verbose_f)
 
 def run(task, model_path, output_path, verbose, objective=None):
     try:
@@ -97,27 +108,23 @@ def run(task, model_path, output_path, verbose, objective=None):
                 output_path=None,
                 objective=objective,
             )
-            if error == "":
-                save_final_spreadsheet(facade, output_path, verbose_f)
-            else:
-                print(MSG_UNKNOWN_ERROR.format(error))
+            save_final_spreadsheet(facade, output_path, verbose_f, error)
 
         elif task == TASK_SENSIBILITY:
-            print("Task: Save growth dependent chokepoints spreadsheet")
+
+            print("Task: Save growth dependent chokepoints reports")
+
+            config = GrowthDependentCPConfig()
+            config.model_path = model_path
+            config.print_f = verbose_f
+            config.args1 = verbose
+            config.args2 = None
+            config.output_path_spreadsheet = output_path
+            config.output_path_html = output_path[:output_path.rfind('.')] + '.html'
+            config.objective = objective
+
             facade = Facade()
-            error = facade.generate_sensibility_spreadsheet(
-                False,
-                model_path,
-                verbose_f,
-                args1=verbose,
-                args2=None,
-                output_path=None,
-                objective=objective,
-            )
-            if error == "":
-                save_final_spreadsheet(facade, output_path, verbose_f)
-            else:
-                print(MSG_UNKNOWN_ERROR.format(error))
+            facade.generate_growth_dependent_report(config)
 
         elif task == TASK_SAVE_WITHOUT_DEM:
             print("Task: save model without dead end metabolites")
@@ -139,10 +146,7 @@ def run(task, model_path, output_path, verbose, objective=None):
                 args2=None,
                 objective=objective,
             )
-            if error != "":
-                print(MSG_UNKNOWN_ERROR.format(error))
-            else:
-                save_final_model(facade, output_path, verbose_f)
+            check_error_save_final_model(error, facade, output_path, verbose_f)
 
         elif task == TASK_SAVE_WITH_FVA_DEM:
             print(
@@ -158,10 +162,7 @@ def run(task, model_path, output_path, verbose, objective=None):
                 args2=None,
                 objective=objective,
             )
-            if error != "":
-                print(MSG_UNKNOWN_ERROR.format(error))
-            else:
-                save_final_model(facade, output_path, verbose_f)
+            check_error_save_final_model(error, facade, output_path, verbose_f)
 
         # Leave final blank line
         print("")
@@ -170,6 +171,8 @@ def run(task, model_path, output_path, verbose, objective=None):
         print("Error: Something went wrong:")
         # Important: the error is not raised but instead it is printed.
         print(str(error))
+        if os.environ.get(ENV_ENVIRONMENT) == ENV_DEV:
+            raise error
 
 
 def read_input():
