@@ -60,8 +60,8 @@ For a detailes description of the operations see the [documentation](https://fin
 ```shell
 $ findCPcli [-h] [-v] [-l] -i <input file> [-o <output file>]
                  [-cp <output file>] [-swD <output file>] [-sF <output file>]
-                 [-swDF <output file>]
-
+                 [-swDF <output file>] [-objective <reaction id>]
+                 [-fraction <fraction>]
                        
 optional arguments:
   -h, --help           show this help message and exit
