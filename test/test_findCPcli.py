@@ -84,7 +84,7 @@ def test_no_args():
 
     try:
         subprocess.check_output(
-            ["python", FINDCPCLI_PATH], stderr=subprocess.STDOUT, text=True
+            ["python", FINDCPCLI_PATH], stderr=subprocess.STDOUT, universal_newlines=True
         )
         raise RuntimeError(
             "This point should not be reached. Return code must not be 0."
@@ -107,7 +107,7 @@ def test_incorrect_input_model():
     f.close()
 
     result = subprocess.check_output(
-        ["python", FINDCPCLI_PATH] + params, stderr=subprocess.STDOUT, text=True
+        ["python", FINDCPCLI_PATH] + params, stderr=subprocess.STDOUT, universal_newlines=True
     )
     assert expected_result in str(result)
 
@@ -126,7 +126,7 @@ def test_verbose_output_on_model():
     f.close()
 
     result = subprocess.check_output(
-        ["python", FINDCPCLI_PATH] + params, stderr=subprocess.STDOUT, text=True
+        ["python", FINDCPCLI_PATH] + params, stderr=subprocess.STDOUT, universal_newlines=True
     )
 
     # The output is not checked as this could change based on different dependencies version.
@@ -158,7 +158,7 @@ def test_verbose_chokepoint_computation_on_model():
     f.close()
 
     result = subprocess.check_output(
-        ["python", FINDCPCLI_PATH] + params, stderr=subprocess.STDOUT, text=True
+        ["python", FINDCPCLI_PATH] + params, stderr=subprocess.STDOUT, universal_newlines=True
     )
 
     # The output is not checked as this could change based on different dependencies version.
@@ -199,7 +199,7 @@ def test_verbose_generate_new_models():
     f.close()
 
     result = subprocess.check_output(
-        ["python", FINDCPCLI_PATH] + params, stderr=subprocess.STDOUT, text=True
+        ["python", FINDCPCLI_PATH] + params, stderr=subprocess.STDOUT, universal_newlines=True
     )
 
     # The output is not checked as this could change based on different dependencies version.
