@@ -4,4 +4,4 @@
 cp scripts/findCPcli scripts/findCPcli.py
 
 # Run analysis
-sonar-scanner
+# sonar-scanner

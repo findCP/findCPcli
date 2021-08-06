@@ -17705,7 +17705,7 @@
 "metabolites":{
 "4crsol_c":-1.0
 },
-"lower_bound":0.0002190689142380213,
+"lower_bound":0.00021906891423798645,
 "upper_bound":0.00021906891423811617,
 "gene_reaction_rule":""
 },
@@ -17715,7 +17715,7 @@
 "metabolites":{
 "5drib_c":-1.0
 },
-"lower_bound":0.0002210336578634745,
+"lower_bound":0.00022103365786343935,
 "upper_bound":0.00022103365786357027,
 "gene_reaction_rule":""
 },
@@ -17735,7 +17735,7 @@
 "metabolites":{
 "amob_c":-1.0
 },
-"lower_bound":1.9647436254531056e-06,
+"lower_bound":1.964743625452793e-06,
 "upper_bound":1.9647436254539565e-06,
 "gene_reaction_rule":""
 },
@@ -17745,7 +17745,7 @@
 "metabolites":{
 "mththf_c":-1.0
 },
-"lower_bound":0.00044010257210149573,
+"lower_bound":0.0004401025721014257,
 "upper_bound":0.00044010257210168633,
 "gene_reaction_rule":""
 },
@@ -17951,7 +17951,7 @@
 "val_DASH_L_c":-0.423162,
 "zn2_c":-0.000341
 },
-"lower_bound":0.982371812726553,
+"lower_bound":0.9823718127263967,
 "upper_bound":0.9823718127269784,
 "gene_reaction_rule":"",
 "objective_coefficient":1.0
@@ -18613,7 +18613,7 @@
 "ca2_e":-1.0
 },
 "lower_bound":-0.005113245285243923,
-"upper_bound":-0.0051132452852417085,
+"upper_bound":-0.005113245285240895,
 "gene_reaction_rule":""
 },
 {
@@ -18693,7 +18693,7 @@
 "cl_e":-1.0
 },
 "lower_bound":-0.005113245285243923,
-"upper_bound":-0.0051132452852417085,
+"upper_bound":-0.005113245285240895,
 "gene_reaction_rule":""
 },
 {
@@ -18723,7 +18723,7 @@
 "co2_e":-1.0
 },
 "lower_bound":19.67522263566239,
-"upper_bound":19.6752226356787,
+"upper_bound":19.675222635685117,
 "gene_reaction_rule":""
 },
 {
@@ -18733,7 +18733,7 @@
 "cobalt2_e":-1.0
 },
 "lower_bound":-2.4559295318174462e-05,
-"upper_bound":-2.4559295318163827e-05,
+"upper_bound":-2.4559295318159917e-05,
 "gene_reaction_rule":""
 },
 {
@@ -18823,7 +18823,7 @@
 "cu2_e":-1.0
 },
 "lower_bound":-0.0006965016152234277,
-"upper_bound":-0.0006965016152231262,
+"upper_bound":-0.0006965016152230153,
 "gene_reaction_rule":""
 },
 {
@@ -19143,7 +19143,7 @@
 "fe2_e":-1.0
 },
 "lower_bound":-999.9999999999978,
-"upper_bound":-0.015777873690910885,
+"upper_bound":-0.015777873690908377,
 "gene_reaction_rule":""
 },
 {
@@ -19152,7 +19152,7 @@
 "metabolites":{
 "fe3_e":-1.0
 },
-"lower_bound":5.833230304244677e-12,
+"lower_bound":4.395746335261294e-12,
 "upper_bound":999.9842221263137,
 "gene_reaction_rule":""
 },
@@ -19743,7 +19743,7 @@
 "h2o_e":-1.0
 },
 "lower_bound":45.61943037003527,
-"upper_bound":545.6115414331914,
+"upper_bound":545.611541433193,
 "gene_reaction_rule":""
 },
 {
@@ -19933,7 +19933,7 @@
 "k_e":-1.0
 },
 "lower_bound":-0.1917521012416171,
-"upper_bound":-0.19175210124153408,
+"upper_bound":-0.19175210124150358,
 "gene_reaction_rule":""
 },
 {
@@ -20203,7 +20203,7 @@
 "mg2_e":-1.0
 },
 "lower_bound":-0.008522075475406538,
-"upper_bound":-0.008522075475402848,
+"upper_bound":-0.008522075475401491,
 "gene_reaction_rule":""
 },
 {
@@ -20243,7 +20243,7 @@
 "mn2_e":-1.0
 },
 "lower_bound":-0.000678818922594342,
-"upper_bound":-0.0006788189225940481,
+"upper_bound":-0.00067881892259394,
 "gene_reaction_rule":""
 },
 {
@@ -20263,7 +20263,7 @@
 "mobd_e":-1.0
 },
 "lower_bound":-0.0001267259638417802,
-"upper_bound":-0.00012672596384172532,
+"upper_bound":-0.00012672596384170516,
 "gene_reaction_rule":""
 },
 {
@@ -20313,7 +20313,7 @@
 "nh4_e":-1.0
 },
 "lower_bound":-10.610425051825487,
-"upper_bound":-10.610425051820993,
+"upper_bound":-10.610425051819304,
 "gene_reaction_rule":""
 },
 {
@@ -20323,7 +20323,7 @@
 "ni2_e":-1.0
 },
 "lower_bound":-0.000317306095510814,
-"upper_bound":-0.0003173060955106766,
+"upper_bound":-0.0003173060955106261,
 "gene_reaction_rule":""
 },
 {
@@ -20392,7 +20392,7 @@
 "metabolites":{
 "o2_e":-1.0
 },
-"lower_bound":-267.5749890618481,
+"lower_bound":-267.57498906185447,
 "upper_bound":-17.578933530255853,
 "gene_reaction_rule":""
 },
@@ -20503,7 +20503,7 @@
 "pi_e":-1.0
 },
 "lower_bound":-0.9476263040826405,
-"upper_bound":-0.9476263040822127,
+"upper_bound":-0.9476263040820619,
 "gene_reaction_rule":""
 },
 {
@@ -20783,7 +20783,7 @@
 "so4_e":-1.0
 },
 "lower_bound":-0.24776399488787093,
-"upper_bound":-0.24776399488776377,
+"upper_bound":-0.24776399488772433,
 "gene_reaction_rule":""
 },
 {
@@ -21193,7 +21193,7 @@
 "zn2_e":-1.0
 },
 "lower_bound":-0.00033498878813989963,
-"upper_bound":-0.00033498878813975456,
+"upper_bound":-0.0003349887881397013,
 "gene_reaction_rule":""
 },
 {
@@ -22599,7 +22599,7 @@
 "nadp_c":1.0,
 "nadph_c":-1.0
 },
-"lower_bound":0.07645210395363126,
+"lower_bound":0.0764521039536191,
 "upper_bound":0.07645210395366436,
 "gene_reaction_rule":"b1093",
 "notes":{
@@ -22817,7 +22817,7 @@
 "h_c":-1.0,
 "malACP_c":-1.0
 },
-"lower_bound":0.07645210395363126,
+"lower_bound":0.0764521039536191,
 "upper_bound":0.07645210395366436,
 "gene_reaction_rule":"",
 "notes":{
@@ -23175,7 +23175,7 @@
 "dad_DASH_5_c":-1.0,
 "h2o_c":-1.0
 },
-"lower_bound":0.0002210336578634745,
+"lower_bound":0.00022103365786343935,
 "upper_bound":0.00022103365786357027,
 "gene_reaction_rule":"b0159",
 "notes":{
@@ -23214,7 +23214,7 @@
 "ara5p_c":1.0,
 "ru5p_DASH_D_c":-1.0
 },
-"lower_bound":0.03822605197681563,
+"lower_bound":0.03822605197680955,
 "upper_bound":0.03822605197683218,
 "gene_reaction_rule":"",
 "notes":{
@@ -23268,7 +23268,7 @@
 "palmACP_c":1.0,
 "ppi_c":1.0
 },
-"lower_bound":0.12537814971466452,
+"lower_bound":0.12537814971464456,
 "upper_bound":0.1253781497147188,
 "gene_reaction_rule":"",
 "notes":{
@@ -23286,7 +23286,7 @@
 "hdeACP_c":1.0,
 "ppi_c":1.0
 },
-"lower_bound":0.14777622704408766,
+"lower_bound":0.14777622704406412,
 "upper_bound":0.14777622704415164,
 "gene_reaction_rule":"",
 "notes":{
@@ -23340,7 +23340,7 @@
 "ddca_c":-1.0,
 "ppi_c":1.0
 },
-"lower_bound":0.07645210395363126,
+"lower_bound":0.0764521039536191,
 "upper_bound":0.07645210395366436,
 "gene_reaction_rule":"",
 "notes":{
@@ -23552,7 +23552,7 @@
 "accoa_c":-2.0,
 "coa_c":1.0
 },
-"lower_bound":0.34960648071312567,
+"lower_bound":0.34960648071307004,
 "upper_bound":0.34960648071327854,
 "gene_reaction_rule":"",
 "notes":{
@@ -23568,7 +23568,7 @@
 "btcoa_c":-1.0,
 "coa_c":1.0
 },
-"lower_bound":0.34960648071312567,
+"lower_bound":0.34960648071307004,
 "upper_bound":0.34960648071327854,
 "gene_reaction_rule":"",
 "notes":{
@@ -23584,7 +23584,7 @@
 "coa_c":1.0,
 "hxcoa_c":-1.0
 },
-"lower_bound":0.34960648071312567,
+"lower_bound":0.34960648071307004,
 "upper_bound":0.34960648071327854,
 "gene_reaction_rule":"",
 "notes":{
@@ -23600,7 +23600,7 @@
 "coa_c":1.0,
 "occoa_c":-1.0
 },
-"lower_bound":0.34960648071312567,
+"lower_bound":0.34960648071307004,
 "upper_bound":0.34960648071327854,
 "gene_reaction_rule":"",
 "notes":{
@@ -23616,7 +23616,7 @@
 "coa_c":1.0,
 "dcacoa_c":-1.0
 },
-"lower_bound":0.34960648071312567,
+"lower_bound":0.34960648071307004,
 "upper_bound":0.34960648071327854,
 "gene_reaction_rule":"",
 "notes":{
@@ -23632,7 +23632,7 @@
 "coa_c":1.0,
 "ddcacoa_c":-1.0
 },
-"lower_bound":0.2731543767594944,
+"lower_bound":0.2731543767594509,
 "upper_bound":0.27315437675961385,
 "gene_reaction_rule":"",
 "notes":{
@@ -23648,7 +23648,7 @@
 "coa_c":1.0,
 "tdcoa_c":-1.0
 },
-"lower_bound":0.27315437675875215,
+"lower_bound":0.2731543767587087,
 "upper_bound":0.27315437675887155,
 "gene_reaction_rule":"",
 "notes":{
@@ -23787,7 +23787,7 @@
 "malcoa_c":1.0,
 "pi_c":1.0
 },
-"lower_bound":0.0764579981852499,
+"lower_bound":0.07645799818523773,
 "upper_bound":0.07645799818528332,
 "gene_reaction_rule":"",
 "notes":{
@@ -23946,7 +23946,7 @@
 "adp_c":1.0,
 "atp_c":-1.0
 },
-"lower_bound":0.2905777232300151,
+"lower_bound":0.29057772322996883,
 "upper_bound":0.29057772323082764,
 "gene_reaction_rule":"b3959",
 "notes":{
@@ -23964,7 +23964,7 @@
 "glu_DASH_L_c":-1.0,
 "h_c":1.0
 },
-"lower_bound":0.2905777232300151,
+"lower_bound":0.29057772322996883,
 "upper_bound":0.29057772323082764,
 "gene_reaction_rule":"b2818",
 "notes":{
@@ -23982,7 +23982,7 @@
 "h_c":-1.0,
 "pyr_c":-1.0
 },
-"lower_bound":0.2854075003796327,
+"lower_bound":0.2854075003795873,
 "upper_bound":0.28540750037979407,
 "gene_reaction_rule":""
 },
@@ -23995,7 +23995,7 @@
 "adp_c":1.0,
 "atp_c":-1.0
 },
-"lower_bound":-995.9858676642222,
+"lower_bound":-995.985867664222,
 "upper_bound":0.5723062411601504,
 "gene_reaction_rule":"",
 "notes":{
@@ -24011,7 +24011,7 @@
 "h_c":-1.0,
 "pyr_c":-2.0
 },
-"lower_bound":0.8588572223404953,
+"lower_bound":0.8588572223403945,
 "upper_bound":0.8588572223408549,
 "gene_reaction_rule":""
 },
@@ -24151,7 +24151,7 @@
 "fadh2_c":1.0
 },
 "lower_bound":-0.34960648071324085,
-"upper_bound":-0.34960648071317507,
+"upper_bound":-0.34960648071310746,
 "gene_reaction_rule":"b0221",
 "notes":{
 "GENE_ASSOCIATION":"b0221",
@@ -24168,7 +24168,7 @@
 "hxcoa_c":-1.0
 },
 "lower_bound":-0.34960648071324085,
-"upper_bound":-0.34960648071317507,
+"upper_bound":-0.34960648071310746,
 "gene_reaction_rule":"b0221",
 "notes":{
 "GENE_ASSOCIATION":"b0221",
@@ -24185,7 +24185,7 @@
 "occoa_c":-1.0
 },
 "lower_bound":-0.34960648071324085,
-"upper_bound":-0.34960648071317507,
+"upper_bound":-0.34960648071310746,
 "gene_reaction_rule":"b0221",
 "notes":{
 "GENE_ASSOCIATION":"b0221",
@@ -24202,7 +24202,7 @@
 "fadh2_c":1.0
 },
 "lower_bound":-0.34960648071324085,
-"upper_bound":-0.349606480713175,
+"upper_bound":-0.34960648071310746,
 "gene_reaction_rule":"b0221",
 "notes":{
 "GENE_ASSOCIATION":"b0221",
@@ -24219,7 +24219,7 @@
 "fadh2_c":1.0
 },
 "lower_bound":-0.34960648071324085,
-"upper_bound":-0.349606480713175,
+"upper_bound":-0.34960648071310746,
 "gene_reaction_rule":"b0221",
 "notes":{
 "GENE_ASSOCIATION":"b0221",
@@ -24236,7 +24236,7 @@
 "tdcoa_c":-1.0
 },
 "lower_bound":-0.27315437675884213,
-"upper_bound":-0.27315437675879073,
+"upper_bound":-0.2731543767587379,
 "gene_reaction_rule":"b0221",
 "notes":{
 "GENE_ASSOCIATION":"b0221",
@@ -24253,7 +24253,7 @@
 "pmtcoa_c":-1.0
 },
 "lower_bound":-0.12537814971470584,
-"upper_bound":-0.12537814971468222,
+"upper_bound":-0.125378149714658,
 "gene_reaction_rule":"b0221",
 "notes":{
 "GENE_ASSOCIATION":"b0221",
@@ -24302,7 +24302,7 @@
 "h2o_c":-1.0,
 "orn_c":1.0
 },
-"lower_bound":0.2905777232300035,
+"lower_bound":0.2905777232299694,
 "upper_bound":0.29057772323082764,
 "gene_reaction_rule":"b3957",
 "notes":{
@@ -24367,7 +24367,7 @@
 "h2o_c":1.0
 },
 "lower_bound":4.85777664420967,
-"upper_bound":4.857776644234835,
+"upper_bound":4.857776644237883,
 "gene_reaction_rule":"",
 "notes":{
 "SUBSYSTEM":"Citric Acid Cycle"
@@ -24382,7 +24382,7 @@
 "icit_c":1.0
 },
 "lower_bound":4.85777664420967,
-"upper_bound":4.857776644234835,
+"upper_bound":4.857776644237883,
 "gene_reaction_rule":"",
 "notes":{
 "SUBSYSTEM":"Citric Acid Cycle"
@@ -24398,7 +24398,7 @@
 "glu_DASH_L_c":1.0
 },
 "lower_bound":-0.29057772323074965,
-"upper_bound":-0.29057772323002595,
+"upper_bound":-0.2905777232299748,
 "gene_reaction_rule":"",
 "notes":{
 "SUBSYSTEM":"Arginine and Proline Metabolism"
@@ -24482,7 +24482,7 @@
 "hdeACP_c":-1.0,
 "pi_c":-1.0
 },
-"lower_bound":1.0275879762349876e-12,
+"lower_bound":1.0189076894013595e-12,
 "upper_bound":0.0738881135224501,
 "gene_reaction_rule":"",
 "notes":{
@@ -24551,7 +24551,7 @@
 "coa_c":-1.0,
 "ppi_c":1.0
 },
-"lower_bound":1.8521098882828088e-11,
+"lower_bound":1.84297519575047e-11,
 "upper_bound":996.5581739054112,
 "gene_reaction_rule":"b4069",
 "notes":{
@@ -24648,7 +24648,7 @@
 "h_c":1.0,
 "pyr_c":1.0
 },
-"lower_bound":0.0006572067427140891,
+"lower_bound":0.0006572067427139843,
 "upper_bound":0.0006572067427143319,
 "gene_reaction_rule":"b1096",
 "notes":{
@@ -24665,7 +24665,7 @@
 "gln_DASH_L_c":-1.0,
 "glu_DASH_L_c":1.0
 },
-"lower_bound":0.0006572067427140891,
+"lower_bound":0.0006572067427139843,
 "upper_bound":0.0006572067427143319,
 "gene_reaction_rule":"",
 "notes":{
@@ -24966,7 +24966,7 @@
 "ppi_c":1.0,
 "prpp_c":-1.0
 },
-"lower_bound":1.763550642031599e-11,
+"lower_bound":1.7635373011463232e-11,
 "upper_bound":0.0006611362299651737,
 "gene_reaction_rule":"b0469",
 "notes":{
@@ -24984,7 +24984,7 @@
 "h_c":1.0,
 "paps_c":1.0
 },
-"lower_bound":0.24350246596414657,
+"lower_bound":0.24350246596409747,
 "upper_bound":0.24350246596434771,
 "gene_reaction_rule":"b2750",
 "notes":{
@@ -25000,7 +25000,7 @@
 "dcamp_c":-1.0,
 "fum_c":1.0
 },
-"lower_bound":0.29376551976251497,
+"lower_bound":0.29376551976268306,
 "upper_bound":0.2937655197628403,
 "gene_reaction_rule":"b1131",
 "notes":{
@@ -25016,7 +25016,7 @@
 "aicar_c":1.0,
 "fum_c":1.0
 },
-"lower_bound":0.4401173076789073,
+"lower_bound":0.4401173076790459,
 "upper_bound":0.4401173076808076,
 "gene_reaction_rule":"b1131",
 "notes":{
@@ -25036,7 +25036,7 @@
 "imp_c":-1.0,
 "pi_c":1.0
 },
-"lower_bound":0.29376551976251497,
+"lower_bound":0.29376551976268306,
 "upper_bound":0.2937655197628403,
 "gene_reaction_rule":"b4177",
 "notes":{
@@ -25364,7 +25364,7 @@
 "pa160_c":1.0,
 "palmACP_c":-1.0
 },
-"lower_bound":0.06268907485732982,
+"lower_bound":0.06268907485731717,
 "upper_bound":0.06268907485735155,
 "gene_reaction_rule":"b3018",
 "notes":{
@@ -25381,7 +25381,7 @@
 "hdeACP_c":-1.0,
 "pa161_c":1.0
 },
-"lower_bound":0.07388811352241208,
+"lower_bound":0.07388811352239719,
 "upper_bound":0.07388811352243768,
 "gene_reaction_rule":"b3018",
 "notes":{
@@ -25435,7 +25435,7 @@
 "pi_c":-1.0
 },
 "lower_bound":-0.29057772323076936,
-"upper_bound":-0.29057772322997844,
+"upper_bound":-0.290577723229902,
 "gene_reaction_rule":"b3958",
 "notes":{
 "GENE_ASSOCIATION":"b3958",
@@ -25467,7 +25467,7 @@
 "h2o_c":-1.0,
 "rhcys_c":1.0
 },
-"lower_bound":0.00044010257210147865,
+"lower_bound":0.00044010257210138986,
 "upper_bound":0.00044010257210163115,
 "gene_reaction_rule":"b0159",
 "notes":{
@@ -25484,7 +25484,7 @@
 "fprica_c":1.0,
 "thf_c":1.0
 },
-"lower_bound":0.5331852484729961,
+"lower_bound":0.533185248473116,
 "upper_bound":0.53318524847492,
 "gene_reaction_rule":"b4006",
 "notes":{
@@ -25504,7 +25504,7 @@
 "hco3_c":-1.0,
 "pi_c":1.0
 },
-"lower_bound":0.44011730767890717,
+"lower_bound":0.4401173076790458,
 "upper_bound":0.4401173076808076,
 "gene_reaction_rule":"b0522",
 "notes":{
@@ -25520,7 +25520,7 @@
 "5caiz_c":1.0
 },
 "lower_bound":-0.4401173076803957,
-"upper_bound":-0.4401173076796318,
+"upper_bound":-0.4401173076796894,
 "gene_reaction_rule":"b0523",
 "notes":{
 "GENE_ASSOCIATION":"b0523",
@@ -25539,7 +25539,7 @@
 "succoa_c":1.0
 },
 "lower_bound":3.8015383301398624,
-"upper_bound":3.801538330164623,
+"upper_bound":3.8015383301678387,
 "gene_reaction_rule":"",
 "notes":{
 "SUBSYSTEM":"Citric Acid Cycle"
@@ -25615,7 +25615,7 @@
 "h_c":1.0,
 "pi_c":1.0
 },
-"lower_bound":0.027298147931669958,
+"lower_bound":0.027298147931664424,
 "upper_bound":0.027298147939819547,
 "gene_reaction_rule":"",
 "notes":{
@@ -25655,7 +25655,7 @@
 "ala_DASH_D_c":1.0,
 "ala_DASH_L_c":-1.0
 },
-"lower_bound":0.04094722189806781,
+"lower_bound":0.04094722189805955,
 "upper_bound":0.04094722192622555,
 "gene_reaction_rule":"",
 "notes":{
@@ -26350,7 +26350,7 @@
 "nad_c":-1.0,
 "nadh_c":1.0
 },
-"lower_bound":0.0002190689142380213,
+"lower_bound":0.00021906891423798645,
 "upper_bound":0.00021906891423811617,
 "gene_reaction_rule":"b3994",
 "notes":{
@@ -26457,7 +26457,7 @@
 "pran_c":1.0,
 "prpp_c":-1.0
 },
-"lower_bound":0.05584096095081545,
+"lower_bound":0.05584096095080657,
 "upper_bound":0.05584096095083963,
 "gene_reaction_rule":"b1263",
 "notes":{
@@ -26475,7 +26475,7 @@
 "h_c":1.0,
 "pyr_c":1.0
 },
-"lower_bound":0.05584096095081545,
+"lower_bound":0.05584096095080657,
 "upper_bound":0.05584096095083963,
 "gene_reaction_rule":""
 },
@@ -26506,7 +26506,7 @@
 "co2_c":1.0,
 "pimACP_c":-1.0
 },
-"lower_bound":1.9647436254531056e-06,
+"lower_bound":1.964743625452793e-06,
 "upper_bound":1.9647436254539565e-06,
 "gene_reaction_rule":"b0776",
 "notes":{
@@ -26666,7 +26666,7 @@
 "hdceap_c":-1.0,
 "pi_c":1.0
 },
-"lower_bound":1.0305151625719748e-12,
+"lower_bound":1.0187582061456306e-12,
 "upper_bound":0.07388811352244695,
 "gene_reaction_rule":"b3059",
 "notes":{
@@ -26864,7 +26864,7 @@
 "nadp_c":1.0,
 "nadph_c":-1.0
 },
-"lower_bound":0.0004381378284762091,
+"lower_bound":0.00043813782847613937,
 "upper_bound":0.0004381378284763988,
 "gene_reaction_rule":"b0414",
 "notes":{
@@ -27172,7 +27172,7 @@
 "argsuc_c":-1.0,
 "fum_c":1.0
 },
-"lower_bound":0.2905777232300126,
+"lower_bound":0.29057772322996633,
 "upper_bound":0.2905777232301384,
 "gene_reaction_rule":"b3960",
 "notes":{
@@ -27192,7 +27192,7 @@
 "h_c":1.0,
 "ppi_c":1.0
 },
-"lower_bound":0.2905777232300126,
+"lower_bound":0.29057772322996633,
 "upper_bound":0.2905777232301384,
 "gene_reaction_rule":"b3172",
 "notes":{
@@ -27274,7 +27274,7 @@
 "pi_c":-1.0
 },
 "lower_bound":-1.050230128062907,
-"upper_bound":-1.0502301280624522,
+"upper_bound":-1.0502301280622852,
 "gene_reaction_rule":"b3433",
 "notes":{
 "GENE_ASSOCIATION":"b3433",
@@ -27389,7 +27389,7 @@
 "nh4_c":-1.0,
 "ppi_c":1.0
 },
-"lower_bound":0.2368056373167992,
+"lower_bound":0.23680563731676155,
 "upper_bound":0.23680563731690177,
 "gene_reaction_rule":"b3744",
 "notes":{
@@ -27498,7 +27498,7 @@
 "co2_c":1.0,
 "h_c":-1.0
 },
-"lower_bound":0.0005658461641303485,
+"lower_bound":0.0005658461641302585,
 "upper_bound":0.0005658461641304825,
 "gene_reaction_rule":"b0131",
 "notes":{
@@ -27516,7 +27516,7 @@
 "h_c":1.0,
 "pi_c":1.0
 },
-"lower_bound":0.3249636837908801,
+"lower_bound":0.3249636837908284,
 "upper_bound":0.3249636837910208,
 "gene_reaction_rule":"",
 "notes":{
@@ -27532,7 +27532,7 @@
 "asp_DASH_L_c":-1.0,
 "atp_c":-1.0
 },
-"lower_bound":1.0502301280624522,
+"lower_bound":1.0502301280622852,
 "upper_bound":1.050230128062907,
 "gene_reaction_rule":"",
 "notes":{
@@ -27603,7 +27603,7 @@
 "iasp_c":1.0,
 "o2_c":-1.0
 },
-"lower_bound":0.00223784298938468,
+"lower_bound":0.002237842989384324,
 "upper_bound":0.002237842989385649,
 "gene_reaction_rule":"b2574",
 "notes":{
@@ -27637,7 +27637,7 @@
 "oaa_c":1.0
 },
 "lower_bound":-2.8760693263139023,
-"upper_bound":-2.8760693263115846,
+"upper_bound":-2.8760693263111268,
 "gene_reaction_rule":"b0928",
 "notes":{
 "GENE_ASSOCIATION":"b0928",
@@ -27845,7 +27845,7 @@
 "prbatp_c":1.0,
 "prpp_c":-1.0
 },
-"lower_bound":0.09306794079408798,
+"lower_bound":0.09306794079407317,
 "upper_bound":0.09306794079412849,
 "gene_reaction_rule":"b2019",
 "notes":{
@@ -27864,8 +27864,8 @@
 "h_p":-4.0,
 "pi_c":-1.0
 },
-"lower_bound":55.81524739984006,
-"upper_bound":55.81524739991049,
+"lower_bound":55.815247399834725,
+"upper_bound":55.815247399924935,
 "gene_reaction_rule":"",
 "notes":{
 "SUBSYSTEM":"Oxidative Phosphorylation"
@@ -27946,7 +27946,7 @@
 "moco_c":-1.0,
 "mptamp_c":-1.0
 },
-"lower_bound":0.00011984936115263919,
+"lower_bound":0.00011984936115262014,
 "upper_bound":0.00011984936115269135,
 "gene_reaction_rule":"b0827",
 "notes":{
@@ -27964,7 +27964,7 @@
 "h_c":-1.0,
 "ppi_c":1.0
 },
-"lower_bound":0.00011984936115263919,
+"lower_bound":0.00011984936115262014,
 "upper_bound":0.00011984936115269135,
 "gene_reaction_rule":"",
 "notes":{
@@ -27981,7 +27981,7 @@
 "h_c":-1.0,
 "ppi_c":1.0
 },
-"lower_bound":0.00011984936115263919,
+"lower_bound":0.00011984936115262014,
 "upper_bound":0.00011984936115269135,
 "gene_reaction_rule":"",
 "notes":{
@@ -27997,7 +27997,7 @@
 "pap_c":-1.0,
 "pi_c":1.0
 },
-"lower_bound":0.24350246596415542,
+"lower_bound":0.2435024659641167,
 "upper_bound":0.2435024659642613,
 "gene_reaction_rule":"b4214",
 "notes":{
@@ -28080,7 +28080,7 @@
 "h_c":1.0,
 "met_DASH_L_c":1.0
 },
-"lower_bound":1.9647436254531014e-06,
+"lower_bound":1.964743625452789e-06,
 "upper_bound":1.9647436254539565e-06,
 "gene_reaction_rule":"b0775",
 "notes":{
@@ -28234,7 +28234,7 @@
 "ca2_e":-1.0,
 "ca2_p":1.0
 },
-"lower_bound":0.005113245285241697,
+"lower_bound":0.0051132452852408845,
 "upper_bound":0.005113245285243983,
 "gene_reaction_rule":""
 },
@@ -28281,7 +28281,7 @@
 "na1_p":-1.0
 },
 "lower_bound":-1000.0,
-"upper_bound":-0.0051132452852417085,
+"upper_bound":-0.005113245285240895,
 "gene_reaction_rule":"b3196",
 "notes":{
 "GENE_ASSOCIATION":"b3196",
@@ -28410,7 +28410,7 @@
 "h_c":2.0,
 "nh4_c":-1.0
 },
-"lower_bound":0.6155414070208907,
+"lower_bound":0.6155414070207924,
 "upper_bound":0.6155414070211592,
 "gene_reaction_rule":"",
 "notes":{
@@ -28691,7 +28691,7 @@
 "atp_c":-1.0,
 "h_c":1.0
 },
-"lower_bound":0.0023468862606037407,
+"lower_bound":0.002346886260603366,
 "upper_bound":0.0023468862606047646,
 "gene_reaction_rule":"b1208",
 "notes":{
@@ -28863,7 +28863,7 @@
 "chor_c":-1.0,
 "pphn_c":1.0
 },
-"lower_bound":0.3176833262867626,
+"lower_bound":0.31768332628671186,
 "upper_bound":0.31768332628690116,
 "gene_reaction_rule":""
 },
@@ -28875,7 +28875,7 @@
 "chor_c":1.0,
 "pi_c":1.0
 },
-"lower_bound":0.37440056289453,
+"lower_bound":0.3744005628944702,
 "upper_bound":0.3744005628946933,
 "gene_reaction_rule":"b2329",
 "notes":{
@@ -28890,7 +28890,7 @@
 "chor_c":-1.0,
 "pyr_c":1.0
 },
-"lower_bound":0.0002190689142380206,
+"lower_bound":0.0002190689142379856,
 "upper_bound":0.00021906891423811617,
 "gene_reaction_rule":"b4039",
 "notes":{
@@ -29247,7 +29247,7 @@
 "h_c":-1.0,
 "h_p":1.0
 },
-"lower_bound":0.002556622642620846,
+"lower_bound":0.002556622642620438,
 "upper_bound":0.0025566226426219614,
 "gene_reaction_rule":"",
 "notes":{
@@ -29261,7 +29261,7 @@
 "cl_e":-1.0,
 "cl_p":1.0
 },
-"lower_bound":0.005113245285241692,
+"lower_bound":0.005113245285240876,
 "upper_bound":0.005113245285243923,
 "gene_reaction_rule":""
 },
@@ -29323,7 +29323,7 @@
 "co2_e":-1.0,
 "co2_p":1.0
 },
-"lower_bound":-19.675222635678697,
+"lower_bound":-19.675222635685138,
 "upper_bound":-19.67522263566239,
 "gene_reaction_rule":""
 },
@@ -29334,7 +29334,7 @@
 "co2_c":1.0,
 "co2_p":-1.0
 },
-"lower_bound":-19.675222635678697,
+"lower_bound":-19.675222635685138,
 "upper_bound":-19.67522263566239,
 "gene_reaction_rule":"s0001",
 "notes":{
@@ -29384,7 +29384,7 @@
 "cobalt2_e":-1.0,
 "cobalt2_p":1.0
 },
-"lower_bound":2.4559295318163746e-05,
+"lower_bound":2.4559295318159826e-05,
 "upper_bound":2.4559295318174462e-05,
 "gene_reaction_rule":""
 },
@@ -29395,7 +29395,7 @@
 "cobalt2_c":1.0,
 "cobalt2_p":-1.0
 },
-"lower_bound":2.4559295318163746e-05,
+"lower_bound":2.4559295318159826e-05,
 "upper_bound":2.4559295318174462e-05,
 "gene_reaction_rule":"",
 "notes":{
@@ -29628,7 +29628,7 @@
 "h2o_c":-1.0,
 "ppi_c":1.0
 },
-"lower_bound":0.00023969872230527814,
+"lower_bound":0.00023969872230523987,
 "upper_bound":0.0002396987223053827,
 "gene_reaction_rule":"",
 "notes":{
@@ -29646,7 +29646,7 @@
 "o2_c":-1.0,
 "pppg9_c":1.0
 },
-"lower_bound":0.0002190689142380206,
+"lower_bound":0.0002190689142379856,
 "upper_bound":0.00021906891423811617,
 "gene_reaction_rule":"b2436",
 "notes":{
@@ -29906,7 +29906,7 @@
 "oaa_c":-1.0
 },
 "lower_bound":4.857776644209854,
-"upper_bound":4.8577766442340256,
+"upper_bound":4.857776644237069,
 "gene_reaction_rule":"b0720",
 "notes":{
 "GENE_ASSOCIATION":"b0720",
@@ -30032,7 +30032,7 @@
 "hdd2coa_c":1.0
 },
 "lower_bound":-0.1477762270441511,
-"upper_bound":-0.14777622704408758,
+"upper_bound":-0.1477762270440641,
 "gene_reaction_rule":"b3846",
 "notes":{
 "GENE_ASSOCIATION":"b3846",
@@ -30068,7 +30068,7 @@
 "pi_c":1.0,
 "utp_c":-1.0
 },
-"lower_bound":0.1576952352379294,
+"lower_bound":0.15769523523790419,
 "upper_bound":0.1576952352379981,
 "gene_reaction_rule":"b2780",
 "notes":{
@@ -30141,7 +30141,7 @@
 "cu2_e":-1.0,
 "cu2_p":1.0
 },
-"lower_bound":0.0006965016152231239,
+"lower_bound":0.0006965016152230127,
 "upper_bound":0.0006965016152234275,
 "gene_reaction_rule":""
 },
@@ -30152,7 +30152,7 @@
 "cu2_c":1.0,
 "cu2_p":-1.0
 },
-"lower_bound":0.0006965016152231239,
+"lower_bound":0.0006965016152230127,
 "upper_bound":0.0006965016152234275,
 "gene_reaction_rule":"b3040",
 "notes":{
@@ -30348,7 +30348,7 @@
 "h2s_c":-1.0,
 "h_c":1.0
 },
-"lower_bound":0.2435024659641552,
+"lower_bound":0.2435024659641163,
 "upper_bound":0.24350246596426123,
 "gene_reaction_rule":"",
 "notes":{
@@ -30382,7 +30382,7 @@
 "nh4_c":1.0,
 "pyr_c":1.0
 },
-"lower_bound":0.151197828068556,
+"lower_bound":0.15119782806853185,
 "upper_bound":0.1511978280686219,
 "gene_reaction_rule":"",
 "notes":{
@@ -30510,7 +30510,7 @@
 "q8h2_c":-1.0
 },
 "lower_bound":35.14953949465056,
-"upper_bound":35.14953949468457,
+"upper_bound":35.14953949469806,
 "gene_reaction_rule":"",
 "notes":{
 "SUBSYSTEM":"Oxidative Phosphorylation"
@@ -30617,7 +30617,7 @@
 "cdp_c":1.0,
 "cmp_c":-1.0
 },
-"lower_bound":0.17771597278129814,
+"lower_bound":0.17771597278126988,
 "upper_bound":0.17771597278303122,
 "gene_reaction_rule":"b0910",
 "notes":{
@@ -30882,7 +30882,7 @@
 "h_c":1.0,
 "h_p":-1.0
 },
-"lower_bound":0.013649073966022699,
+"lower_bound":0.013649073966020529,
 "upper_bound":0.01364907396674325,
 "gene_reaction_rule":"b4208",
 "notes":{
@@ -30937,7 +30937,7 @@
 "h_c":-1.0,
 "lys_DASH_L_c":1.0
 },
-"lower_bound":0.3371116936270558,
+"lower_bound":0.33711169362700216,
 "upper_bound":0.3371116936272025,
 "gene_reaction_rule":"b2838",
 "notes":{
@@ -30952,7 +30952,7 @@
 "26dap_DASH_LL_c":-1.0,
 "26dap_DASH_M_c":1.0
 },
-"lower_bound":0.36440984155910117,
+"lower_bound":0.3644098415590432,
 "upper_bound":0.36440984155925976,
 "gene_reaction_rule":"b3809",
 "notes":{
@@ -31051,7 +31051,7 @@
 "pa160_c":-1.0,
 "ppi_c":1.0
 },
-"lower_bound":0.0626890748573321,
+"lower_bound":0.06268907485732213,
 "upper_bound":0.06268907485735938,
 "gene_reaction_rule":"b0175",
 "notes":{
@@ -31069,7 +31069,7 @@
 "pa161_c":-1.0,
 "ppi_c":1.0
 },
-"lower_bound":0.07388811352241477,
+"lower_bound":0.07388811352240303,
 "upper_bound":0.07388811352244692,
 "gene_reaction_rule":"b0175",
 "notes":{
@@ -31140,7 +31140,7 @@
 "h_c":1.0,
 "ru5p_DASH_D_c":-1.0
 },
-"lower_bound":0.0008762756569524159,
+"lower_bound":0.0008762756569522766,
 "upper_bound":0.0008762756569527973,
 "gene_reaction_rule":"b3041",
 "notes":{
@@ -31160,7 +31160,7 @@
 "h_c":3.0,
 "pi_c":1.0
 },
-"lower_bound":1.964743625453101e-06,
+"lower_bound":1.9647436254527884e-06,
 "upper_bound":1.964743625453956e-06,
 "gene_reaction_rule":"b0778",
 "notes":{
@@ -31357,7 +31357,7 @@
 "pep_c":-1.0,
 "pi_c":1.0
 },
-"lower_bound":0.3744005628945312,
+"lower_bound":0.37440056289447166,
 "upper_bound":0.3744005628946933,
 "gene_reaction_rule":""
 },
@@ -31456,7 +31456,7 @@
 "3mob_c":1.0,
 "h2o_c":1.0
 },
-"lower_bound":0.8588572223406307,
+"lower_bound":0.858857222340494,
 "upper_bound":0.8588572223410025,
 "gene_reaction_rule":"b3771",
 "notes":{
@@ -31471,7 +31471,7 @@
 "3mop_c":1.0,
 "h2o_c":1.0
 },
-"lower_bound":0.2854075003796327,
+"lower_bound":0.2854075003795873,
 "upper_bound":0.2854075003797563,
 "gene_reaction_rule":"b3771",
 "notes":{
@@ -31488,7 +31488,7 @@
 "pyr_c":1.0
 },
 "lower_bound":-7.449535891555705e-12,
-"upper_bound":0.8653751925283341,
+"upper_bound":0.8653751925304242,
 "gene_reaction_rule":"",
 "notes":{
 "SUBSYSTEM":"Alternate Carbon Metabolism"
@@ -31613,7 +31613,7 @@
 "nadph_c":-1.0,
 "thdp_c":1.0
 },
-"lower_bound":0.3644098415591016,
+"lower_bound":0.36440984155904366,
 "upper_bound":0.3644098415592599,
 "gene_reaction_rule":"b0031",
 "notes":{
@@ -31631,7 +31631,7 @@
 "h_c":1.0,
 "pyr_c":-1.0
 },
-"lower_bound":0.3644098415591016,
+"lower_bound":0.36440984155904366,
 "upper_bound":0.3644098415592599,
 "gene_reaction_rule":"b2478",
 "notes":{
@@ -31649,7 +31649,7 @@
 "nadph_c":-1.0,
 "thf_c":1.0
 },
-"lower_bound":0.026361947594517057,
+"lower_bound":0.026361947594512863,
 "upper_bound":0.026361947594528506,
 "gene_reaction_rule":"",
 "notes":{
@@ -31668,7 +31668,7 @@
 "h_c":1.0,
 "pi_c":1.0
 },
-"lower_bound":0.0006572067427141033,
+"lower_bound":0.0006572067427139988,
 "upper_bound":0.0006572067427143888,
 "gene_reaction_rule":"b2315",
 "notes":{
@@ -31756,7 +31756,7 @@
 "dhnpt_c":-1.0,
 "gcald_c":1.0
 },
-"lower_bound":0.0006572067427141033,
+"lower_bound":0.0006572067427139988,
 "upper_bound":0.0006572067427143888,
 "gene_reaction_rule":"b3058",
 "notes":{
@@ -31839,7 +31839,7 @@
 "h_c":1.0
 },
 "lower_bound":-0.32496368379102125,
-"upper_bound":-0.3249636837908801,
+"upper_bound":-0.3249636837908284,
 "gene_reaction_rule":"b1062",
 "notes":{
 "GENE_ASSOCIATION":"b1062",
@@ -31874,7 +31874,7 @@
 "h_c":-1.0,
 "nh4_c":1.0
 },
-"lower_bound":0.0004381378284762085,
+"lower_bound":0.0004381378284761388,
 "upper_bound":0.0004381378284763988,
 "gene_reaction_rule":"b0414",
 "notes":{
@@ -31891,7 +31891,7 @@
 "dhpt_c":1.0,
 "ppi_c":1.0
 },
-"lower_bound":0.0006572067427141033,
+"lower_bound":0.0006572067427139988,
 "upper_bound":0.0006572067427143888,
 "gene_reaction_rule":"b3177",
 "notes":{
@@ -31906,7 +31906,7 @@
 "dhptd_c":-1.0,
 "mdhdhf_c":1.0
 },
-"lower_bound":0.00044010257210149513,
+"lower_bound":0.00044010257210142515,
 "upper_bound":0.00044010257210168633,
 "gene_reaction_rule":"s0001",
 "notes":{
@@ -31973,7 +31973,7 @@
 "3dhq_c":1.0,
 "pi_c":1.0
 },
-"lower_bound":0.3744005628945307,
+"lower_bound":0.37440056289447116,
 "upper_bound":0.3744005628946933,
 "gene_reaction_rule":"b3389",
 "notes":{
@@ -31988,7 +31988,7 @@
 "3dhsk_c":1.0,
 "h2o_c":1.0
 },
-"lower_bound":0.3744005628945307,
+"lower_bound":0.37440056289447116,
 "upper_bound":0.3744005628946933,
 "gene_reaction_rule":"b1693",
 "notes":{
@@ -32095,7 +32095,7 @@
 "ipdp_c":-1.0,
 "ppi_c":1.0
 },
-"lower_bound":0.00027309936393798257,
+"lower_bound":0.0002730993639379391,
 "upper_bound":0.0002730993639381012,
 "gene_reaction_rule":"b0421",
 "notes":{
@@ -32114,7 +32114,7 @@
 "nad_c":1.0,
 "nadh_c":-1.0
 },
-"lower_bound":-1.0494644781835055e-16,
+"lower_bound":-1.4840157434431264e-16,
 "upper_bound":0.0023468862604959515,
 "gene_reaction_rule":"b0029",
 "notes":{
@@ -32253,7 +32253,7 @@
 "h2o_c":-1.0,
 "pi_c":1.0
 },
-"lower_bound":0.0006572067427141033,
+"lower_bound":0.0006572067427139988,
 "upper_bound":0.0006572067427143888,
 "gene_reaction_rule":"",
 "notes":{
@@ -32270,7 +32270,7 @@
 "h_c":1.0,
 "ppi_c":1.0
 },
-"lower_bound":0.0006572067427141033,
+"lower_bound":0.0006572067427139988,
 "upper_bound":0.0006572067427143888,
 "gene_reaction_rule":"",
 "notes":{
@@ -32340,7 +32340,7 @@
 "dpcoa_c":-1.0,
 "h_c":1.0
 },
-"lower_bound":0.0005658461641303477,
+"lower_bound":0.0005658461641302577,
 "upper_bound":0.0005658461641304825,
 "gene_reaction_rule":"b0103",
 "notes":{
@@ -32358,7 +32358,7 @@
 "nadph_c":-1.0,
 "pant_DASH_R_c":1.0
 },
-"lower_bound":0.0005658461641303477,
+"lower_bound":0.0005658461641302577,
 "upper_bound":0.0005658461641304825,
 "gene_reaction_rule":"",
 "notes":{
@@ -32533,7 +32533,7 @@
 "dtdp_c":1.0,
 "dtmp_c":-1.0
 },
-"lower_bound":0.02570474085180295,
+"lower_bound":0.02570474085179886,
 "upper_bound":0.025704740851814116,
 "gene_reaction_rule":"b1098",
 "notes":{
@@ -32651,7 +32651,7 @@
 "h_c":1.0,
 "ppi_c":1.0
 },
-"lower_bound":0.02570474085180295,
+"lower_bound":0.02570474085179886,
 "upper_bound":0.025704740851814116,
 "gene_reaction_rule":"",
 "notes":{
@@ -32668,7 +32668,7 @@
 "nadp_c":1.0,
 "nadph_c":-1.0
 },
-"lower_bound":0.002346886260603745,
+"lower_bound":0.0023468862606033716,
 "upper_bound":0.0023468862606047646,
 "gene_reaction_rule":"b0173",
 "notes":{
@@ -32686,7 +32686,7 @@
 "h_c":-1.0,
 "pyr_c":-1.0
 },
-"lower_bound":0.002785024089079787,
+"lower_bound":0.002785024089079344,
 "upper_bound":0.002785024089080997,
 "gene_reaction_rule":"b0420",
 "notes":{
@@ -32723,7 +32723,7 @@
 "nad_c":-1.0,
 "nadh_c":1.0
 },
-"lower_bound":0.00021906891423802103,
+"lower_bound":0.00021906891423798618,
 "upper_bound":0.00021906891423811617,
 "gene_reaction_rule":"",
 "notes":{
@@ -33258,7 +33258,7 @@
 "b2coa_c":1.0,
 "h2o_c":1.0
 },
-"lower_bound":0.3496064807131252,
+"lower_bound":0.3496064807130696,
 "upper_bound":0.34960648071327705,
 "gene_reaction_rule":"",
 "notes":{
@@ -33273,7 +33273,7 @@
 "h2o_c":1.0,
 "hx2coa_c":1.0
 },
-"lower_bound":0.3496064807131252,
+"lower_bound":0.3496064807130696,
 "upper_bound":0.34960648071327705,
 "gene_reaction_rule":"",
 "notes":{
@@ -33288,7 +33288,7 @@
 "h2o_c":1.0,
 "oc2coa_c":1.0
 },
-"lower_bound":0.3496064807131252,
+"lower_bound":0.3496064807130696,
 "upper_bound":0.34960648071327705,
 "gene_reaction_rule":"",
 "notes":{
@@ -33303,7 +33303,7 @@
 "dc2coa_c":1.0,
 "h2o_c":1.0
 },
-"lower_bound":0.3496064807131252,
+"lower_bound":0.34960648071306955,
 "upper_bound":0.34960648071327705,
 "gene_reaction_rule":"",
 "notes":{
@@ -33318,7 +33318,7 @@
 "dd2coa_c":1.0,
 "h2o_c":1.0
 },
-"lower_bound":0.3496064807131252,
+"lower_bound":0.34960648071306955,
 "upper_bound":0.34960648071327705,
 "gene_reaction_rule":"",
 "notes":{
@@ -33333,7 +33333,7 @@
 "h2o_c":1.0,
 "td2coa_c":1.0
 },
-"lower_bound":0.27315437675949406,
+"lower_bound":0.2731543767594506,
 "upper_bound":0.2731543767596127,
 "gene_reaction_rule":"",
 "notes":{
@@ -33348,7 +33348,7 @@
 "h2o_c":1.0,
 "hdd2coa_c":1.0
 },
-"lower_bound":0.27315437675875176,
+"lower_bound":0.2731543767587083,
 "upper_bound":0.27315437675887044,
 "gene_reaction_rule":"",
 "notes":{
@@ -33476,7 +33476,7 @@
 "nadp_c":1.0,
 "nadph_c":-1.0
 },
-"lower_bound":1.964743625453103e-06,
+"lower_bound":1.9647436254527905e-06,
 "upper_bound":1.9647436254539565e-06,
 "gene_reaction_rule":"b1288",
 "notes":{
@@ -33509,7 +33509,7 @@
 "pep_c":1.0
 },
 "lower_bound":14.586890401167832,
-"upper_bound":14.586890401192303,
+"upper_bound":14.586890401193802,
 "gene_reaction_rule":"b2779",
 "notes":{
 "GENE_ASSOCIATION":"b2779"
@@ -33686,7 +33686,7 @@
 "g3p_c":1.0
 },
 "lower_bound":-7.449141856839916e-12,
-"upper_bound":0.8653751925283344,
+"upper_bound":0.8653751925304245,
 "gene_reaction_rule":""
 },
 {
@@ -33887,7 +33887,7 @@
 "h2o_c":-1.0,
 "h_c":1.0
 },
-"lower_bound":0.07645210395363117,
+"lower_bound":0.076452103953619,
 "upper_bound":0.07645210395366436,
 "gene_reaction_rule":"b0452",
 "notes":{
@@ -33941,7 +33941,7 @@
 "hdca_c":1.0,
 "pmtcoa_c":-1.0
 },
-"lower_bound":0.12537814971466435,
+"lower_bound":0.1253781497146444,
 "upper_bound":0.1253781497147188,
 "gene_reaction_rule":"b0452",
 "notes":{
@@ -33959,7 +33959,7 @@
 "hdcea_c":1.0,
 "hdcoa_c":-1.0
 },
-"lower_bound":0.14777622704408747,
+"lower_bound":0.14777622704406393,
 "upper_bound":0.14777622704415164,
 "gene_reaction_rule":"b0452",
 "notes":{
@@ -34249,7 +34249,7 @@
 "nad_c":1.0,
 "nadh_c":-1.0
 },
-"lower_bound":2.1473567217201,
+"lower_bound":2.1473567217197584,
 "upper_bound":2.1473567217210325,
 "gene_reaction_rule":"b3844",
 "notes":{
@@ -34353,7 +34353,7 @@
 "e4p_c":1.0,
 "s17bp_c":-1.0
 },
-"lower_bound":-2.0275106080058442e-13,
+"lower_bound":-1.0248809129836639e-12,
 "upper_bound":7.784185977751285,
 "gene_reaction_rule":"b2925",
 "notes":{
@@ -34431,7 +34431,7 @@
 "pheme_c":1.0,
 "ppp9_c":-1.0
 },
-"lower_bound":0.00021906891423802144,
+"lower_bound":0.00021906891423798658,
 "upper_bound":0.0002190689142381163,
 "gene_reaction_rule":"b0475",
 "notes":{
@@ -34641,7 +34641,7 @@
 "fe2_e":-1.0,
 "fe2_p":1.0
 },
-"lower_bound":0.015777873690910896,
+"lower_bound":0.015777873690908384,
 "upper_bound":999.999999999998,
 "gene_reaction_rule":""
 },
@@ -34652,7 +34652,7 @@
 "fe2_c":1.0,
 "fe2_p":-1.0
 },
-"lower_bound":0.015777873684201176,
+"lower_bound":0.015777873684198668,
 "upper_bound":0.01577787368420801,
 "gene_reaction_rule":"b3040",
 "notes":{
@@ -34919,7 +34919,7 @@
 "fe3_p":1.0
 },
 "lower_bound":-999.9842221263137,
-"upper_bound":-5.790544661633482e-12,
+"upper_bound":-4.366827458155439e-12,
 "gene_reaction_rule":""
 },
 {
@@ -35338,7 +35338,7 @@
 "h_p":-4.0,
 "o2_p":-1.0
 },
-"lower_bound":1.4635281905144563e-12,
+"lower_bound":1.1076511481896656e-12,
 "upper_bound":249.99605553157843,
 "gene_reaction_rule":"b0123",
 "notes":{
@@ -35357,7 +35357,7 @@
 "h2o_c":2.0,
 "h_c":-2.0
 },
-"lower_bound":0.0038351795568844654,
+"lower_bound":0.003835179556883855,
 "upper_bound":0.003835179556886126,
 "gene_reaction_rule":"s0001",
 "notes":{
@@ -35393,7 +35393,7 @@
 "4fe4s_c":1.0,
 "fe2_c":-1.0
 },
-"lower_bound":0.007670359113768931,
+"lower_bound":0.0076703591137677095,
 "upper_bound":0.007670359113772252,
 "gene_reaction_rule":"b4209",
 "notes":{
@@ -35513,7 +35513,7 @@
 "h_c":-1.0,
 "ppi_c":1.0
 },
-"lower_bound":0.0002190689142381879,
+"lower_bound":0.00021906891423815303,
 "upper_bound":0.00021906891423828276,
 "gene_reaction_rule":"b0025",
 "notes":{
@@ -35650,7 +35650,7 @@
 "succ_c":1.0
 },
 "lower_bound":0.0,
-"upper_bound":31.022380274001982,
+"upper_bound":31.022380274012313,
 "gene_reaction_rule":"",
 "notes":{
 "SUBSYSTEM":"Citric Acid Cycle"
@@ -35887,7 +35887,7 @@
 "mal_DASH_L_c":1.0
 },
 "lower_bound":4.825998880813108,
-"upper_bound":4.825998880835938,
+"upper_bound":4.825998880838986,
 "gene_reaction_rule":"",
 "notes":{
 "SUBSYSTEM":"Citric Acid Cycle"
@@ -35967,7 +35967,7 @@
 "gam1p_c":-1.0,
 "h_c":1.0
 },
-"lower_bound":0.09282234784090934,
+"lower_bound":0.09282234784089456,
 "upper_bound":0.09282234784244844,
 "gene_reaction_rule":"b3730",
 "notes":{
@@ -36026,7 +36026,7 @@
 "5aop_c":1.0,
 "glu1sa_c":-1.0
 },
-"lower_bound":0.003505102627808343,
+"lower_bound":0.0035051026278077853,
 "upper_bound":0.003505102627809856,
 "gene_reaction_rule":"b0154",
 "notes":{
@@ -36125,7 +36125,7 @@
 "glyc3p_c":-1.0,
 "palmACP_c":-1.0
 },
-"lower_bound":1.3985795901085312e-11,
+"lower_bound":1.3975820917473342e-11,
 "upper_bound":0.06268907485735936,
 "gene_reaction_rule":"",
 "notes":{
@@ -36218,7 +36218,7 @@
 "nadph_c":1.0
 },
 "lower_bound":-0.1365771883798065,
-"upper_bound":-0.13657718837974692,
+"upper_bound":-0.1365771883797252,
 "gene_reaction_rule":"b3608",
 "notes":{
 "GENE_ASSOCIATION":"b3608",
@@ -36407,7 +36407,7 @@
 "h2o_c":1.0,
 "h_c":1.0
 },
-"lower_bound":0.21715820106226832,
+"lower_bound":0.21715820106223377,
 "upper_bound":0.21715820106236206,
 "gene_reaction_rule":"s0001",
 "notes":{
@@ -36426,7 +36426,7 @@
 "nadph_c":-1.0,
 "pi_c":1.0
 },
-"lower_bound":0.21715820106226832,
+"lower_bound":0.21715820106223377,
 "upper_bound":0.21715820106236206,
 "gene_reaction_rule":"b0243",
 "notes":{
@@ -36461,7 +36461,7 @@
 "nadp_c":-1.0,
 "nadph_c":1.0
 },
-"lower_bound":4.081934853503477,
+"lower_bound":4.081934853500918,
 "upper_bound":4.081934853564745,
 "gene_reaction_rule":"b1852",
 "notes":{
@@ -36920,7 +36920,7 @@
 "pi_c":-1.0
 },
 "lower_bound":16.274774634573888,
-"upper_bound":16.274774634594433,
+"upper_bound":16.274774634595662,
 "gene_reaction_rule":"b1779",
 "notes":{
 "GENE_ASSOCIATION":"b1779"
@@ -36936,7 +36936,7 @@
 "h_c":1.0,
 "thf_c":1.0
 },
-"lower_bound":0.4379266185363244,
+"lower_bound":0.43792661853625475,
 "upper_bound":0.4403363765855022,
 "gene_reaction_rule":"b2500",
 "notes":{
@@ -36956,7 +36956,7 @@
 "h_c":1.0,
 "pi_c":1.0
 },
-"lower_bound":8.92688375284158e-12,
+"lower_bound":8.926500316059679e-12,
 "upper_bound":0.0024097580566198175,
 "gene_reaction_rule":"b1849",
 "notes":{
@@ -36986,7 +36986,7 @@
 "nad_c":-1.0,
 "nadh_c":1.0
 },
-"lower_bound":0.0006572067427141044,
+"lower_bound":0.0006572067427139999,
 "upper_bound":0.0006572067427143888,
 "gene_reaction_rule":"b1415",
 "notes":{
@@ -37099,7 +37099,7 @@
 "gln_DASH_L_c":-1.0,
 "glu_DASH_L_c":1.0
 },
-"lower_bound":0.09282234784090657,
+"lower_bound":0.0928223478408918,
 "upper_bound":0.09282234784094673,
 "gene_reaction_rule":"b3729",
 "notes":{
@@ -37210,7 +37210,7 @@
 "ser_DASH_L_c":-1.0,
 "thf_c":-1.0
 },
-"lower_bound":1.0958166008461672,
+"lower_bound":1.0958166008459929,
 "upper_bound":1.0958166008485521,
 "gene_reaction_rule":"b2551",
 "notes":{
@@ -37227,7 +37227,7 @@
 "gdp_c":1.0,
 "gmp_c":-1.0
 },
-"lower_bound":0.23941972871046477,
+"lower_bound":0.23941972871042666,
 "upper_bound":0.23941972871056835,
 "gene_reaction_rule":"b3648",
 "notes":{
@@ -37317,7 +37317,7 @@
 "pi_c":-1.0
 },
 "lower_bound":0.0,
-"upper_bound":996.558173905364,
+"upper_bound":996.5581739053647,
 "gene_reaction_rule":""
 },
 {
@@ -37397,7 +37397,7 @@
 "h_c":1.0
 },
 "lower_bound":0.0,
-"upper_bound":996.5581739053639,
+"upper_bound":996.5581739053646,
 "gene_reaction_rule":"b3429",
 "notes":{
 "GENE_ASSOCIATION":"b3429"
@@ -37584,7 +37584,7 @@
 "ppi_c":1.0
 },
 "lower_bound":0.0,
-"upper_bound":996.5581739053639,
+"upper_bound":996.5581739053646,
 "gene_reaction_rule":"b3430",
 "notes":{
 "GENE_ASSOCIATION":"b3430"
@@ -37602,7 +37602,7 @@
 "nh4_c":-1.0,
 "pi_c":1.0
 },
-"lower_bound":1.7786971396999638,
+"lower_bound":1.7786971396996807,
 "upper_bound":1.7786971397032303,
 "gene_reaction_rule":"",
 "notes":{
@@ -37682,7 +37682,7 @@
 "glu5p_c":1.0,
 "glu_DASH_L_c":-1.0
 },
-"lower_bound":0.21715820106226827,
+"lower_bound":0.2171582010622337,
 "upper_bound":0.2171582010623623,
 "gene_reaction_rule":"b0242",
 "notes":{
@@ -37755,7 +37755,7 @@
 "nh4_c":1.0
 },
 "lower_bound":-8.400956398768697,
-"upper_bound":-8.400956398683782,
+"upper_bound":-8.400956398682442,
 "gene_reaction_rule":"b1761",
 "notes":{
 "GENE_ASSOCIATION":"b1761",
@@ -37806,7 +37806,7 @@
 "pram_c":1.0,
 "prpp_c":-1.0
 },
-"lower_bound":0.44033637659294167,
+"lower_bound":0.4403363765928716,
 "upper_bound":0.44033637659442415,
 "gene_reaction_rule":"b2312",
 "notes":{
@@ -37822,7 +37822,7 @@
 "glu_DASH_L_c":1.0
 },
 "lower_bound":-0.027298147932057294,
-"upper_bound":-0.027298147932045005,
+"upper_bound":-0.027298147932040655,
 "gene_reaction_rule":"b3967",
 "notes":{
 "GENE_ASSOCIATION":"b3967",
@@ -37858,7 +37858,7 @@
 "nadph_c":-1.0,
 "trnaglu_c":1.0
 },
-"lower_bound":0.003505102627808342,
+"lower_bound":0.0035051026278077844,
 "upper_bound":0.0035051026278098726,
 "gene_reaction_rule":"b1210",
 "notes":{
@@ -37877,7 +37877,7 @@
 "ppi_c":1.0,
 "trnaglu_c":-1.0
 },
-"lower_bound":0.003505102627808342,
+"lower_bound":0.0035051026278077844,
 "upper_bound":0.0035051026278098726,
 "gene_reaction_rule":"b2400",
 "notes":{
@@ -38203,7 +38203,7 @@
 "nh4_c":1.0,
 "thf_c":-1.0
 },
-"lower_bound":0.05364192164802785,
+"lower_bound":0.05364192164801932,
 "upper_bound":0.053641921648711476,
 "gene_reaction_rule":"",
 "notes":{
@@ -38576,7 +38576,7 @@
 "ppi_c":1.0,
 "xmp_c":-1.0
 },
-"lower_bound":0.239419728710466,
+"lower_bound":0.23941972871042788,
 "upper_bound":0.23941972871056882,
 "gene_reaction_rule":"b2507",
 "notes":{
@@ -38605,7 +38605,7 @@
 "nadph_c":1.0,
 "ru5p_DASH_D_c":1.0
 },
-"lower_bound":4.081934853503492,
+"lower_bound":4.081934853500931,
 "upper_bound":4.081934853564745,
 "gene_reaction_rule":"b2029",
 "notes":{
@@ -38854,7 +38854,7 @@
 "ipdp_c":-1.0,
 "ppi_c":1.0
 },
-"lower_bound":0.0002730993639379844,
+"lower_bound":0.00027309936393794094,
 "upper_bound":0.0002730993639381017,
 "gene_reaction_rule":"b0421",
 "notes":{
@@ -39096,7 +39096,7 @@
 "h2o_c":-1.0,
 "h_c":1.0
 },
-"lower_bound":0.0006572067427141079,
+"lower_bound":0.0006572067427140032,
 "upper_bound":0.0006572067427143901,
 "gene_reaction_rule":"b2153",
 "notes":{
@@ -39115,7 +39115,7 @@
 "h_c":2.0,
 "ppi_c":1.0
 },
-"lower_bound":0.00043813782847621147,
+"lower_bound":0.0004381378284761417,
 "upper_bound":0.0004381378284763997,
 "gene_reaction_rule":"b1277",
 "notes":{
@@ -39342,7 +39342,7 @@
 "h2o_e":-1.0,
 "h2o_p":1.0
 },
-"lower_bound":-545.6115414331912,
+"lower_bound":-545.6115414331929,
 "upper_bound":-45.61943037003403,
 "gene_reaction_rule":""
 },
@@ -39353,7 +39353,7 @@
 "h2o_c":1.0,
 "h2o_p":-1.0
 },
-"lower_bound":-45.61943037003858,
+"lower_bound":-45.61943037004087,
 "upper_bound":-45.61943037003104,
 "gene_reaction_rule":""
 },
@@ -39433,7 +39433,7 @@
 "nad_c":1.0,
 "nadh_c":-1.0
 },
-"lower_bound":0.34960648071312755,
+"lower_bound":0.3496064807130719,
 "upper_bound":0.34960648071327777,
 "gene_reaction_rule":"",
 "notes":{
@@ -39450,7 +39450,7 @@
 "nad_c":1.0,
 "nadh_c":-1.0
 },
-"lower_bound":0.34960648071312755,
+"lower_bound":0.3496064807130719,
 "upper_bound":0.34960648071327777,
 "gene_reaction_rule":"",
 "notes":{
@@ -39467,7 +39467,7 @@
 "nad_c":1.0,
 "nadh_c":-1.0
 },
-"lower_bound":0.34960648071312755,
+"lower_bound":0.3496064807130719,
 "upper_bound":0.34960648071327777,
 "gene_reaction_rule":"",
 "notes":{
@@ -39484,7 +39484,7 @@
 "nad_c":1.0,
 "nadh_c":-1.0
 },
-"lower_bound":0.3496064807131275,
+"lower_bound":0.3496064807130719,
 "upper_bound":0.34960648071327777,
 "gene_reaction_rule":"",
 "notes":{
@@ -39501,7 +39501,7 @@
 "nad_c":1.0,
 "nadh_c":-1.0
 },
-"lower_bound":0.3496064807131275,
+"lower_bound":0.3496064807130719,
 "upper_bound":0.34960648071327777,
 "gene_reaction_rule":"",
 "notes":{
@@ -39518,7 +39518,7 @@
 "nad_c":1.0,
 "nadh_c":-1.0
 },
-"lower_bound":0.27315437675949583,
+"lower_bound":0.27315437675945237,
 "upper_bound":0.27315437675961324,
 "gene_reaction_rule":"",
 "notes":{
@@ -39535,7 +39535,7 @@
 "nad_c":1.0,
 "nadh_c":-1.0
 },
-"lower_bound":0.2731543767587536,
+"lower_bound":0.2731543767587101,
 "upper_bound":0.273154376758871,
 "gene_reaction_rule":"",
 "notes":{
@@ -39586,7 +39586,7 @@
 "octdp_c":-1.0,
 "ppi_c":1.0
 },
-"lower_bound":0.00021906891423802247,
+"lower_bound":0.00021906891423798759,
 "upper_bound":0.0002190689142381166,
 "gene_reaction_rule":"b4040",
 "notes":{
@@ -39630,7 +39630,7 @@
 "h_c":1.0,
 "hco3_c":1.0
 },
-"lower_bound":0.51657530586396,
+"lower_bound":0.5165753058638778,
 "upper_bound":0.5165753058654642,
 "gene_reaction_rule":"",
 "notes":{
@@ -39965,7 +39965,7 @@
 "nad_c":-2.0,
 "nadh_c":2.0
 },
-"lower_bound":0.09306794079408869,
+"lower_bound":0.09306794079407386,
 "upper_bound":0.09306794079412867,
 "gene_reaction_rule":"b2020",
 "notes":{
@@ -39982,7 +39982,7 @@
 "histd_c":1.0,
 "pi_c":1.0
 },
-"lower_bound":0.09306794079408869,
+"lower_bound":0.09306794079407386,
 "upper_bound":0.09306794079412867,
 "gene_reaction_rule":"b2022",
 "notes":{
@@ -40097,7 +40097,7 @@
 "nh4_c":4.0,
 "ppbng_c":-4.0
 },
-"lower_bound":0.00043813782847604494,
+"lower_bound":0.00043813782847597517,
 "upper_bound":0.0004381378284762332,
 "gene_reaction_rule":"b3805",
 "notes":{
@@ -40172,7 +40172,7 @@
 "atp_c":-1.0,
 "h_c":1.0
 },
-"lower_bound":0.0006572067427141078,
+"lower_bound":0.0006572067427140031,
 "upper_bound":0.0006572067427143901,
 "gene_reaction_rule":"b0142",
 "notes":{
@@ -40284,7 +40284,7 @@
 "nadph_c":1.0
 },
 "lower_bound":-0.6858202865036499,
-"upper_bound":-0.6858202865033166,
+"upper_bound":-0.6858202865032071,
 "gene_reaction_rule":"",
 "notes":{
 "SUBSYSTEM":"Threonine and Lysine Metabolism"
@@ -40300,7 +40300,7 @@
 "hom_DASH_L_c":-1.0,
 "phom_c":1.0
 },
-"lower_bound":0.5346224584347966,
+"lower_bound":0.5346224584347115,
 "upper_bound":0.5346224584350227,
 "gene_reaction_rule":"b0003",
 "notes":{
@@ -40317,7 +40317,7 @@
 "succoa_c":-1.0,
 "suchms_c":1.0
 },
-"lower_bound":0.15119782806855728,
+"lower_bound":0.1511978280685332,
 "upper_bound":0.15119782806862123,
 "gene_reaction_rule":"b4013",
 "notes":{
@@ -40334,7 +40334,7 @@
 "hisp_c":1.0,
 "imacp_c":-1.0
 },
-"lower_bound":0.09306794079408869,
+"lower_bound":0.09306794079407386,
 "upper_bound":0.09306794079412803,
 "gene_reaction_rule":"b2021",
 "notes":{
@@ -40514,7 +40514,7 @@
 "iscu_DASH_2fe2s_c":1.0,
 "iscu_c":-1.0
 },
-"lower_bound":1.9647436254531162e-06,
+"lower_bound":1.9647436254528037e-06,
 "upper_bound":1.964743625453947e-06,
 "gene_reaction_rule":"",
 "notes":{
@@ -40534,7 +40534,7 @@
 "iscu_DASH_2fe2s_c":1.0,
 "iscu_c":-1.0
 },
-"lower_bound":0.00028095833843979674,
+"lower_bound":0.000280958338439752,
 "upper_bound":0.00028095833843991557,
 "gene_reaction_rule":"",
 "notes":{
@@ -40554,7 +40554,7 @@
 "iscu_DASH_2fe2s2_c":1.0,
 "iscu_DASH_2fe2s_c":-1.0
 },
-"lower_bound":0.00025541667130890626,
+"lower_bound":0.0002554166713088656,
 "upper_bound":0.0002554166713090143,
 "gene_reaction_rule":"",
 "notes":{
@@ -40570,7 +40570,7 @@
 "iscu_DASH_2fe2s_c":-1.0,
 "iscu_c":1.0
 },
-"lower_bound":2.750641075634363e-05,
+"lower_bound":2.750641075633925e-05,
 "upper_bound":2.750641075635526e-05,
 "gene_reaction_rule":"",
 "notes":{
@@ -40587,7 +40587,7 @@
 "iscu_DASH_2fe2s2_c":-1.0,
 "iscu_DASH_4fe4s_c":1.0
 },
-"lower_bound":0.00025541667130890626,
+"lower_bound":0.0002554166713088656,
 "upper_bound":0.0002554166713090143,
 "gene_reaction_rule":"b2529",
 "notes":{
@@ -40604,7 +40604,7 @@
 "iscu_DASH_4fe4s_c":-1.0,
 "iscu_c":1.0
 },
-"lower_bound":0.00025541667130890626,
+"lower_bound":0.0002554166713088656,
 "upper_bound":0.0002554166713090143,
 "gene_reaction_rule":"",
 "notes":{
@@ -40622,7 +40622,7 @@
 "nadph_c":1.0
 },
 "lower_bound":4.857776644209824,
-"upper_bound":4.8577766442339385,
+"upper_bound":4.857776644236994,
 "gene_reaction_rule":"b1136",
 "notes":{
 "GENE_ASSOCIATION":"b1136",
@@ -40701,7 +40701,7 @@
 "iscs_c":-1.0,
 "iscssh_c":1.0
 },
-"lower_bound":0.001773181121971442,
+"lower_bound":0.0017731811219711597,
 "upper_bound":0.0017731811219721919,
 "gene_reaction_rule":"b2530",
 "notes":{
@@ -40783,7 +40783,7 @@
 "h_c":1.0,
 "prlp_c":-1.0
 },
-"lower_bound":0.09306794079408869,
+"lower_bound":0.09306794079407386,
 "upper_bound":0.09306794079412804,
 "gene_reaction_rule":"",
 "notes":{
@@ -40798,7 +40798,7 @@
 "h2o_c":1.0,
 "imacp_c":1.0
 },
-"lower_bound":0.09306794079408869,
+"lower_bound":0.09306794079407386,
 "upper_bound":0.09306794079412804,
 "gene_reaction_rule":"b2022",
 "notes":{
@@ -40816,7 +40816,7 @@
 "h2o_c":1.0,
 "h_c":-1.0
 },
-"lower_bound":0.05584096095081575,
+"lower_bound":0.05584096095080686,
 "upper_bound":0.05584096095083937,
 "gene_reaction_rule":"b1262",
 "notes":{
@@ -40833,7 +40833,7 @@
 "ile_DASH_L_c":-1.0
 },
 "lower_bound":-0.28540750037975743,
-"upper_bound":-0.2854075003796187,
+"upper_bound":-0.2854075003795732,
 "gene_reaction_rule":"b3770",
 "notes":{
 "GENE_ASSOCIATION":"b3770"
@@ -40910,7 +40910,7 @@
 "imp_c":-1.0
 },
 "lower_bound":-0.5331852484743166,
-"upper_bound":-0.5331852484729961,
+"upper_bound":-0.5331852484729109,
 "gene_reaction_rule":"b4006",
 "notes":{
 "GENE_ASSOCIATION":"b4006",
@@ -40928,7 +40928,7 @@
 "nadh_c":1.0,
 "xmp_c":1.0
 },
-"lower_bound":0.23941972871047723,
+"lower_bound":0.2394197287104391,
 "upper_bound":0.2394197287118959,
 "gene_reaction_rule":"b2508",
 "notes":{
@@ -41121,7 +41121,7 @@
 "nad_c":1.0,
 "nadh_c":-1.0
 },
-"lower_bound":1.0792652818090602e-13,
+"lower_bound":1.0759679943532075e-13,
 "upper_bound":0.002346886260604728,
 "gene_reaction_rule":"b0029",
 "notes":{
@@ -41139,7 +41139,7 @@
 "nad_c":-1.0,
 "nadh_c":1.0
 },
-"lower_bound":0.442588955159509,
+"lower_bound":0.4425889551594387,
 "upper_bound":0.44258895515969354,
 "gene_reaction_rule":"b0073",
 "notes":{
@@ -41155,7 +41155,7 @@
 "h2o_c":1.0
 },
 "lower_bound":-0.44258895515970004,
-"upper_bound":-0.4425889551594822,
+"upper_bound":-0.4425889551594116,
 "gene_reaction_rule":""
 },
 {
@@ -41167,7 +41167,7 @@
 "h2o_c":-1.0
 },
 "lower_bound":-0.44258895515970004,
-"upper_bound":-0.4425889551594822,
+"upper_bound":-0.4425889551594116,
 "gene_reaction_rule":""
 },
 {
@@ -41181,7 +41181,7 @@
 "h2o_c":-1.0,
 "h_c":1.0
 },
-"lower_bound":0.442588955159509,
+"lower_bound":0.4425889551594387,
 "upper_bound":0.44258895515969354,
 "gene_reaction_rule":"b0074",
 "notes":{
@@ -41227,7 +41227,7 @@
 "kdo2lipid4_p":1.0,
 "pi_c":1.0
 },
-"lower_bound":0.019113025988407917,
+"lower_bound":0.019113025988404878,
 "upper_bound":0.019113025988415883,
 "gene_reaction_rule":"b0914",
 "notes":{
@@ -41246,7 +41246,7 @@
 "kdo2lipid4_p":-1.0,
 "pi_c":1.0
 },
-"lower_bound":0.019113025988407917,
+"lower_bound":0.019113025988404878,
 "upper_bound":0.019113025988415883,
 "gene_reaction_rule":""
 },
@@ -41261,7 +41261,7 @@
 "nadph_c":1.0
 },
 "lower_bound":-0.8588572223410058,
-"upper_bound":-0.8588572223405831,
+"upper_bound":-0.8588572223404461,
 "gene_reaction_rule":"b3774",
 "notes":{
 "GENE_ASSOCIATION":"b3774"
@@ -41277,7 +41277,7 @@
 "nadp_c":1.0,
 "nadph_c":-1.0
 },
-"lower_bound":0.28540750037963425,
+"lower_bound":0.28540750037958884,
 "upper_bound":0.2854075003797532,
 "gene_reaction_rule":"b3774",
 "notes":{
@@ -41330,7 +41330,7 @@
 "kdo_c":-1.0,
 "ppi_c":1.0
 },
-"lower_bound":0.038226051976815834,
+"lower_bound":0.038226051976809755,
 "upper_bound":0.038226051976831765,
 "gene_reaction_rule":"b0918",
 "notes":{
@@ -41346,7 +41346,7 @@
 "kdo_c":1.0,
 "pi_c":1.0
 },
-"lower_bound":0.038226051976815834,
+"lower_bound":0.038226051976809755,
 "upper_bound":0.038226051976831765,
 "gene_reaction_rule":"b3198",
 "notes":{
@@ -41363,7 +41363,7 @@
 "pep_c":-1.0,
 "pi_c":1.0
 },
-"lower_bound":0.038226051976815834,
+"lower_bound":0.038226051976809755,
 "upper_bound":0.038226051976831765,
 "gene_reaction_rule":"b1215",
 "notes":{
@@ -41414,7 +41414,7 @@
 "k_c":1.0,
 "k_p":-1.0
 },
-"lower_bound":0.1917521012415351,
+"lower_bound":0.1917521012415046,
 "upper_bound":0.19175210124161501,
 "gene_reaction_rule":"",
 "notes":{
@@ -41444,7 +41444,7 @@
 "k_e":-1.0,
 "k_p":1.0
 },
-"lower_bound":0.1917521012415351,
+"lower_bound":0.1917521012415046,
 "upper_bound":0.19175210124161501,
 "gene_reaction_rule":""
 },
@@ -41808,7 +41808,7 @@
 "glu_DASH_L_c":-1.0,
 "leu_DASH_L_c":1.0
 },
-"lower_bound":0.4425889551595067,
+"lower_bound":0.44258895515943625,
 "upper_bound":0.4425889551596983,
 "gene_reaction_rule":""
 },
@@ -42086,7 +42086,7 @@
 "u23ga_c":-1.0,
 "udp_c":1.0
 },
-"lower_bound":0.019113025988407816,
+"lower_bound":0.019113025988404773,
 "upper_bound":0.01911302598841609,
 "gene_reaction_rule":"b0182",
 "notes":{
@@ -43284,7 +43284,7 @@
 "malcoa_c":-1.0,
 "malcoame_c":1.0
 },
-"lower_bound":1.964743625453124e-06,
+"lower_bound":1.9647436254528113e-06,
 "upper_bound":1.9647436254539387e-06,
 "gene_reaction_rule":"b0777",
 "notes":{
@@ -43348,7 +43348,7 @@
 "h_c":1.0,
 "mal_DASH_L_c":1.0
 },
-"lower_bound":0.0006572067427141346,
+"lower_bound":0.0006572067427140301,
 "upper_bound":0.0006572067440543469,
 "gene_reaction_rule":"",
 "notes":{
@@ -43791,7 +43791,7 @@
 "malACP_c":1.0,
 "malcoa_c":-1.0
 },
-"lower_bound":0.07645603344162444,
+"lower_bound":0.07645603344161227,
 "upper_bound":0.07645603344165754,
 "gene_reaction_rule":"",
 "notes":{
@@ -43824,7 +43824,7 @@
 "murein5p5p_p":-1.0,
 "murein5px4p_p":1.0
 },
-"lower_bound":0.013649073966022727,
+"lower_bound":0.013649073966020555,
 "upper_bound":0.013649073966028638,
 "gene_reaction_rule":"",
 "notes":{
@@ -44012,7 +44012,7 @@
 "oaa_c":1.0
 },
 "lower_bound":4.825058751002782,
-"upper_bound":4.82527781999207,
+"upper_bound":4.8252778199951205,
 "gene_reaction_rule":"b3236",
 "notes":{
 "GENE_ASSOCIATION":"b3236",
@@ -44100,7 +44100,7 @@
 "h2o_c":1.0,
 "h_c":-1.0
 },
-"lower_bound":0.002346886260603748,
+"lower_bound":0.0023468862606033747,
 "upper_bound":0.0023468862606047646,
 "gene_reaction_rule":"",
 "notes":{
@@ -44115,7 +44115,7 @@
 "2p4c2me_c":-1.0,
 "cmp_c":1.0
 },
-"lower_bound":0.002346886260603748,
+"lower_bound":0.0023468862606033747,
 "upper_bound":0.0023468862606047646,
 "gene_reaction_rule":"b2746",
 "notes":{
@@ -44173,8 +44173,8 @@
 "meoh_e":-1.0,
 "meoh_p":1.0
 },
-"lower_bound":-1.9647436254532073e-06,
-"upper_bound":-1.9647436254532073e-06,
+"lower_bound":-1.9647436254528947e-06,
+"upper_bound":-1.9647436254528947e-06,
 "gene_reaction_rule":""
 },
 {
@@ -44184,8 +44184,8 @@
 "meoh_c":1.0,
 "meoh_p":-1.0
 },
-"lower_bound":-1.9647436254532073e-06,
-"upper_bound":-1.9647436254532073e-06,
+"lower_bound":-1.9647436254528947e-06,
+"upper_bound":-1.9647436254528947e-06,
 "gene_reaction_rule":"s0001",
 "notes":{
 "GENE_ASSOCIATION":"s0001"
@@ -44201,7 +44201,7 @@
 "h_c":-1.0,
 "ppi_c":1.0
 },
-"lower_bound":0.002346886260603748,
+"lower_bound":0.0023468862606033747,
 "upper_bound":0.0023468862606047646,
 "gene_reaction_rule":"b2747",
 "notes":{
@@ -44220,7 +44220,7 @@
 "pi_c":1.0,
 "ppi_c":1.0
 },
-"lower_bound":0.0008821698878284446,
+"lower_bound":0.0008821698878283042,
 "upper_bound":0.0008821698878288267,
 "gene_reaction_rule":"b2942",
 "notes":{
@@ -44299,7 +44299,7 @@
 "met_DASH_L_c":1.0,
 "thf_c":1.0
 },
-"lower_bound":0.15163793064065795,
+"lower_bound":0.15163793064063383,
 "upper_bound":0.15163793064072364,
 "gene_reaction_rule":"",
 "notes":{
@@ -44449,7 +44449,7 @@
 "mg2_c":1.0,
 "mg2_p":-1.0
 },
-"lower_bound":0.008522075475402846,
+"lower_bound":0.008522075475401491,
 "upper_bound":0.008522075475406538,
 "gene_reaction_rule":"",
 "notes":{
@@ -44463,7 +44463,7 @@
 "mg2_e":-1.0,
 "mg2_p":1.0
 },
-"lower_bound":0.008522075475402846,
+"lower_bound":0.008522075475401491,
 "upper_bound":0.008522075475406538,
 "gene_reaction_rule":""
 },
@@ -44972,7 +44972,7 @@
 "mn2_c":1.0,
 "mn2_p":-1.0
 },
-"lower_bound":0.0006788189225940481,
+"lower_bound":0.00067881892259394,
 "upper_bound":0.000678818922594342,
 "gene_reaction_rule":"b3040",
 "notes":{
@@ -45060,7 +45060,7 @@
 "mn2_e":-1.0,
 "mn2_p":1.0
 },
-"lower_bound":0.0006788189225940481,
+"lower_bound":0.00067881892259394,
 "upper_bound":0.000678818922594342,
 "gene_reaction_rule":""
 },
@@ -45076,7 +45076,7 @@
 "nad_c":1.0,
 "nadh_c":-1.0
 },
-"lower_bound":0.00047939744461055785,
+"lower_bound":0.0004793974446104816,
 "upper_bound":0.0004793974446107654,
 "gene_reaction_rule":"",
 "notes":{
@@ -45093,7 +45093,7 @@
 "kdolipid4_c":1.0,
 "lipidA_c":-1.0
 },
-"lower_bound":0.019113025988407816,
+"lower_bound":0.019113025988404773,
 "upper_bound":0.01911302598841609,
 "gene_reaction_rule":"b3633",
 "notes":{
@@ -45110,7 +45110,7 @@
 "kdo2lipid4_c":1.0,
 "kdolipid4_c":-1.0
 },
-"lower_bound":0.019113025988407816,
+"lower_bound":0.019113025988404773,
 "upper_bound":0.01911302598841609,
 "gene_reaction_rule":"b3633",
 "notes":{
@@ -45146,7 +45146,7 @@
 "mobd_p":-1.0,
 "pi_c":1.0
 },
-"lower_bound":0.00012672596384172532,
+"lower_bound":0.00012672596384170516,
 "upper_bound":0.0001267259638417802,
 "gene_reaction_rule":"",
 "notes":{
@@ -45160,7 +45160,7 @@
 "mobd_e":-1.0,
 "mobd_p":1.0
 },
-"lower_bound":0.00012672596384172532,
+"lower_bound":0.00012672596384170516,
 "upper_bound":0.0001267259638417802,
 "gene_reaction_rule":""
 },
@@ -45194,7 +45194,7 @@
 "moco_c":1.0,
 "mptamp_c":-1.0
 },
-"lower_bound":0.00011984936115263946,
+"lower_bound":0.0001198493611526204,
 "upper_bound":0.00011984936115269135,
 "gene_reaction_rule":"b0827",
 "notes":{
@@ -45229,7 +45229,7 @@
 "mlthf_c":-1.0,
 "thf_c":1.0
 },
-"lower_bound":0.0005658461641303485,
+"lower_bound":0.0005658461641302585,
 "upper_bound":0.0005658461641304825,
 "gene_reaction_rule":"b0134",
 "notes":{
@@ -45246,7 +45246,7 @@
 "o2_c":-1.0,
 "oaa_c":1.0
 },
-"lower_bound":0.001378267573527593,
+"lower_bound":0.0013782675735273735,
 "upper_bound":0.0015973365674270847,
 "gene_reaction_rule":"",
 "notes":{
@@ -45263,7 +45263,7 @@
 "mptamp_c":1.0,
 "ppi_c":1.0
 },
-"lower_bound":0.00023969872230527892,
+"lower_bound":0.0002396987223052408,
 "upper_bound":0.00023969872230538274,
 "gene_reaction_rule":"b0009",
 "notes":{
@@ -45280,7 +45280,7 @@
 "uaagmda_c":-2.0,
 "udcpdp_c":2.0
 },
-"lower_bound":0.01364907396602313,
+"lower_bound":0.013649073966020959,
 "upper_bound":0.01364907396640436,
 "gene_reaction_rule":"",
 "notes":{
@@ -45315,7 +45315,7 @@
 "moadcosh_c":-2.0,
 "mpt_c":1.0
 },
-"lower_bound":0.00023969872230527892,
+"lower_bound":0.0002396987223052408,
 "upper_bound":0.00023969872230538274,
 "gene_reaction_rule":"",
 "notes":{
@@ -45332,7 +45332,7 @@
 "moadcoo_c":-1.0,
 "ppi_c":1.0
 },
-"lower_bound":0.00047939744461055785,
+"lower_bound":0.0004793974446104816,
 "upper_bound":0.00047939744461076547,
 "gene_reaction_rule":"b0826",
 "notes":{
@@ -45410,7 +45410,7 @@
 "h_c":1.0,
 "methf_c":-1.0
 },
-"lower_bound":0.9713309359233603,
+"lower_bound":0.9713309359232057,
 "upper_bound":0.971330935926371,
 "gene_reaction_rule":"b0529",
 "notes":{
@@ -45427,7 +45427,7 @@
 "nadp_c":-1.0,
 "nadph_c":1.0
 },
-"lower_bound":0.9713309359233603,
+"lower_bound":0.9713309359232057,
 "upper_bound":0.971330935926371,
 "gene_reaction_rule":"b0529",
 "notes":{
@@ -45445,7 +45445,7 @@
 "nad_c":1.0,
 "nadh_c":-1.0
 },
-"lower_bound":0.15163793064065798,
+"lower_bound":0.15163793064063386,
 "upper_bound":0.15163793064072364,
 "gene_reaction_rule":"b3941",
 "notes":{
@@ -45461,7 +45461,7 @@
 "mdhdhf_c":-1.0,
 "mththf_c":1.0
 },
-"lower_bound":0.00044010257210149573,
+"lower_bound":0.0004401025721014257,
 "upper_bound":0.00044010257210168633,
 "gene_reaction_rule":"s0001",
 "notes":{
@@ -45618,7 +45618,7 @@
 "nadh_c":-1.0
 },
 "lower_bound":0.0,
-"upper_bound":31.02172306725925,
+"upper_bound":31.021723067269594,
 "gene_reaction_rule":"",
 "notes":{
 "SUBSYSTEM":"Oxidative Phosphorylation"
@@ -45688,7 +45688,7 @@
 "nad_c":-1.0,
 "nadp_c":1.0
 },
-"lower_bound":0.00043912020028871664,
+"lower_bound":0.00043912020028864676,
 "upper_bound":0.00043912020028890665,
 "gene_reaction_rule":"b2615",
 "notes":{
@@ -45795,7 +45795,7 @@
 "nh4_c":-1.0,
 "ppi_c":1.0
 },
-"lower_bound":0.0022378429893835706,
+"lower_bound":0.0022378429893832145,
 "upper_bound":0.002237842989385649,
 "gene_reaction_rule":"b1740",
 "notes":{
@@ -45926,7 +45926,7 @@
 "udp_c":-1.0,
 "utp_c":1.0
 },
-"lower_bound":0.4177860316318346,
+"lower_bound":0.4177860316317769,
 "upper_bound":0.4177860316334771,
 "gene_reaction_rule":"",
 "notes":{
@@ -45942,7 +45942,7 @@
 "cdp_c":-1.0,
 "ctp_c":1.0
 },
-"lower_bound":0.17771597278131374,
+"lower_bound":0.1777159727812892,
 "upper_bound":0.17771597278303536,
 "gene_reaction_rule":"",
 "notes":{
@@ -45958,7 +45958,7 @@
 "dtdp_c":-1.0,
 "dttp_c":1.0
 },
-"lower_bound":0.02570474085180519,
+"lower_bound":0.025704740851801643,
 "upper_bound":0.025704740851815212,
 "gene_reaction_rule":"",
 "notes":{
@@ -46036,7 +46036,7 @@
 "nh4_e":-1.0,
 "nh4_p":1.0
 },
-"lower_bound":10.61042505181957,
+"lower_bound":10.610425051817536,
 "upper_bound":10.610425051824768,
 "gene_reaction_rule":""
 },
@@ -46047,7 +46047,7 @@
 "nh4_c":1.0,
 "nh4_p":-1.0
 },
-"lower_bound":10.61042505181957,
+"lower_bound":10.610425051817536,
 "upper_bound":10.610425051824768,
 "gene_reaction_rule":"",
 "notes":{
@@ -46115,7 +46115,7 @@
 "ni2_e":-1.0,
 "ni2_p":1.0
 },
-"lower_bound":0.00031730609551070384,
+"lower_bound":0.00031730609551066004,
 "upper_bound":0.00031730609551082755,
 "gene_reaction_rule":""
 },
@@ -46126,7 +46126,7 @@
 "ni2_c":1.0,
 "ni2_p":-1.0
 },
-"lower_bound":0.00031730609551070384,
+"lower_bound":0.00031730609551066004,
 "upper_bound":0.00031730609551082755,
 "gene_reaction_rule":"b3816",
 "notes":{
@@ -46269,7 +46269,7 @@
 "nicrnt_c":-1.0,
 "ppi_c":1.0
 },
-"lower_bound":0.002237842989383762,
+"lower_bound":0.0022378429893834526,
 "upper_bound":0.0022378429893857446,
 "gene_reaction_rule":"b0639",
 "notes":{
@@ -46306,7 +46306,7 @@
 "prpp_c":-1.0,
 "quln_c":-1.0
 },
-"lower_bound":0.002237842989383762,
+"lower_bound":0.0022378429893834526,
 "upper_bound":0.0022378429893857446,
 "gene_reaction_rule":"b0109",
 "notes":{
@@ -47495,7 +47495,7 @@
 "o2_p":1.0
 },
 "lower_bound":17.57893353025519,
-"upper_bound":267.5749890618481,
+"upper_bound":267.57498906185447,
 "gene_reaction_rule":""
 },
 {
@@ -47506,7 +47506,7 @@
 "o2_p":-1.0
 },
 "lower_bound":17.57893353025351,
-"upper_bound":17.578933530270515,
+"upper_bound":17.578933530277265,
 "gene_reaction_rule":"s0001",
 "notes":{
 "GENE_ASSOCIATION":"s0001",
@@ -47556,7 +47556,7 @@
 "orn_c":-1.0,
 "pi_c":1.0
 },
-"lower_bound":0.2905777232300126,
+"lower_bound":0.29057772322996633,
 "upper_bound":0.2905777232301384,
 "gene_reaction_rule":"",
 "notes":{
@@ -47611,7 +47611,7 @@
 "octdp_c":1.0,
 "ppi_c":5.0
 },
-"lower_bound":0.0002190689142380213,
+"lower_bound":0.00021906891423798645,
 "upper_bound":0.00021906891423811617,
 "gene_reaction_rule":"b3187",
 "notes":{
@@ -47646,7 +47646,7 @@
 "h2o_c":1.0,
 "hgmeACP_c":-1.0
 },
-"lower_bound":1.9647436254531056e-06,
+"lower_bound":1.964743625452793e-06,
 "upper_bound":1.9647436254539565e-06,
 "gene_reaction_rule":"b0180",
 "notes":{
@@ -47664,7 +47664,7 @@
 "nadph_c":-1.0,
 "ogmeACP_c":-1.0
 },
-"lower_bound":1.9647436254531056e-06,
+"lower_bound":1.964743625452793e-06,
 "upper_bound":1.9647436254539565e-06,
 "gene_reaction_rule":"b1093",
 "notes":{
@@ -47683,7 +47683,7 @@
 "malcoame_c":-1.0,
 "ogmeACP_c":1.0
 },
-"lower_bound":1.9647436254531056e-06,
+"lower_bound":1.964743625452793e-06,
 "upper_bound":1.9647436254539565e-06,
 "gene_reaction_rule":"b1091",
 "notes":{
@@ -47700,7 +47700,7 @@
 "ohpb_c":-1.0,
 "phthr_c":1.0
 },
-"lower_bound":0.0002190689142380213,
+"lower_bound":0.00021906891423798645,
 "upper_bound":0.00021906891423811617,
 "gene_reaction_rule":"b0907",
 "notes":{
@@ -47753,7 +47753,7 @@
 "co2_c":1.0,
 "h_c":-1.0
 },
-"lower_bound":0.4425889551595067,
+"lower_bound":0.44258895515943625,
 "upper_bound":0.4425889551596983,
 "gene_reaction_rule":"s0001",
 "notes":{
@@ -47806,7 +47806,7 @@
 "orot5p_c":-1.0,
 "ump_c":1.0
 },
-"lower_bound":0.3249636837908801,
+"lower_bound":0.3249636837908284,
 "upper_bound":0.3249636837910208,
 "gene_reaction_rule":"b1281",
 "notes":{
@@ -47876,7 +47876,7 @@
 "co2_c":1.0,
 "h_c":-1.0
 },
-"lower_bound":0.0002190689142380213,
+"lower_bound":0.00021906891423798645,
 "upper_bound":0.00021906891423811617,
 "gene_reaction_rule":"",
 "notes":{
@@ -47891,7 +47891,7 @@
 "2oph_c":-1.0,
 "o2_c":-0.5
 },
-"lower_bound":0.0002190689142380213,
+"lower_bound":0.00021906891423798645,
 "upper_bound":0.00021906891423811617,
 "gene_reaction_rule":"b3835",
 "notes":{
@@ -47928,7 +47928,7 @@
 "h2o_c":1.0,
 "hpmeACP_c":-1.0
 },
-"lower_bound":1.9647436254531056e-06,
+"lower_bound":1.964743625452793e-06,
 "upper_bound":1.9647436254539565e-06,
 "gene_reaction_rule":"b0180",
 "notes":{
@@ -47946,7 +47946,7 @@
 "nadph_c":-1.0,
 "opmeACP_c":-1.0
 },
-"lower_bound":1.9647436254531056e-06,
+"lower_bound":1.964743625452793e-06,
 "upper_bound":1.9647436254539565e-06,
 "gene_reaction_rule":"b1093",
 "notes":{
@@ -47965,7 +47965,7 @@
 "malACP_c":-1.0,
 "opmeACP_c":1.0
 },
-"lower_bound":1.9647436254531056e-06,
+"lower_bound":1.964743625452793e-06,
 "upper_bound":1.9647436254539565e-06,
 "gene_reaction_rule":"b2323",
 "notes":{
@@ -48053,7 +48053,7 @@
 "prpp_c":1.0
 },
 "lower_bound":-0.3249636837910208,
-"upper_bound":-0.3249636837908801,
+"upper_bound":-0.3249636837908284,
 "gene_reaction_rule":"b3642",
 "notes":{
 "GENE_ASSOCIATION":"b3642",
@@ -48157,7 +48157,7 @@
 "nadph_c":-1.0,
 "pro_DASH_L_c":1.0
 },
-"lower_bound":0.21715820106226819,
+"lower_bound":0.21715820106223363,
 "upper_bound":0.21715820106236222,
 "gene_reaction_rule":"b0386",
 "notes":{
@@ -48372,7 +48372,7 @@
 "pnto_DASH_R_c":1.0,
 "ppi_c":1.0
 },
-"lower_bound":0.0005658461641303485,
+"lower_bound":0.0005658461641302585,
 "upper_bound":0.0005658461641304825,
 "gene_reaction_rule":"b0133",
 "notes":{
@@ -48627,7 +48627,7 @@
 "ugmda_c":-1.0,
 "ump_c":1.0
 },
-"lower_bound":0.02729814793204626,
+"lower_bound":0.027298147932041918,
 "upper_bound":0.02729814793280872,
 "gene_reaction_rule":"b0087",
 "notes":{
@@ -48646,7 +48646,7 @@
 "trdox_c":1.0,
 "trdrd_c":-1.0
 },
-"lower_bound":1.4032575118605395e-13,
+"lower_bound":1.0158003491899149e-13,
 "upper_bound":0.2435024659642613,
 "gene_reaction_rule":"",
 "notes":{
@@ -48717,7 +48717,7 @@
 "pyr_c":-1.0
 },
 "lower_bound":7.969186891465777,
-"upper_bound":7.969186891490095,
+"upper_bound":7.969186891492646,
 "gene_reaction_rule":""
 },
 {
@@ -48746,7 +48746,7 @@
 "pdx5p_c":-1.0,
 "pydx5p_c":1.0
 },
-"lower_bound":7.329513403359947e-14,
+"lower_bound":7.326027614433584e-14,
 "upper_bound":0.00021906891423811617,
 "gene_reaction_rule":"b1638",
 "notes":{
@@ -48768,7 +48768,7 @@
 "phthr_c":-1.0,
 "pi_c":1.0
 },
-"lower_bound":0.0002190689142380213,
+"lower_bound":0.00021906891423798645,
 "upper_bound":0.00021906891423811617,
 "gene_reaction_rule":"",
 "notes":{
@@ -48861,7 +48861,7 @@
 "pe160_p":1.0,
 "pi_c":1.0
 },
-"lower_bound":0.0451360553075342,
+"lower_bound":0.04513605530752702,
 "upper_bound":0.04513605530755375,
 "gene_reaction_rule":"b0914",
 "notes":{
@@ -48880,7 +48880,7 @@
 "pe161_p":1.0,
 "pi_c":1.0
 },
-"lower_bound":0.020688750376021206,
+"lower_bound":0.020688750376017914,
 "upper_bound":0.020688750376030164,
 "gene_reaction_rule":"b0914",
 "notes":{
@@ -48965,7 +48965,7 @@
 "nadh_c":1.0,
 "ohpb_c":1.0
 },
-"lower_bound":0.0002190689142380213,
+"lower_bound":0.00021906891423798645,
 "upper_bound":0.00021906891423811617,
 "gene_reaction_rule":"b2320",
 "notes":{
@@ -49015,7 +49015,7 @@
 "fdp_c":1.0,
 "h_c":1.0
 },
-"lower_bound":2.596323156467406e-12,
+"lower_bound":2.5949020709958858e-12,
 "upper_bound":7.784185977721307,
 "gene_reaction_rule":""
 },
@@ -49047,7 +49047,7 @@
 "s17bp_c":1.0,
 "s7p_c":-1.0
 },
-"lower_bound":-2.0268358612463608e-13,
+"lower_bound":-1.024813438307718e-12,
 "upper_bound":7.784185977751289,
 "gene_reaction_rule":"b3916",
 "notes":{
@@ -49212,7 +49212,7 @@
 "gam6p_c":1.0
 },
 "lower_bound":-0.09282234784244857,
-"upper_bound":-0.09282234784090938,
+"upper_bound":-0.09282234784089462,
 "gene_reaction_rule":"b3176",
 "notes":{
 "GENE_ASSOCIATION":"b3176",
@@ -49229,7 +49229,7 @@
 "nad_c":-1.0,
 "nadh_c":1.0
 },
-"lower_bound":1.6878842334020048,
+"lower_bound":1.6878842334017363,
 "upper_bound":1.6878842334062116,
 "gene_reaction_rule":"b2913",
 "notes":{
@@ -49245,7 +49245,7 @@
 "g6p_c":-1.0
 },
 "lower_bound":5.91806514643524,
-"upper_bound":5.918065146496527,
+"upper_bound":5.918065146499086,
 "gene_reaction_rule":"b4025",
 "notes":{
 "GENE_ASSOCIATION":"b4025"
@@ -49260,7 +49260,7 @@
 "adp_c":1.0,
 "atp_c":-1.0
 },
-"lower_bound":-16.274774634594444,
+"lower_bound":-16.274774634595673,
 "upper_bound":-16.27477463457389,
 "gene_reaction_rule":"b2926",
 "notes":{
@@ -49276,7 +49276,7 @@
 "h2o_c":-1.0,
 "h_c":1.0
 },
-"lower_bound":4.081934853503477,
+"lower_bound":4.081934853500918,
 "upper_bound":4.081934853564756,
 "gene_reaction_rule":"b0767",
 "notes":{
@@ -49308,7 +49308,7 @@
 "2pg_c":-1.0,
 "3pg_c":1.0
 },
-"lower_bound":-14.586890401192312,
+"lower_bound":-14.58689040119381,
 "upper_bound":-14.586890401167823,
 "gene_reaction_rule":""
 },
@@ -49846,7 +49846,7 @@
 "phpyr_c":1.0
 },
 "lower_bound":-0.1819991138848639,
-"upper_bound":-0.18199911388478474,
+"upper_bound":-0.1819991138847558,
 "gene_reaction_rule":""
 },
 {
@@ -49917,7 +49917,7 @@
 "pi_c":1.0,
 "pi_p":-1.0
 },
-"lower_bound":0.9476263040822062,
+"lower_bound":0.9476263040820554,
 "upper_bound":0.9476263040826342,
 "gene_reaction_rule":"",
 "notes":{
@@ -49931,7 +49931,7 @@
 "pi_e":-1.0,
 "pi_p":1.0
 },
-"lower_bound":0.9476263040822062,
+"lower_bound":0.9476263040820554,
 "upper_bound":0.9476263040826342,
 "gene_reaction_rule":""
 },
@@ -50726,7 +50726,7 @@
 "h2o_c":-1.0,
 "pi_c":1.0
 },
-"lower_bound":0.00043813782847620936,
+"lower_bound":0.00043813782847613964,
 "upper_bound":0.0004381378284763991,
 "gene_reaction_rule":"",
 "notes":{
@@ -50742,7 +50742,7 @@
 "pimACP_c":1.0,
 "pmeACP_c":-1.0
 },
-"lower_bound":1.964743625453107e-06,
+"lower_bound":1.9647436254527943e-06,
 "upper_bound":1.9647436254539577e-06,
 "gene_reaction_rule":"b3412",
 "notes":{
@@ -50759,7 +50759,7 @@
 "adp_c":1.0,
 "atp_c":-1.0
 },
-"lower_bound":0.00021906891423802144,
+"lower_bound":0.00021906891423798658,
 "upper_bound":0.0002190689142381163,
 "gene_reaction_rule":"b2103",
 "notes":{
@@ -50777,7 +50777,7 @@
 "h_c":1.0,
 "pnto_DASH_R_c":-1.0
 },
-"lower_bound":0.0005658461641303488,
+"lower_bound":0.0005658461641302588,
 "upper_bound":0.0005658461641304829,
 "gene_reaction_rule":"b3974",
 "notes":{
@@ -50842,7 +50842,7 @@
 "h_c":1.0,
 "pyr_c":-1.0
 },
-"lower_bound":0.10683784649307636,
+"lower_bound":0.10683784649305936,
 "upper_bound":0.10683784649312263,
 "gene_reaction_rule":"",
 "notes":{
@@ -50976,7 +50976,7 @@
 "h_c":1.0,
 "ppbng_c":1.0
 },
-"lower_bound":0.0017525513139041715,
+"lower_bound":0.0017525513139038927,
 "upper_bound":0.0017525513139049365,
 "gene_reaction_rule":"b0369",
 "notes":{
@@ -50995,7 +50995,7 @@
 "pep_c":-1.0,
 "pi_c":1.0
 },
-"lower_bound":2.9071898829654796,
+"lower_bound":2.907189882965017,
 "upper_bound":2.9071898829681,
 "gene_reaction_rule":"b3956",
 "notes":{
@@ -51012,7 +51012,7 @@
 "h_c":-1.0,
 "pan4p_c":1.0
 },
-"lower_bound":0.0005658461641303488,
+"lower_bound":0.0005658461641302588,
 "upper_bound":0.0005658461641424752,
 "gene_reaction_rule":"b3639",
 "notes":{
@@ -51099,7 +51099,7 @@
 "ppi_c":1.0
 },
 "lower_bound":-1000.0,
-"upper_bound":-3.4418260946352732,
+"upper_bound":-3.4418260946345995,
 "gene_reaction_rule":"b2501",
 "notes":{
 "GENE_ASSOCIATION":"b2501",
@@ -51147,8 +51147,8 @@
 "h_c":1.0,
 "ppi_c":1.0
 },
-"lower_bound":0.0005658461641303334,
-"upper_bound":0.0005658461641303334,
+"lower_bound":0.0005658461641302913,
+"upper_bound":0.0005658461641302913,
 "gene_reaction_rule":"b3639",
 "notes":{
 "GENE_ASSOCIATION":"b3639",
@@ -51165,7 +51165,7 @@
 "nadh_c":1.0,
 "pphn_c":-1.0
 },
-"lower_bound":0.13568421240197517,
+"lower_bound":0.13568421240196507,
 "upper_bound":0.1356842124020433,
 "gene_reaction_rule":"b2600",
 "notes":{
@@ -51182,7 +51182,7 @@
 "phpyr_c":1.0,
 "pphn_c":-1.0
 },
-"lower_bound":0.18199911388478002,
+"lower_bound":0.18199911388476647,
 "upper_bound":0.18199911388487144,
 "gene_reaction_rule":"b2599",
 "notes":{
@@ -51215,7 +51215,7 @@
 "pppg9_c":-1.0,
 "succ_c":3.0
 },
-"lower_bound":0.0002190689142176466,
+"lower_bound":0.0002190689142176303,
 "upper_bound":0.00021906891423812552,
 "gene_reaction_rule":"b3850",
 "notes":{
@@ -51327,7 +51327,7 @@
 "pi_c":1.0,
 "pram_c":-1.0
 },
-"lower_bound":0.4403363765931491,
+"lower_bound":0.4403363765926616,
 "upper_bound":0.44033637659470204,
 "gene_reaction_rule":"b4005",
 "notes":{
@@ -51346,7 +51346,7 @@
 "h_c":2.0,
 "pi_c":1.0
 },
-"lower_bound":0.4403363765931491,
+"lower_bound":0.4403363765926616,
 "upper_bound":0.44033637659470204,
 "gene_reaction_rule":"b2499",
 "notes":{
@@ -51361,7 +51361,7 @@
 "2cpr5p_c":1.0,
 "pran_c":-1.0
 },
-"lower_bound":0.055840960950813964,
+"lower_bound":0.055840960950809815,
 "upper_bound":0.05584096095084202,
 "gene_reaction_rule":"b1262",
 "notes":{
@@ -51376,7 +51376,7 @@
 "prbamp_c":-1.0,
 "prfp_c":1.0
 },
-"lower_bound":0.0930679407940857,
+"lower_bound":0.09306794079407878,
 "upper_bound":0.09306794079413246,
 "gene_reaction_rule":"b2026",
 "notes":{
@@ -51396,7 +51396,7 @@
 "h_c":1.0,
 "pi_c":1.0
 },
-"lower_bound":0.44011730767891105,
+"lower_bound":0.44011730767842355,
 "upper_bound":0.4401173076804639,
 "gene_reaction_rule":"b2476",
 "notes":{
@@ -51414,7 +51414,7 @@
 "prbamp_c":1.0,
 "prbatp_c":-1.0
 },
-"lower_bound":0.0930679407940857,
+"lower_bound":0.09306794079407878,
 "upper_bound":0.09306794079413246,
 "gene_reaction_rule":"b2026",
 "notes":{
@@ -51436,7 +51436,7 @@
 "h_c":1.0,
 "pi_c":1.0
 },
-"lower_bound":0.4403363765931491,
+"lower_bound":0.4403363765926616,
 "upper_bound":0.44033637659470204,
 "gene_reaction_rule":"b2557",
 "notes":{
@@ -51451,7 +51451,7 @@
 "prfp_c":-1.0,
 "prlp_c":1.0
 },
-"lower_bound":0.0930679407940857,
+"lower_bound":0.09306794079407878,
 "upper_bound":0.09306794079413246,
 "gene_reaction_rule":"b2024",
 "notes":{
@@ -51636,7 +51636,7 @@
 "pi_c":1.0,
 "skm5p_c":-1.0
 },
-"lower_bound":0.3744005628945206,
+"lower_bound":0.37440056289449275,
 "upper_bound":0.37440056289470935,
 "gene_reaction_rule":"b0908",
 "notes":{
@@ -51703,7 +51703,7 @@
 "pe160_c":1.0,
 "ps160_c":-1.0
 },
-"lower_bound":0.06268907485733048,
+"lower_bound":0.06268907485732582,
 "upper_bound":0.06268907485736208,
 "gene_reaction_rule":"b4160",
 "notes":{
@@ -51720,7 +51720,7 @@
 "pe161_c":1.0,
 "ps161_c":-1.0
 },
-"lower_bound":0.07388811352241285,
+"lower_bound":0.07388811352240736,
 "upper_bound":0.0738881135224501,
 "gene_reaction_rule":"b4160",
 "notes":{
@@ -51771,7 +51771,7 @@
 "glu_DASH_L_c":-1.0,
 "pser_DASH_L_c":1.0
 },
-"lower_bound":1.6878842334017414,
+"lower_bound":1.6878842334014736,
 "upper_bound":1.6878842334062372,
 "gene_reaction_rule":"b0907",
 "notes":{
@@ -51799,7 +51799,7 @@
 "pser_DASH_L_c":-1.0,
 "ser_DASH_L_c":1.0
 },
-"lower_bound":1.6878842334017414,
+"lower_bound":1.6878842334014736,
 "upper_bound":1.6878842334062372,
 "gene_reaction_rule":"b4388",
 "notes":{
@@ -51888,7 +51888,7 @@
 "ps160_c":1.0,
 "ser_DASH_L_c":-1.0
 },
-"lower_bound":0.06268907485733048,
+"lower_bound":0.06268907485732582,
 "upper_bound":0.06268907485736208,
 "gene_reaction_rule":"b2585",
 "notes":{
@@ -51906,7 +51906,7 @@
 "ps161_c":1.0,
 "ser_DASH_L_c":-1.0
 },
-"lower_bound":0.07388811352241285,
+"lower_bound":0.07388811352240736,
 "upper_bound":0.0738881135224501,
 "gene_reaction_rule":"b2585",
 "notes":{
@@ -51977,7 +51977,7 @@
 "pi_c":-1.0
 },
 "lower_bound":-0.5723062411601504,
-"upper_bound":995.9858676642042,
+"upper_bound":995.9858676642048,
 "gene_reaction_rule":"",
 "notes":{
 "SUBSYSTEM":"Pyruvate Metabolism"
@@ -52010,8 +52010,8 @@
 "pan4p_c":-1.0,
 "ppi_c":1.0
 },
-"lower_bound":0.0005658461641303356,
-"upper_bound":0.0005658461641303356,
+"lower_bound":0.0005658461641302459,
+"upper_bound":0.0005658461641302459,
 "gene_reaction_rule":"b3634",
 "notes":{
 "GENE_ASSOCIATION":"b3634",
@@ -52518,7 +52518,7 @@
 "pi_c":1.0,
 "quln_c":1.0
 },
-"lower_bound":0.00223784298938468,
+"lower_bound":0.002237842989384324,
 "upper_bound":0.002237842989385652,
 "gene_reaction_rule":"b0750",
 "notes":{
@@ -52615,7 +52615,7 @@
 "h_c":1.0,
 "ribflv_c":-1.0
 },
-"lower_bound":0.00021906891423818776,
+"lower_bound":0.0002190689142381529,
 "upper_bound":0.00021906891423828387,
 "gene_reaction_rule":"b0025",
 "notes":{
@@ -52633,7 +52633,7 @@
 "h2o_c":2.0,
 "pi_c":1.0
 },
-"lower_bound":0.0008762756569524182,
+"lower_bound":0.0008762756569522787,
 "upper_bound":0.0008762756569528025,
 "gene_reaction_rule":"b1662",
 "notes":{
@@ -52649,7 +52649,7 @@
 "dmlz_c":-2.0,
 "ribflv_c":1.0
 },
-"lower_bound":0.0004381378284762091,
+"lower_bound":0.00043813782847613937,
 "upper_bound":0.00043813782847640126,
 "gene_reaction_rule":"b0415",
 "notes":{
@@ -52774,7 +52774,7 @@
 "hcys_DASH_L_c":1.0,
 "rhcys_c":-1.0
 },
-"lower_bound":0.00044010257210149573,
+"lower_bound":0.0004401025721014257,
 "upper_bound":0.00044010257210168877,
 "gene_reaction_rule":"b2687",
 "notes":{
@@ -53032,7 +53032,7 @@
 "h2o_c":1.0,
 "h_c":-2.0
 },
-"lower_bound":0.025704740851802986,
+"lower_bound":0.025704740851798896,
 "upper_bound":0.025704740851814258,
 "gene_reaction_rule":"",
 "notes":{
@@ -53050,7 +53050,7 @@
 "h2o_c":1.0,
 "h_c":-2.0
 },
-"lower_bound":0.02654073926443328,
+"lower_bound":0.02654073926442906,
 "upper_bound":0.026540739264444925,
 "gene_reaction_rule":"",
 "notes":{
@@ -53068,7 +53068,7 @@
 "h2o_c":1.0,
 "h_c":-2.0
 },
-"lower_bound":0.02654073926443328,
+"lower_bound":0.02654073926442906,
 "upper_bound":0.026540739264444925,
 "gene_reaction_rule":"",
 "notes":{
@@ -53086,7 +53086,7 @@
 "h_c":-2.0,
 "utp_c":-1.0
 },
-"lower_bound":0.025704740851802986,
+"lower_bound":0.025704740851798896,
 "upper_bound":0.025704740851814258,
 "gene_reaction_rule":"",
 "notes":{
@@ -53100,7 +53100,7 @@
 "ru5p_DASH_D_c":-1.0,
 "xu5p_DASH_D_c":1.0
 },
-"lower_bound":1.958943179078033,
+"lower_bound":1.9589431790764449,
 "upper_bound":1.958943179118699,
 "gene_reaction_rule":"",
 "notes":{
@@ -53115,7 +53115,7 @@
 "ru5p_DASH_D_c":1.0
 },
 "lower_bound":-2.0838893468121307,
-"upper_bound":-2.0838893467917696,
+"upper_bound":-2.0838893467908672,
 "gene_reaction_rule":"",
 "notes":{
 "SUBSYSTEM":"Pentose Phosphate Pathway"
@@ -53303,7 +53303,7 @@
 "ppi_c":1.0,
 "so4_c":-1.0
 },
-"lower_bound":0.24350246596415598,
+"lower_bound":0.24350246596411723,
 "upper_bound":0.24350246596426267,
 "gene_reaction_rule":"",
 "notes":{
@@ -53396,7 +53396,7 @@
 "sl26da_c":-1.0,
 "succ_c":1.0
 },
-"lower_bound":0.3644098415591021,
+"lower_bound":0.3644098415590441,
 "upper_bound":0.3644098415592619,
 "gene_reaction_rule":"b2472",
 "notes":{
@@ -53414,7 +53414,7 @@
 "sl2a6o_c":1.0
 },
 "lower_bound":-0.3644098415592599,
-"upper_bound":-0.36440984155907064,
+"upper_bound":-0.3644098415590124,
 "gene_reaction_rule":"b3359",
 "notes":{
 "GENE_ASSOCIATION":"b3359",
@@ -53600,7 +53600,7 @@
 "coa_c":1.0,
 "ser_DASH_L_c":-1.0
 },
-"lower_bound":0.24350246596415598,
+"lower_bound":0.24350246596411723,
 "upper_bound":0.24350246596426267,
 "gene_reaction_rule":"b3607",
 "notes":{
@@ -53796,7 +53796,7 @@
 "nadh_c":1.0,
 "scl_c":1.0
 },
-"lower_bound":0.00021906891423802106,
+"lower_bound":0.00021906891423798618,
 "upper_bound":0.00021906891423811693,
 "gene_reaction_rule":"b3368",
 "notes":{
@@ -53813,7 +53813,7 @@
 "scl_c":-1.0,
 "sheme_c":1.0
 },
-"lower_bound":0.00021906891423802106,
+"lower_bound":0.00021906891423798618,
 "upper_bound":0.00021906891423811693,
 "gene_reaction_rule":"b3368",
 "notes":{
@@ -53831,7 +53831,7 @@
 "nadph_c":-1.0,
 "skm_c":1.0
 },
-"lower_bound":0.3744005628945308,
+"lower_bound":0.3744005628944712,
 "upper_bound":0.37440056289469464,
 "gene_reaction_rule":""
 },
@@ -53845,7 +53845,7 @@
 "skm5p_c":1.0,
 "skm_c":-1.0
 },
-"lower_bound":0.3744005628945308,
+"lower_bound":0.3744005628944712,
 "upper_bound":0.37440056289469464,
 "gene_reaction_rule":""
 },
@@ -53859,7 +53859,7 @@
 "succ_c":1.0,
 "suchms_c":-1.0
 },
-"lower_bound":0.1511978280685563,
+"lower_bound":0.15119782806853224,
 "upper_bound":0.15119782806862248,
 "gene_reaction_rule":"b3939",
 "notes":{
@@ -53967,7 +53967,7 @@
 "so4_c":1.0,
 "so4_p":-1.0
 },
-"lower_bound":0.24776399488776346,
+"lower_bound":0.24776399488772405,
 "upper_bound":0.2477639948878718,
 "gene_reaction_rule":"b1206",
 "notes":{
@@ -53982,7 +53982,7 @@
 "so4_e":-1.0,
 "so4_p":1.0
 },
-"lower_bound":0.24776399488776346,
+"lower_bound":0.24776399488772405,
 "upper_bound":0.2477639948878718,
 "gene_reaction_rule":""
 },
@@ -54278,7 +54278,7 @@
 "succ_c":-1.0
 },
 "lower_bound":3.802195536883147,
-"upper_bound":35.149539494684895,
+"upper_bound":35.149539494698445,
 "gene_reaction_rule":"",
 "notes":{
 "SUBSYSTEM":"Oxidative Phosphorylation"
@@ -54321,7 +54321,7 @@
 "succ_c":-1.0,
 "succoa_c":1.0
 },
-"lower_bound":-1000.0000000000073,
+"lower_bound":-1000.0000000000108,
 "upper_bound":-3.2859306605121925,
 "gene_reaction_rule":"",
 "notes":{
@@ -54406,7 +54406,7 @@
 "nadph_c":-3.0,
 "so3_c":-1.0
 },
-"lower_bound":0.24350246596395794,
+"lower_bound":0.24350246596390832,
 "upper_bound":0.24350246596426223,
 "gene_reaction_rule":"",
 "notes":{
@@ -54720,7 +54720,7 @@
 "lipidA_c":1.0,
 "lipidAds_c":-1.0
 },
-"lower_bound":0.019113025988408864,
+"lower_bound":0.01911302598840616,
 "upper_bound":0.019113025988416164,
 "gene_reaction_rule":"b0915",
 "notes":{
@@ -54796,7 +54796,7 @@
 "succoa_c":-1.0,
 "thdp_c":-1.0
 },
-"lower_bound":0.36440984155912204,
+"lower_bound":0.3644098415590705,
 "upper_bound":0.36440984155926126,
 "gene_reaction_rule":"b0166",
 "notes":{
@@ -54960,7 +54960,7 @@
 "nh4_c":1.0,
 "thr_DASH_L_c":-1.0
 },
-"lower_bound":0.28540750037964835,
+"lower_bound":0.285407500379608,
 "upper_bound":0.28540750037975726,
 "gene_reaction_rule":""
 },
@@ -54984,7 +54984,7 @@
 "pi_c":1.0,
 "thr_DASH_L_c":1.0
 },
-"lower_bound":0.534622458434823,
+"lower_bound":0.5346224584347474,
 "upper_bound":0.5346224584350271,
 "gene_reaction_rule":"b0004",
 "notes":{
@@ -55125,7 +55125,7 @@
 "nadph_c":-1.0,
 "ppi_c":1.0
 },
-"lower_bound":0.0002190689142380333,
+"lower_bound":0.00021906891423800236,
 "upper_bound":0.00021906891423811696,
 "gene_reaction_rule":"",
 "notes":{
@@ -55141,7 +55141,7 @@
 "s7p_c":1.0,
 "xu5p_DASH_D_c":-1.0
 },
-"lower_bound":1.166781405443281,
+"lower_bound":1.166781405442351,
 "upper_bound":1.1667814054637895,
 "gene_reaction_rule":"",
 "notes":{
@@ -55157,7 +55157,7 @@
 "g3p_c":1.0,
 "xu5p_DASH_D_c":-1.0
 },
-"lower_bound":0.7921617736343977,
+"lower_bound":0.7921617736336208,
 "upper_bound":0.7921617736549352,
 "gene_reaction_rule":"",
 "notes":{
@@ -55302,7 +55302,7 @@
 "dump_c":-1.0,
 "mlthf_c":-1.0
 },
-"lower_bound":0.02570474085180439,
+"lower_bound":0.02570474085180076,
 "upper_bound":0.025704740851814206,
 "gene_reaction_rule":"b2827",
 "notes":{
@@ -55337,7 +55337,7 @@
 "thmmp_c":-1.0,
 "thmpp_c":1.0
 },
-"lower_bound":0.0002190689142380333,
+"lower_bound":0.00021906891423800236,
 "upper_bound":0.00021906891423811696,
 "gene_reaction_rule":"b0417",
 "notes":{
@@ -55355,7 +55355,7 @@
 "ppi_c":1.0,
 "thmmp_c":1.0
 },
-"lower_bound":0.0002190689142380333,
+"lower_bound":0.00021906891423800236,
 "upper_bound":0.00021906891423811696,
 "gene_reaction_rule":"b3993",
 "notes":{
@@ -55371,7 +55371,7 @@
 "g3p_c":1.0
 },
 "lower_bound":7.64537094634432,
-"upper_bound":7.645370946364382,
+"upper_bound":7.645370946365299,
 "gene_reaction_rule":"b3919",
 "notes":{
 "GENE_ASSOCIATION":"b3919"
@@ -55404,7 +55404,7 @@
 "trdox_c":-1.0,
 "trdrd_c":1.0
 },
-"lower_bound":-6.680230049995615e-14,
+"lower_bound":-1.0121246012776347e-13,
 "upper_bound":0.2435024659642622,
 "gene_reaction_rule":"",
 "notes":{
@@ -55530,7 +55530,7 @@
 "trp_DASH_L_c":-1.0
 },
 "lower_bound":-0.05584096095084542,
-"upper_bound":-0.05584096095081048,
+"upper_bound":-0.05584096095080158,
 "gene_reaction_rule":"b3708",
 "notes":{
 "GENE_ASSOCIATION":"b3708"
@@ -55571,7 +55571,7 @@
 "g3p_c":1.0,
 "indole_c":1.0
 },
-"lower_bound":0.05584096095081851,
+"lower_bound":0.05584096095081062,
 "upper_bound":0.05584096095083983,
 "gene_reaction_rule":""
 },
@@ -55772,7 +55772,7 @@
 "nadph_c":-1.0,
 "tyr_DASH_L_c":-1.0
 },
-"lower_bound":0.0002190689142380375,
+"lower_bound":0.0002190689142380012,
 "upper_bound":0.00021906891423811696,
 "gene_reaction_rule":"b3991",
 "notes":{
@@ -55836,7 +55836,7 @@
 "tyr_DASH_L_c":-1.0
 },
 "lower_bound":-0.13568421240205134,
-"upper_bound":-0.13568421240196668,
+"upper_bound":-0.13568421240194506,
 "gene_reaction_rule":""
 },
 {
@@ -55909,7 +55909,7 @@
 "u23ga_c":1.0,
 "u3hga_c":-1.0
 },
-"lower_bound":0.038226051976818456,
+"lower_bound":0.03822605197681212,
 "upper_bound":0.03822605197683232,
 "gene_reaction_rule":"b0179",
 "notes":{
@@ -55928,7 +55928,7 @@
 "uamag_c":-1.0,
 "ugmd_c":1.0
 },
-"lower_bound":0.027298147932047472,
+"lower_bound":0.027298147932042948,
 "upper_bound":0.027298147932057374,
 "gene_reaction_rule":"b0085",
 "notes":{
@@ -56026,7 +56026,7 @@
 "u3aga_c":1.0,
 "uacgam_c":-1.0
 },
-"lower_bound":0.038226051976818456,
+"lower_bound":0.03822605197681212,
 "upper_bound":0.03822605197683232,
 "gene_reaction_rule":""
 },
@@ -56039,7 +56039,7 @@
 "uaccg_c":1.0,
 "uacgam_c":-1.0
 },
-"lower_bound":0.027298147932048118,
+"lower_bound":0.027298147932042358,
 "upper_bound":0.02729814793280876,
 "gene_reaction_rule":"b3189",
 "notes":{
@@ -56057,7 +56057,7 @@
 "uacgam_c":1.0,
 "utp_c":-1.0
 },
-"lower_bound":0.0928223478409156,
+"lower_bound":0.092822347840896,
 "upper_bound":0.09282234784244864,
 "gene_reaction_rule":"b3730",
 "notes":{
@@ -56075,7 +56075,7 @@
 "uagmda_c":-1.0,
 "udp_c":1.0
 },
-"lower_bound":0.027298147932048118,
+"lower_bound":0.027298147932042358,
 "upper_bound":0.02729814793280876,
 "gene_reaction_rule":"b0090",
 "notes":{
@@ -56095,7 +56095,7 @@
 "uama_c":-1.0,
 "uamag_c":1.0
 },
-"lower_bound":0.027298147932047472,
+"lower_bound":0.027298147932042948,
 "upper_bound":0.027298147932057374,
 "gene_reaction_rule":"b0088",
 "notes":{
@@ -56115,7 +56115,7 @@
 "uama_c":1.0,
 "uamr_c":-1.0
 },
-"lower_bound":0.027298147932047472,
+"lower_bound":0.027298147932042948,
 "upper_bound":0.027298147932057374,
 "gene_reaction_rule":"b0091",
 "notes":{
@@ -56133,7 +56133,7 @@
 "uaccg_c":-1.0,
 "uamr_c":1.0
 },
-"lower_bound":0.027298147932048118,
+"lower_bound":0.027298147932042358,
 "upper_bound":0.02729814793280876,
 "gene_reaction_rule":"b3972",
 "notes":{
@@ -56151,7 +56151,7 @@
 "udcpdp_c":-1.0,
 "udcpp_c":1.0
 },
-"lower_bound":0.027298147932048118,
+"lower_bound":0.027298147932042358,
 "upper_bound":0.02729814793280876,
 "gene_reaction_rule":"",
 "notes":{
@@ -56167,7 +56167,7 @@
 "ppi_c":8.0,
 "udcpdp_c":1.0
 },
-"lower_bound":5.4030449699965616e-05,
+"lower_bound":5.403044969995666e-05,
 "upper_bound":5.403044969998521e-05,
 "gene_reaction_rule":"b0174",
 "notes":{
@@ -56431,7 +56431,7 @@
 "ugmd_c":-1.0,
 "ugmda_c":1.0
 },
-"lower_bound":0.027298147932048118,
+"lower_bound":0.027298147932042358,
 "upper_bound":0.02729814793280876,
 "gene_reaction_rule":"b0086",
 "notes":{
@@ -56448,7 +56448,7 @@
 "u3aga_c":-1.0,
 "u3hga_c":1.0
 },
-"lower_bound":0.038226051976818456,
+"lower_bound":0.03822605197681212,
 "upper_bound":0.03822605197683232,
 "gene_reaction_rule":"b0096",
 "notes":{
@@ -56549,7 +56549,7 @@
 "udp_c":1.0,
 "ump_c":-1.0
 },
-"lower_bound":0.37137485771136963,
+"lower_bound":0.37137485771129125,
 "upper_bound":0.3713748577122361,
 "gene_reaction_rule":"",
 "notes":{
@@ -56609,7 +56609,7 @@
 "h_c":1.0,
 "uppg3_c":-1.0
 },
-"lower_bound":0.0002190689142380375,
+"lower_bound":0.0002190689142380012,
 "upper_bound":0.00021906891423811696,
 "gene_reaction_rule":"",
 "notes":{
@@ -56624,7 +56624,7 @@
 "hmbil_c":-1.0,
 "uppg3_c":1.0
 },
-"lower_bound":0.000438137828476075,
+"lower_bound":0.0004381378284760024,
 "upper_bound":0.0004381378284762339,
 "gene_reaction_rule":"b3804",
 "notes":{
@@ -56641,7 +56641,7 @@
 "h_c":-4.0,
 "uppg3_c":-1.0
 },
-"lower_bound":0.0002190689142380375,
+"lower_bound":0.0002190689142380012,
 "upper_bound":0.00021906891423811696,
 "gene_reaction_rule":"b3997",
 "notes":{
@@ -56875,7 +56875,7 @@
 "u23ga_c":-1.0,
 "ump_c":1.0
 },
-"lower_bound":0.01911302598840865,
+"lower_bound":0.01911302598840616,
 "upper_bound":0.01911302598841616,
 "gene_reaction_rule":"b0524",
 "notes":{
@@ -57277,7 +57277,7 @@
 "zn2_p":1.0
 },
 "lower_bound":0.0,
-"upper_bound":0.0,
+"upper_bound":1.2562395568238578e-11,
 "gene_reaction_rule":"b3469",
 "notes":{
 "GENE_ASSOCIATION":"b3469",
@@ -57294,7 +57294,7 @@
 "zn2_p":1.0
 },
 "lower_bound":0.0,
-"upper_bound":0.0,
+"upper_bound":5.024958227295431e-11,
 "gene_reaction_rule":"",
 "notes":{
 "SUBSYSTEM":"Inorganic Ion Transport and Metabolism"
@@ -57307,8 +57307,8 @@
 "zn2_c":1.0,
 "zn2_p":-1.0
 },
-"lower_bound":0.00033498878813975456,
-"upper_bound":0.00033498878813989963,
+"lower_bound":0.0003349887755773419,
+"upper_bound":0.00033498885095182657,
 "gene_reaction_rule":"b3040",
 "notes":{
 "GENE_ASSOCIATION":"b3040",
@@ -57328,7 +57328,7 @@
 "zn2_p":-1.0
 },
 "lower_bound":0.0,
-"upper_bound":0.0,
+"upper_bound":1.2562395568238578e-11,
 "gene_reaction_rule":"",
 "notes":{
 "SUBSYSTEM":"Inorganic Ion Transport and Metabolism"
@@ -57341,8 +57341,8 @@
 "zn2_e":-1.0,
 "zn2_p":1.0
 },
-"lower_bound":0.00033498878813975456,
-"upper_bound":0.00033498878813989963,
+"lower_bound":0.00033498878813972204,
+"upper_bound":0.0003349887881398588,
 "gene_reaction_rule":""
 }
 ],

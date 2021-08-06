@@ -40,19 +40,20 @@ else:
     from findCPcore import FacadeUtils
     from findCPcore.utils.GrowthDependentCPConfig import GrowthDependentCPConfig
 
-TASK_SPREADSHEET = "TASK_SPREADSHEET"
+TASK_CRITICAL_REACTIONS = "TASK_CRITICAL_REACTIONS"
 TASK_SENSIBILITY = "TASK_SENSIBILITY"
 TASK_SAVE_WITHOUT_DEM = "TASK_SAVE_WITHOUT_DEM"
 TASK_SAVE_WITH_FVA = "TASK_SAVE_WITH_FVA"
 TASK_SAVE_WITH_FVA_DEM = "TASK_SAVE_WITH_FVA_DEM"
 
-MSG_SUCCESFULL_SAVE = "File succesfully saved at: {}"
+MSG_SUCCESFULL_SAVE = "File successfully saved at: {}"
 MSG_UNKNOWN_ERROR = "Error, something went wrong: {}"
 MSG_FURTHER_INFO = "run findCPcli -h for further information."
 
 PARAM_INPUT_FILE = "<input file>"
 PARAM_OUTPUT_FILE = "<output file>"
 PARAM_REACTION_ID = "<reaction id>"
+PARAM_FRACTION = "<fraction>"
 
 LICENSE = """
     findCPcli Copyright (C) 2020-2021  Alex Oarga  <718123 at unizar dot es> (University of Zaragoza)
@@ -94,9 +95,9 @@ def check_error_save_final_model(error, facade, output_path, verbose_f):
     else:
         save_final_model(facade, output_path, verbose_f)
 
-def run(task, model_path, output_path, verbose, objective=None):
+def run(task, model_path, output_path, verbose, objective=None, fraction=1.0):
     try:
-        if task == TASK_SPREADSHEET:
+        if task == TASK_CRITICAL_REACTIONS:
             print("Task: Save results spreadsheet")
             facade = Facade()
             error = facade.generate_spreadsheet(
@@ -107,6 +108,7 @@ def run(task, model_path, output_path, verbose, objective=None):
                 args2=None,
                 output_path=None,
                 objective=objective,
+                fraction=fraction
             )
             save_final_spreadsheet(facade, output_path, verbose_f, error)
 
@@ -145,6 +147,7 @@ def run(task, model_path, output_path, verbose, objective=None):
                 args1=verbose,
                 args2=None,
                 objective=objective,
+                fraction=fraction
             )
             check_error_save_final_model(error, facade, output_path, verbose_f)
 
@@ -161,6 +164,7 @@ def run(task, model_path, output_path, verbose, objective=None):
                 args1=verbose,
                 args2=None,
                 objective=objective,
+                fraction=fraction
             )
             check_error_save_final_model(error, facade, output_path, verbose_f)
 
@@ -192,14 +196,14 @@ def read_input():
     )
     parser.add_argument(
         "-i",
-        dest="inputfile",
+        dest="input_file",
         required=True,
         metavar=PARAM_INPUT_FILE,
         help="Input metabolic model. Allowed file formats: .xml .json .yml",
     )
     parser.add_argument(
         "-o",
-        dest="outputfile",
+        dest="output_file",
         metavar=PARAM_OUTPUT_FILE,
         help="Output spreadsheet file with results. Allowed file formats: .xls .xlsx .ods",
     )
@@ -211,21 +215,23 @@ def read_input():
     )
     parser.add_argument(
         "-swD",
-        dest="modelwodem",
+        dest="model_remove_dem",
         metavar=PARAM_OUTPUT_FILE,
         help="Save output model without Dead End Metabolites. Allowed file formats: .xml .json .yml",
     )
     parser.add_argument(
         "-sF",
-        dest="modelfva",
+        dest="model_fva",
         metavar=PARAM_OUTPUT_FILE,
-        help="Save output model with reactions bounds updated with Flux Variability Analysis. Allowed file formats: .xml .json .yml",
+        help="Save output model with reactions bounds updated with Flux Variability Analysis. Allowed file formats: "
+             ".xml .json .yml",
     )
     parser.add_argument(
         "-swDF",
-        dest="modelfvawodem",
+        dest="model_fva_remove_dem",
         metavar=PARAM_OUTPUT_FILE,
-        help="Save output model with reactions bounds updated with Flux Variability Analysis and without Dead End Metabolites. Allowed file formats: .xml .json .yml",
+        help="Save output model with reactions bounds updated with Flux Variability Analysis and without Dead End "
+             "Metabolites. Allowed file formats: .xml .json .yml",
     )
     parser.add_argument(
         "-objective",
@@ -233,29 +239,28 @@ def read_input():
         metavar=PARAM_REACTION_ID,
         help="Reaction id to be used as objective function with Flux Balance Analysis",
     )
+    parser.add_argument(
+        "-fraction",
+        dest="fraction",
+        metavar=PARAM_FRACTION,
+        help="Fraction of optimum growth to be used in Flux Balance Analysis. Value must be beetwen 0.0 and 1.0",
+    )
 
     args = parser.parse_args()
 
-    input_file = args.inputfile
-    output = args.outputfile
-    cp = args.cp
-    modelwodem = args.modelwodem
-    modelfva = args.modelfva
-    modelfvawodem = args.modelfvawodem
-    objective = args.objective
+    params = {}
+    params["input_file"] = args.input_file
+    params["output"] = args.output_file
+    params["cp"] = args.cp
+    params["model_remove_dem"] = args.model_remove_dem
+    params["model_fva"] = args.model_fva
+    params["model_fva_remove_dem"] = args.model_fva_remove_dem
+    params["objective"] = args.objective
+    params["verbose"] = args.verbose
+    params["license"] = args.license
+    params["fraction"] = args.fraction
 
-    return (
-        input_file,
-        output,
-        cp,
-        modelwodem,
-        modelfva,
-        modelfvawodem,
-        args.verbose,
-        objective,
-        args.license,
-    )
-
+    return params
 
 def __check_model_file(path):
     if path[-4:] != ".xml" and path[-5:] != ".json" and path[-4:] != ".yml":
@@ -320,6 +325,13 @@ def validate_operation_selected(list_of_possible_operations):
         print(MSG_FURTHER_INFO)
         exit(1)
 
+def validate_number(parameter):
+    try:
+        parameter = float(parameter)
+    except:
+        print("Error: parameter 'fraction' must be a decimal number beetwen 0.0 and 1.0")
+        exit(1)
+    return parameter
 
 #
 # 	Main cli workflow
@@ -327,17 +339,24 @@ def validate_operation_selected(list_of_possible_operations):
 #
 def main():
     # Read input
-    (
-        input_file,
-        output,
-        cp,
-        modelwodem,
-        modelfva,
-        modelfvawodem,
-        verbose,
-        objective,
-        license,
-    ) = read_input()
+    params = read_input()
+    input_file = params["input_file"]
+    output_file = params["output"]
+    cp = params["cp"]
+    model_remove_dem = params["model_remove_dem"]
+    model_fva = params["model_fva"]
+    model_fva_remove_dem = params["model_fva_remove_dem"]
+    objective = params["objective"]
+    verbose = params["verbose"]
+    license = params["license"]
+    fraction = params["fraction"]
+
+    # Default values
+    if fraction is None:
+        fraction = 1.0
+    fraction = validate_number(fraction)
+        
+    
 
     # Operations that dont requiere validation
     if license:
@@ -346,11 +365,11 @@ def main():
     # Note that the following save the outputh path of each operation
     # If the variable is None, no operation that operation has not been selected
     NEW_MODEL_OPERATIONS = [
-        modelwodem,
-        modelfva,
-        modelfvawodem,
+        model_remove_dem,
+        model_fva,
+        model_fva_remove_dem,
     ]  # Tasks that generate new models
-    NEW_SPREADSHEET_OPS = [output, cp]  # Tasks that generate spreadsheet files
+    NEW_SPREADSHEET_OPS = [output_file, cp]  # Tasks that generate spreadsheet files
 
     # Check input file formats and task
     validate_input_model(input_file)
@@ -359,30 +378,30 @@ def main():
     validate_operation_selected(NEW_MODEL_OPERATIONS + NEW_SPREADSHEET_OPS)
 
     # Run task
-    if output is not None:
-        task = TASK_SPREADSHEET
-        out_path = output
-        run(task, input_file, out_path, verbose, objective)
+    if output_file is not None:
+        task = TASK_CRITICAL_REACTIONS
+        out_path = output_file
+        run(task, input_file, out_path, verbose, objective, fraction)
 
     if cp is not None:
         task = TASK_SENSIBILITY
         out_path = cp
-        run(task, input_file, out_path, verbose, objective)
+        run(task, input_file, out_path, verbose, objective, fraction)
 
-    if modelwodem is not None:
+    if model_remove_dem is not None:
         task = TASK_SAVE_WITHOUT_DEM
-        out_path = modelwodem
-        run(task, input_file, out_path, verbose, objective)
+        out_path = model_remove_dem
+        run(task, input_file, out_path, verbose, objective, fraction)
 
-    if modelfva is not None:
+    if model_fva is not None:
         task = TASK_SAVE_WITH_FVA
-        out_path = modelfva
-        run(task, input_file, out_path, verbose, objective)
+        out_path = model_fva
+        run(task, input_file, out_path, verbose, objective, fraction)
 
-    if modelfvawodem is not None:
+    if model_fva_remove_dem is not None:
         task = TASK_SAVE_WITH_FVA_DEM
-        out_path = modelfvawodem
-        run(task, input_file, out_path, verbose, objective)
+        out_path = model_fva_remove_dem
+        run(task, input_file, out_path, verbose, objective, fraction)
 
 
 if __name__ == "__main__":
