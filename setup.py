@@ -19,7 +19,7 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     install_requires=[
-        "findCPcore",
+        "findCPcore==0.1.1",
         "numpy>=1.16.5",
         "python-dotenv",
     ],

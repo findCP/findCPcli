@@ -1,4 +1,4 @@
-findCPcore==0.0.12
+findCPcore==0.1.1
 numpy>=1.16.5
 xlrd
 python-dotenv
