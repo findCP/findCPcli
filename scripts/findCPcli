@@ -243,7 +243,7 @@ def read_input():
         "-fraction",
         dest="fraction",
         metavar=PARAM_FRACTION,
-        help="Fraction of optimum growth to be used in Flux Balance Analysis. Value must be beetwen 0.0 and 1.0",
+        help="Fraction of optimum growth to be used in Flux Variability Analysis. Value must be beetwen 0.0 and 1.0",
     )
 
     args = parser.parse_args()
