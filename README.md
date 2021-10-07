@@ -24,8 +24,8 @@ The computation of chokepoints can also be exploited programmatically via the [L
 
 ## Table of Contents
 - [License](#license)
-- [Pseudocode](#pseudocode)
-- [Install](#Install)
+- [Install](#install)
+- [Quickstart](#quickstart)
 - [Documentation](#documentation)
 - [Tool parameters](#tool-parameters)
 - [Low Level API](#low-level-api)
@@ -48,6 +48,22 @@ Oarga et al. **Growth Dependent Computation of Chokepoints in Metabolic Networks
 ```shell
 $ pip install findCPcli
 ```
+
+## Quickstart
+- To get a summary spreadsheet run:
+  ```shell
+  $ findCPcli -i <INPUT MODEL> -o output.xls
+  ```
+- To use a suboptimal growth (fraction of optimal growth) with FVA, e.g. 95% of optimal growth:
+  ```shell
+  $ findCPcli -i <INPUT MODEL> -o output.xls -fraction 0.95
+  ```
+  
+- To get the sizes of growth dependent chokepoints run:
+  ```shell
+  $ findCPcli -i <INPUT MODEL> -cp output.xls
+  ```
+
 
 ## Documentation
 
